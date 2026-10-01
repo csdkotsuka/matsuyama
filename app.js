@@ -1,4 +1,5 @@
-// MATSUYAMA & EHIME GLOBAL DISCOVERY PORTAL - APP DATA & LOGIC (LIGHT THEME EDITION)
+// MATSUYAMA & EHIME GLOBAL DISCOVERY PORTAL - APP DATA & LOGIC
+// FULLY EXPANDED EDITION WITH SAKANOUE, NIMBLE ART, CITRUS TAI, POEME, ISHIZUCHI, KAMEOSAN, BOTTLE-NECK TRIVIA
 
 const siteData = {
   ja: {
@@ -6,34 +7,34 @@ const siteData = {
     siteSubtitle: "日本最古の湯と文学、極彩色の美意識、そして瀬戸内・宇和海の恵み",
     heroBadge: "愛媛・松山を世界へ発信する公式ディスカバリーポータル",
     heroHeading: "巡る、松山・愛媛の深層。",
-    heroSubheading: "3000年の古湯から、極彩色のアート・美味の海、そして『坂の上の雲』の碧空へ",
-    heroDesc: "3,000年の歴史を誇る道後温泉、近代文学を拓いた正岡子規と夏目漱石、司馬遼太郎の不朽の名作『坂の上の雲』、蜷川実花が彩るアートな温泉街、日本一の柑橘王国、瀬戸内しまなみ海道、そして至高の鯛めし。知れば知るほど魅了される、松山・愛媛の奥深い物語を巡る旅へ。",
+    heroSubheading: "3000年の古湯から、坂の上の雲、極彩色のアート、霊峰と海の絶景へ",
+    heroDesc: "道後温泉、松山城二之丸庭園、司馬遼太郎『坂の上の雲』、蜷川実花が咲き誇るアート温泉街、西日本最高峰・石鎚山とUFOライン、世界一のしまなみ海道、伝統の鯛釜飯とみかん鯛、そして愛媛の真のソウルフード「母恵夢」。世界を魅了する愛媛・松山の奥深い物語へようこそ。",
     quickStats: [
       { label: "道後温泉の歴史", value: "3,000+", unit: "年" },
-      { label: "街中の俳句ポスト", value: "90+", unit: "箇所以上" },
+      { label: "西日本最高峰・石鎚山", value: "1,982", unit: "m" },
       { label: "愛媛の柑橘品種数", value: "40+", unit: "種以上" },
-      { label: "現存天守の松山城", value: "1602", unit: "年創架" }
+      { label: "松山城・現存天守", value: "1602", unit: "年創架" }
     ],
     tabs: [
       { id: "sakanoue", icon: "cloud", label: "坂の上の雲 特集", subtitle: "秋山兄弟・正岡子規・萬翠荘・安藤忠雄" },
-      { id: "history", icon: "castle", label: "歴史と物語", subtitle: "道後温泉・正岡子規・夏目漱石・松山城" },
+      { id: "history", icon: "castle", label: "歴史と名城", subtitle: "道後温泉・松山城二之丸庭園・夏目漱石" },
       { id: "haiku", icon: "feather", label: "俳句と文化", subtitle: "ことばのまち・正岡子規・俳句甲子園" },
-      { id: "art", icon: "palette", label: "芸術と現代アート", subtitle: "蜷川実花・道後オンセナート・砥部焼・今治タオル" },
-      { id: "citrus", icon: "citrus", label: "農産物・柑橘王国", subtitle: "みかん・紅まどんな・蛇口からみかんジュース" },
-      { id: "fishery", icon: "fish", label: "水産物・極上の美味", subtitle: "宇和島鯛めし・松山鯛めし・鍋焼きうどん" },
-      { id: "shimanami", icon: "compass", label: "絶景と名所巡り", subtitle: "しまなみ海道・下灘駅・四国遍路お接待" },
-      { id: "trivia", icon: "sparkles", label: "意外なトリビア", subtitle: "子規と野球・中村知事と歌舞伎役者の真相" }
+      { id: "art", icon: "palette", label: "極彩色アート＆工芸", subtitle: "蜷川実花道後・砥部焼最高峰・今治タオル" },
+      { id: "citrus", icon: "citrus", label: "柑橘王国", subtitle: "みかん・紅まどんな・蛇口からみかんジュース" },
+      { id: "fishery", icon: "fish", label: "水産・郷土の美味", subtitle: "鯛釜飯歴史・みかん鯛・鍋焼きうどん・母恵夢" },
+      { id: "scenic", icon: "compass", label: "四国山地＆海の絶景", subtitle: "石鎚山・瓶ヶ森UFOライン・亀老山・下灘駅・四国遍路" },
+      { id: "trivia", icon: "sparkles", label: "意外なトリビア", subtitle: "子規と野球・中村知事歌舞伎の真相・現代の話題" }
     ],
     sections: {
       sakanoue: {
-        title: "坂の上の雲：明治の黎明期を駆け抜けた三人の青春",
+        title: "『坂の上の雲』：近代日本の夜明けを駆け抜けた三人の青春",
         desc: "司馬遼太郎が描いた日本近代の奇跡。松山が生んだ秋山好古・真之兄弟と正岡子規の足跡、そして華麗なる洋館・萬翠荘へ。",
         items: [
           {
             id: "akiyama-brothers",
-            title: "秋山好古・真之兄弟の不屈の生涯",
+            title: "秋山好古・真之兄弟の不屈の武士道",
             tag: "松山が生んだ近代日本の英傑",
-            summary: "兄・好古は「日本騎兵の父」、弟・真之は日本海海戦の名参謀。栄達に溺れず、晩年は教育に生きた清廉な武士道精神。",
+            summary: "兄・好古は「日本騎兵の父」としてコサック騎兵を撃破。弟・真之は日本海海戦の名参謀。栄達に溺れず教育に生きた清廉な生涯。",
             image: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
             fullText: `【兄・秋山好古（あきやま よしふる）】：
 貧しい松山藩士の家に生まれ、身一つで陸軍士官学校へ進み、フランスへ留学。騎兵の近代化を成し遂げ「日本騎兵の父」と称されました。
@@ -67,8 +68,8 @@ const siteData = {
         ]
       },
       history: {
-        title: "3,000年の歴史が息づく、文学と城の都",
-        desc: "古代の神話時代から続く温泉、明治の文豪たちが愛した風情、そして街を見守り続ける名城。",
+        title: "3,000年の歴史が息づく名湯と、日本屈指の美しい名城",
+        desc: "世界に誇る道後温泉、トリップアドバイザー日本の城ランキング上位の松山城、そして「恋人の聖地」二之丸史跡庭園。",
         items: [
           {
             id: "dogo-onsen",
@@ -82,6 +83,19 @@ const siteData = {
 最上層には時を告げる「振鷺閣（しんろかく）」があり、朝・昼・夕に打ち鳴らされる「刻太鼓（ときだいこ）」の音は環境省「残したい日本の音風景100選」に選ばれています。`
           },
           {
+            id: "matsuyama-castle",
+            title: "松山城（勝山城）＆ 二之丸史跡庭園",
+            tag: "日本現存12天守 ＆ 恋人の聖地",
+            summary: "「日本の美しい城」上位常連の連立式天守。発掘された藩邸の間取りを流水園で再現した唯一無二の「二之丸史跡庭園」の美。",
+            image: "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&w=800&q=80",
+            fullText: `【松山城天守の美】：
+標高132mの勝山山頂にそびえる松山城は、日本に12基しか残らない「現存天守」の一つ。「日本三大連立式平山城（姫路城・和歌山城・松山城）」に数えられ、トリップアドバイザー「旅好きが選ぶ！日本の城ランキング」でも全国第2位に輝いた実績を持つ屈指の美城です。21棟の建造物が国指定重要文化財。
+
+【奇跡の庭園：松山城二之丸史跡庭園】：
+城の麓に広がる「二之丸史跡庭園」は、発掘調査で見つかった藩主邸の部屋の間取りや通路を、池や流水園、愛媛の柑橘・草花でそのまま立体的に表現した世界でも極めて珍しい史跡庭園です。
+日露戦争当時、捕虜収容所だった松山で出会ったロシア人将校ワシーリー・ボイスマンと日本人看護婦タケの愛のコインが庭園の井戸から出土したことから「恋人の聖地」に認定。結婚式の前撮りロケーションとしても全国から絶大な人気を集めています。`
+          },
+          {
             id: "soseki-botchan",
             title: "夏目漱石と名作『坊っちゃん』",
             tag: "明治の文豪と松山",
@@ -90,17 +104,6 @@ const siteData = {
             fullText: `1895年（明治28年）、28歳の夏目漱石は愛媛県尋常中学校（現在の松山東高校）の英語教師として松山に赴任しました。親友の正岡子規の下宿「愚陀仏庵（ぐだぶつあん）」で52日間の同居生活を送り、俳句の指導を受けながら思索を深めました。
 この松山での実体験をもとに1906年に発表されたのが国民的小説『坊っちゃん』です。
 作中では松山を「マッチ箱のような汽車」「狸や赤シャツの跋扈する片田舎」とユーモアたっぷりに描写していますが、漱石自身は道後温泉を毎日訪れるほど愛していました。今も市内を走る「坊っちゃん列車」や銘菓「坊っちゃん団子」など、松山のアイデンティティとして息づいています。`
-          },
-          {
-            id: "matsuyama-castle",
-            title: "松山城（勝山城）",
-            tag: "日本現存12天守",
-            summary: "標高132mの勝山山頂にそびえる名城。江戸時代以前に建造された天守を有する貴重な城郭建築の傑作。",
-            image: "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&w=800&q=80",
-            fullText: `松山城は、賤ヶ岳の合戦で武功を挙げた加藤嘉明が1602年から約四半世紀をかけて築城しました。
-日本にわずか12基しか残っていない「現存天守」の一つであり、大天守・小天守・隅櫓を渡櫓で結んだ「連立式天守」の最高峰と称されます。
-城郭内には重要文化財に指定された建造物が21棟あり、攻守の工夫が凝らされた石垣の美しさは圧巻。
-ロープウェイやリフトで山頂に登ると、瀬戸内海から松山平野までを一望できる大パノラマが広がります。ミシュラン・グリーンガイド・ジャポンでも二つ星を獲得しています。`
           }
         ]
       },
@@ -141,39 +144,42 @@ const siteData = {
         ]
       },
       art: {
-        title: "歴史と前衛が交差する、最先端のアートトリップ",
-        desc: "蜷川実花が彩る極彩色の温泉街から、240年の歴史を誇る砥部焼、世界的ブランド今治タオルまで。",
+        title: "極彩色の現代アートと、世界に誇る匠の工芸",
+        desc: "蜷川実花が彩る圧倒的な色彩の温泉街から、パリやNYで称賛される砥部焼、最高峰の今治タオルまで。",
         items: [
           {
             id: "ninagawa-dogo",
-            title: "蜷川実花 × 道後温泉",
-            tag: "現代アートプロジェクト",
-            summary: "写真家・映画監督の蜷川実花氏が手がけた極彩色の花と光の世界。歴史ある温泉街が現代アートの美術館へと変貌。",
+            title: "蜷川実花 × 道後温泉：極彩色の花と光のアート",
+            tag: "道後オンセナートの金字塔",
+            summary: "写真家・映画監督の蜷川実花氏が放つ鮮烈な色彩美。本館巨大ラッピングから飛鳥乃湯泉の中庭フラワーアートまで、温泉街が奇跡の美術館へ。",
             image: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=800&q=80",
-            fullText: `道後温泉では、2014年以降「道後オンセナート」をはじめとする大型アートプロジェクトを継続して展開しています。
-中でも世界的な反響を呼んだのが、写真家・映画監督の蜷川実花氏とのコラボレーションです。
-保存修理中の道後温泉本館を包む巨大な覆い幕に、蜷川氏が撮影した約230輪の鮮やかな花々の写真コラージュを大胆に展開。
-さらに、道後温泉の旅館客室を丸ごと極彩色の作品空間に仕立てたアートルームや、道後温泉別館「飛鳥乃湯泉」の中庭を鮮やかなフラワーグラフィックで埋め尽くすインスタレーションなど、3,000年の伝統と現代のビビッドな美意識が見事に融合しました。`
+            fullText: `道後温泉が世界に放つ最も刺激的なプロジェクトが、写真家・映画監督の蜷川実花氏とのコラボレーションです。
+【道後温泉本館のラッピング】：保存修理工事中の本館を覆う巨大なテント幕に、蜷川氏が撮影した230輪もの鮮烈な花々の写真コラージュを全面展開。歴史的木造建築の修復現場を、前代未聞のパブリックアートへと昇華させました。
+【飛鳥乃湯泉の中庭インスタレーション】：道後温泉別館「飛鳥乃湯泉（あすかのゆ）」の中庭シェードや回廊に、太陽光を浴びて透き通る極彩色の花々を敷き詰め、訪れる人々を万華鏡のような色彩のシャワーで包み込みます。
+【旅館アートルーム】：歴史ある旅館の客室を丸ごと蜷川作品で包み込んだ宿泊体験など、3000年の古湯と最先端のビビッドな美意識が響き合う唯一無二の空間です。`
           },
           {
             id: "tobeyaki-craft",
-            title: "国指定伝統的工芸品「砥部焼（とべやき）」",
-            tag: "白磁と藍の美しい用と美",
-            summary: "松山市に隣接する砥部町で240年以上続く陶磁器。ぽってりと厚手で割れにくく、呉須（藍色）の唐草文様が愛される日常の名器。",
+            title: "砥部焼（とべやき）：民藝の実用美から世界最高峰の白磁アートへ",
+            tag: "国指定伝統的工芸品 ＆ グローバルモダン",
+            summary: "柳宗悦やバーナード・リーチが絶賛した素朴な厚手磁器だけでなく、現代ではパリやNYで称賛される繊細な薄手白磁・高級アートピースへと進化。",
             image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80",
-            fullText: `砥部焼は、安永4年（1775年）に伊予松山藩主・加藤泰候の命によって創始された歴史ある磁器です。
-最大の特徴は、陶石から作られる白磁のぽってりとした温かみある厚みと、頑丈さ。藍色の顔料（呉須）で職人が手描きする「唐草文（からくさもん）」や太陽の文様は、素朴でありながら凛とした美しさを放ちます。
-うどん鉢や蕎麦猪口、日常のカフェカップとして日本中で愛用されており、民藝運動の柳宗悦やバーナード・リーチからも「実用美の極み」と絶賛されました。`
+            fullText: `【240年の歴史と民藝の美】：
+砥部焼は1775年、松山藩主・加藤泰候の命により創始されました。頑丈でぽってりとした白磁に、深い藍色（呉須）で手描きされる唐草文様は、柳宗悦の民藝運動や世界的陶芸家バーナード・リーチから「健康な実用美の最高峰」と絶賛されました。
+
+【世界的な評価と現代の高級磁器アート】：
+現代の砥部焼は、日常のうどん鉢やカフェ食器にとどまりません。人間国宝級の作家による「薄手の白磁」「青白磁」「象嵌（ぞうがん）」など、数百万円に達する最高級の美術工芸品が次々と生み出されています。
+近年ではパリの「メゾン・エ・オブジェ」やニューヨークのインテリアシーン、世界の星付きレストランにも採用され、モダンで洗練されたテーブルウェアとして国際的に極めて高い位置づけを獲得しています。`
           },
           {
             id: "imabari-towel",
-            title: "世界が認めた最高品質「今治タオル」",
-            tag: "世界ブランドのクラフトマンシップ",
-            summary: "蒼社川の清らかな軟水が育む、奇跡の吸水性と柔らかな肌触り。「5秒ルール」の厳格な品質基準。",
+            title: "今治タオル：世界の高級ホテルが選ぶ至高の肌触り",
+            tag: "ジャパンブランドの最高峰",
+            summary: "名峰・石鎚山の清らかな軟水が生む奇跡の吸水性。「5秒ルール」の厳格な品質基準と、佐藤可士和氏による世界的リブランディング。",
             image: "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=800&q=80",
-            fullText: `愛媛県今治市は、120年以上の歴史を持つ日本最大のタオル産地です。
-名峰・石鎚山脈から湧き出る蒼社川の極めて不純物の少ない軟水を使って糸を晒すことで、綿本来の柔らかさと繊細な発色を引き出します。
-「タオル片を水に浮かべて5秒以内に沈むかどうか」という独自の厳格な品質基準（5秒ルール）をクリアしたものだけが、あの赤・青・白の認定マークを冠することができます。クリエイティブディレクター・佐藤可士和氏によるブランディングを経て、今や世界最高峰のジャパンブランドとして海外の高級ホテルやギフトで絶大な支持を得ています。`
+            fullText: `愛媛県今治市は、120年以上の歴史を持つ世界最高峰のタオル産地です。
+名峰・石鎚山脈の雪解け水（蒼社川の伏流水）は極めてミネラル分の少ない軟水。この清冽な水で糸を丁寧に晒すことで、綿本来の柔らかさと繊細な発色を極限まで引き出します。
+「タオル片を水に浮かべ、5秒以内に水中に沈み始めるか」を試す厳格な「5秒ルール」をクリアしたものだけが認証されます。クリエイティブディレクター・佐藤可士和氏によるブランディングを経て、今や世界の一流ホテルや海外セレブ御用達のグローバル高級ブランドとして確固たる地位を築いています。`
           }
         ]
       },
@@ -216,83 +222,99 @@ const siteData = {
         ]
       },
       fishery: {
-        title: "瀬戸内海と宇和海がもたらす、至高の海の幸とソウルフード",
-        desc: "潮の流れが育む日本一の真鯛。2大「鯛めし」から、甘い出汁の松山名物「鍋焼きうどん」まで。",
+        title: "2大鯛めしの深き歴史、革新のみかん鯛、そして愛媛の真のソウルフード",
+        desc: "1700年の歴史を持つ鯛釜飯、産学連携の「みかん鯛」、そしてタルトより愛される銘菓「母恵夢（ポエム）」。",
         items: [
           {
             id: "taimeshi-battle",
-            title: "愛媛が誇る2大「鯛めし」大対決！",
-            tag: "郷土料理の東西横綱",
-            summary: "【宇和島鯛めし】生の鯛刺身を特製タレと生卵で！ vs 【松山鯛めし】昆布出汁で丸ごと炊き込む上品な味！",
+            title: "鯛めしの歴史と松山の真実：【釜飯・炊き込み】vs【生卵刺身】",
+            tag: "1700年の歴史と売れ筋",
+            summary: "神功皇后ゆかりの松山・北条「鯛釜飯（炊き込み）」と、伊予水軍の「宇和島鯛めし」。松山の名店では食べ比べが大人気！",
             image: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80",
-            fullText: `愛媛県は養殖・天然ともに全国トップクラスの真鯛の産地。その鯛を味わう郷土料理「鯛めし」には、実は全く異なる2つのスタイルが存在します。
-■【宇和島鯛めし（南予風）】：
-もとは宇和海の水軍や漁師が船上で酒盛りをした後、火を使わずに手早く食べたのが始まり。新鮮な真鯛の刺身を、醤油・みりん・出汁に生卵を溶いた特製タレに漬け込み、海藻や胡麻、ネギとともに温かいご飯にぶっかけてかき込む豪快かつ贅沢な逸品！
-■【松山鯛めし（中予風）】：
-素焼きにした新鮮な真鯛を一尾丸ごと、昆布出汁とお米とともに土鍋などで炊き上げます。鯛の芳醇な旨味がご飯一粒一粒に染み渡り、ふっくらほぐした身と香ばしいおこげを上品に味わう伝統の味です。`
+            fullText: `【歴史的ルーツの違い】：
+■ 松山鯛めし（中予・北条鯛めし）：歴史はなんと古墳時代まで遡ります！神功皇后が三韓征伐の折、松山市北条の鹿島に立ち寄って戦勝を祈願した際、土地の漁師が獲れたての真鯛を丸ごと米と塩・酒で土釜で炊き上げて献上したのが始まり（1700年以上の歴史）。素焼きにした鯛の旨味がご飯一粒一粒に染み渡る、香ばしいおこげが絶品の「釜飯・土鍋炊き込み」です。
+■ 宇和島鯛めし（南予風）：伊予水軍や宇和海の漁師が船の上で酒盛りをした後、火を使わずに生卵と醤油タレに鯛の刺身を絡めてご飯にぶっかけたのが始まり。
+
+【松山での現在の売れ筋動向】：
+観光客の間では、インパクト抜群の「宇和島鯛めし（生卵ぶっかけ）」が広く知られ大ヒットしていますが、地元松山市民や冠婚葬祭では伝統の「鯛釜飯・炊き込み」への支持も絶大！
+老舗郷土料理店「五志喜（ごしき）」や「かどや」「丸水」などでは、両方を贅沢に食べ比べできるセットが松山グルメの超売れ筋となっています。`
           },
           {
-            id: "jakoten",
-            title: "宇和海・八幡浜のソウルフード「じゃこ天」",
-            tag: "カルシウム満点の名物",
-            summary: "小魚（ほたるじゃこ等）を骨ごとすり身にして木枠で型取り、菜種油で揚げた素朴で力強い味。",
-            image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
-            fullText: `じゃこ天（雑魚天）は、宇和海で獲れる新鮮な小魚「ホタルジャコ（地元名：ハランボ）」などを頭と内臓だけ除き、皮や骨ごと石臼ですり潰して油で揚げた練り製品です。
-一口かじるとシャリシャリとした骨の小気味よい食感と、濃厚な魚の旨味が口いっぱいに広がります。
-軽く炙って生姜醤油や大根おろしを添え、地酒の辛口とともにいただくのが地元流の最高の楽しみ方です。`
+            id: "mikan-tai",
+            title: "産学官共同研究の結晶！新名物「みかん鯛」",
+            tag: "世界初のフルーツ魚パイオニア",
+            summary: "愛媛県と愛媛大学、養殖業者の共同研究で誕生！みかん果皮オイルを食べて育ち、魚臭さが消え爽やかな柑橘香が漂う奇跡の真鯛。",
+            image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+            fullText: `【共同研究が生んだ科学の鯛】：
+愛媛県水産研究センター、愛媛大学、そして地元養殖業者がタッグを組み、愛媛特産の柑橘（伊予柑やみかんの搾りかす果皮）を飼料に配合して共同開発したのが「みかん鯛（フルーツ魚）」です！
+柑橘に含まれるリモネンやポリフェノールが身に浸透することで、鯛特有の生臭さが劇的に低減。一口噛むとほんのり爽やかなみかんのアロマが口いっぱいに広がり、脂の抗酸化力も高まるため鮮度が長持ちします。
+近年では全国の大手回転寿司チェーンや高級和食店、ふるさと納税でも引っ張りだことなり、全国の養殖界を揺るがす画期的なブランド魚として知名度が急上昇しています！`
           },
           {
-            id: "nabeyaki-udon",
-            title: "松山市民のソウルフード「鍋焼きうどん」＆「一六タルト」",
-            tag: "甘くて懐かしい松山の味",
-            summary: "アルミの小鍋でグツグツ煮込まれた甘いイリコ出汁のうどんと、江戸時代南蛮伝来の柚子香る伝統銘菓。",
+            id: "poeme-soulfood",
+            title: "愛媛県民が一番愛する真のソウルフード菓子「母恵夢（ポエム）」",
+            tag: "タルト・団子を超える熱愛銘菓",
+            summary: "「タルトや坊っちゃん団子よりポエムが好き！」白餡にバターと卵黄を練り込んだ黄金の餡とバニラの香り。県民のDNAに刻まれた味。",
             image: "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=800&q=80",
-            fullText: `松山の隠れた大人気グルメが「鍋焼きうどん」です。
-路地裏の老舗「ことり」や「アサヒ」で親しまれるスタイルは、レトロなアルミ製の鍋に、柔らかめのうどん、甘辛く煮た牛肉、油揚げ、かまぼこが入り、瀬戸内海のイリコ（煮干し）から取った優しい甘めのお出汁が特徴。一口飲むとほっと旅の疲れが癒やされます。
-また、松山土産の代名詞「一六タルト」は、江戸時代に松山藩主・松平定行公が長崎から持ち帰った南蛮菓子のカステラ生地に、愛媛特産の柚子を加えたこし餡を「の」の字に巻いた銘菓覚醒の逸品です。`
+            fullText: `愛媛の有名なお土産といえば「一六タルト」や「坊っちゃん団子」ですが、地元・松山市民や愛媛県民に「一番好きなお菓子は？」と聞くと、多くの人が真っ先に挙げるのがこの「母恵夢（ポエム）」です！
+昭和25年に松山で誕生した瀬戸内銘菓。丁寧に裏ごしされた白餡に、新鮮な卵黄と上質なバターをたっぷりと練り込んだしっとり黄金色の餡を、バニラ香るビスケット生地で包んで香ばしく焼き上げています。
+お茶にもコーヒーにも合い、一口食べると懐かしい温もりがあふれ出します。ひとくちサイズの「ベビー母恵夢」や、季節限定の「愛媛のみかん味」「瀬戸内レモン味」「栗味」など、県民の日常のおやつからご進物まで愛され続ける真の国民的スイーツです。`
           }
         ]
       },
-      shimanami: {
-        title: "世界が憧れる絶景と、1200年続く「お接待」の心",
-        desc: "世界一のサイクリングロード「しまなみ海道」、海に最も近い「下灘駅」、そして四国遍路の巡礼文化。",
+      scenic: {
+        title: "四国山地の天空パノラマと、多島美を望む世界最高峰の展望台",
+        desc: "西日本最高峰・石鎚山、CMで話題沸騰のUFOライン（瓶ヶ森）、隈研吾設計の亀老山、そして海に最も近い下灘駅。",
         items: [
           {
-            id: "shimanami-cycling",
-            title: "瀬戸内しまなみ海道：世界のサイクリストの聖地",
-            tag: "CNN世界7大サイクリングコース",
-            summary: "愛媛県今治市から広島県尾道市まで、瀬戸内海の多島美を空中散歩のように島伝いに渡る全長約70kmの海の道。",
-            image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-            fullText: `「瀬戸内しまなみ海道」は、日本で唯一、自転車や歩行者が高速道路の橋を渡れる奇跡のサイクリングロードです。
-来島海峡大橋をはじめとする雄大な6つの大橋から見下ろす瀬戸内海の多島美と碧い海は息をのむ美しさ。
-米国CNNの「世界で最も素晴らしい7大サイクリングコース」に選ばれ、世界中からサイクリストが訪れます。愛媛県の中村時広知事自らが先頭に立ち、ブルーラインの整備やレンタサイクル、サイクルオアシスなど世界最高水準の環境を整備しました。`
+            id: "ishizuchisan",
+            title: "西日本最高峰・霊峰「石鎚山（いしづちさん）」",
+            tag: "標高1,982m 日本七霊山",
+            summary: "日本百名山にして四国の屋根。鎖場を登り詰めた天狗岳の鋭峰、山岳信仰の神秘と紅葉の圧倒的大パノラマ。",
+            image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80",
+            fullText: `標高1,982mを誇る石鎚山は、近畿以西の西日本最高峰。日本七霊山の一つとして古くから山岳信仰を集める神体山です。
+切り立った岩壁をよじ登る「一の鎖」「二の鎖」「三の鎖」（迂回路あり）を乗り越えた先にある最高峰「天狗岳」の鋭利な断崖絶壁は圧巻の一言。
+秋には山頂から山麓へと染まる紅葉が息をのむ美しさを誇ります。また、石鎚山脈が蓄える豊かな清流こそが、今治タオルの製造や愛媛の農作物を潤す命の源流となっています。`
           },
           {
-            id: "shimonada-station",
-            title: "夕暮れの奇跡：JR下灘駅 & 観光列車",
-            tag: "日本一海に近い駅",
-            summary: "ホームの目の前に広がる伊予灘の大パノラマ。夕日が茜色に海を染める時間、世界中から旅人が集うノスタルジーの極み。",
+            id: "kamegamori-ufoline",
+            title: "瓶ヶ森（かめがもり）と「UFOライン」：天空の絶景ロード",
+            tag: "国内屈指の山岳パノラマ",
+            summary: "標高1,897m。車のCMで世界中の度肝を抜いた町道瓶ヶ森線（UFOライン）。広大な笹原「氷見二千石原」を抜ける天空の絶景！",
+            image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+            fullText: `四国山地の稜線を標高1,300m〜1,700mに沿って走る「町道瓶ヶ森線」、通称「UFOライン（雄峰ライン）」。
+大手自動車メーカーの全国テレビCMの舞台となり、「日本にこんな天空の道があったのか！」と全国で話題沸騰となった国内屈指の絶景ドライブウェイです。
+主峰・瓶ヶ森（1,897m）の山頂付近には、見渡す限りの緑の笹原「氷見二千石原（ひみにせんこくばら）」が広がり、雲の上を歩くような非日常のパノラマが広がります。四国山地の雄大さを最もダイレクトに体感できるスポットです。`
+          },
+          {
+            id: "kirosan-view",
+            title: "亀老山（きろうさん）展望公園：隈研吾設計の「見えない展望台」",
+            tag: "日本の展望スポット第2位",
+            summary: "しまなみ海道・大島の山頂に埋め込まれた世界的建築。来島海峡大橋と瀬戸内の多島美を一望する奇跡の夕日・夜景ビュー。",
             image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
-            fullText: `JR予讃線の「下灘（しもなだ）駅」は、かつて「日本で一番海に近い駅」として青春18きっぷのポスターや数々の映画・ドラマ・アニメの舞台となった伝説の無人駅です。
-屋根とベンチだけの素朴なホームに座ると、視界を遮るもののない瀬戸内海（伊予灘）が目の前いっぱいに広がります。
-特に夕暮れ時、黄金色の太陽が海へと沈み、空と海が茜色から紫色のグラデーションに染まる瞬間は言葉を失う美しさ。
-また、松山駅から運行されている本格観光列車「伊予灘ものがたり」に乗れば、地元食材の美食を味わいながらこの絶景車窓を満喫できます。`
+            fullText: `しまなみ海道の大島南端に位置する標高307mの「亀老山（きろうさん）展望公園」。
+トリップアドバイザー「旅好きが選ぶ！日本の展望スポット」で全国第2位に輝いた、世界中から観光客が集まる名所です。
+世界的建築家・隈研吾氏が手がけた展望台は、山の自然景観を守るために地中に埋め込まれた「見えない建築」。スロープを抜けると視界が一気に開け、世界初の三連吊橋「来島海峡大橋」と渦巻く潮流、夕暮れに黄金に輝く瀬戸内海の多島美が一望できます。`
           },
           {
-            id: "osettai-culture",
-            title: "四国遍路と「お接待」の精神",
-            tag: "1200年息づく無償の愛",
-            summary: "弘法大師ゆかりの四国八十八ヶ所霊場。巡礼者（お遍路さん）を家族のように温かく迎える、愛媛が誇る心の文化。",
+            id: "shikoku-henro-heritage",
+            title: "四国遍路と「お接待」：国宝仁王門と日本遺産第1号",
+            tag: "国宝・日本遺産・世界遺産候補",
+            summary: "1200年の巡礼道。松山・石手寺の仁王門は国宝！文化庁「日本遺産第1号」に認定され、現在ユネスコ世界文化遺産登録を目指す心の文化。",
             image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80",
-            fullText: `四国八十八ヶ所霊場は、弘法大師（空海）の足跡をたどる1200年以上の歴史を持つ巡礼路です。
-松山市内には、道後温泉の守り寺として知られる「石手寺（第51番）」や「浄瑠璃寺（第46番）」、「八坂寺（第47番）」など由緒ある名刹が点在しています。
-この遍路文化の根底にあるのが「お接待（おせったい）」と呼ばれる無償の善意です。道行く見ず知らずの巡礼者に、地元の人々がお茶やみかん、お菓子を差し出し、道中の無事を祈ります。「見返りを求めず、旅人を慈しむ」この温かい心こそが、松山・愛媛の真髄です。`
+            fullText: `【国宝と世界遺産への位置づけ】：
+四国八十八ヶ所霊場は、弘法大師（空海）の足跡を巡る全長約1,400kmの巡礼路です。
+「遍路は国宝になっているの？」という疑問に対し、正確には寺院ごとの貴重な建造物や宝物が数多く「国宝」に指定されています（松山市の第51番札所・石手寺の「仁王門」は鎌倉時代建造の正真正銘の国宝！）。
+さらに、遍路道や札所寺院、巡礼文化全体が2015年に文化庁の【日本遺産（Japan Heritage）第1号】に認定されました！現在、四国4県が連携して【ユネスコ世界文化遺産】への登録を目指す国民的プロジェクトとして推進されています。
+
+【1200年息づく「お接待」の奇跡】：
+遍路文化の最大の魅力は、見ず知らずの巡礼者に地元の人々がお茶やみかん、お菓子を差し出し、見返りを求めずに道中の無事を祈る「お接待（おせったい）」の精神です。この無償の優しさこそが、四国・愛媛が世界に誇る宝です。`
           }
         ]
       },
       trivia: {
-        title: "知られざる松山・愛媛の意外な真実と歴史秘話",
-        desc: "「えっ、本当！？」と驚く、文学・スポーツ・人物のディープなエピソード。",
+        title: "知られざる松山・愛媛の意外な真実、噂の解明と現代の話題",
+        desc: "子規の野球愛、中村知事歌舞伎の真相、そしてリベラルアーツ大学の話題まで徹底解剖！",
         items: [
           {
             id: "shiki-baseball",
@@ -308,7 +330,7 @@ const siteData = {
 【数々の野球用語の翻訳と普及】
 子規は新聞や随筆の中で、まだルールの知られていなかった野球の面白さを熱烈に解説しました。
 「打者」「走者」「四球」「直球」「飛球」といった現在も使われている日本語の野球用語の多くは、子規が考案・紹介したものです。
-短歌でも「九つの人あつまりて 一つの毬 打ちて走るが いと楽しきかな」「今やかの 三輪の籬の 桜花 咲きぬらむとぞ 思ひやるかな」と詠み、日本で初めて野球を文学に詠み込んだ人物となりました。
+短歌でも「九つの人あつまりて 一つの毬 打ちて走るが いと楽しきかな」と詠み、日本で初めて野球を文学に詠み込んだ人物となりました。
 
 【野球殿堂入りと松山の野球聖地】
 2002年、子規の野球普及への絶大な功績を讃え、文学者として初めて「野球殿堂（特別表彰）」入りを果たしました。
@@ -335,15 +357,14 @@ const siteData = {
 慶應義塾大学法学部を卒業後、三菱商事に勤務。その後、政治の道へ進み、愛媛県議会議員、衆議院議員、松山市長（3期11年）を経て、2010年より愛媛県知事に就任（現在4期目）。自転車文化の振興（しまなみ海道サイクリングの国際化）や愛媛ブランドの世界展開に熱血的に取り組む、生粋の実務派リーダーです！父の中村時雄氏も元松山市長・衆議院議員でした。`
           },
           {
-            id: "botchan-paradox",
-            title: "漱石は松山を悪口だらけで書いたのに、なぜ愛される？",
-            tag: "松山人の温かいユーモア",
-            summary: "「不浄地」「マッチ箱のような汽車」と書かれながらも、松山市民が『坊っちゃん』を誇りにする理由。",
-            image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80",
-            fullText: `夏目漱石の『坊っちゃん』を開くと、主人公の坊っちゃんは赴任先の松山について「やたら狭い」「不潔だ」「ろくな町じゃない」と散々な毒舌を連発しています。
-普通なら住民が怒っても不思議ではないところ、松山の人々は腹を立てるどころか大喜びで受け入れました！
-汽車を「坊っちゃん列車」、団子を「坊っちゃん団子」、球場を「坊っちゃんスタジアム」と命名し、街の最高のマスコットにしてしまったのです。
-これこそが、温暖な気候と豊かな海山の幸に恵まれて育まれた、松山人の大らかでユーモアに満ちた「おもてなし精神」の証と言われています。`
+            id: "libedai-modern-scene",
+            title: "現代の話題：リベラルアーツ大学と愛媛のコミュニティ熱",
+            tag: "新しい学びとつながり",
+            summary: "お金の教養オンラインコミュニティ「リベ大」の四国・愛媛の活気。自立した生き方を目指す人々の熱い交流。",
+            image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
+            fullText: `近年、日本中で大きなムーブメントとなっている「リベラルアーツ大学（通称：リベ大・両学長主宰）」。
+お金の知識やITスキル、副業、自立したライフスタイルを学ぶこのコミュニティは、愛媛県・松山市でも活発なオフ会や勉強会が定期的に開催されています。
+「中村たいせいさん」といったキーマンの名前が地域で話題に上るのも、愛媛の若手や起業志向のビジネスパーソンの間で、こうしたオンラインコミュニティを通じた自主的な経済活動や相互支援の輪が急速に広がっている証拠と言えます。松山の進取の気性は現代も健在です！`
           }
         ]
       }
@@ -352,7 +373,7 @@ const siteData = {
       quizTitle: "正岡子規の「ベースボール」訳語クイズ",
       quizDesc: "子規が考案・紹介した野球用語を当ててみよう！",
       haikuGenTitle: "あなただけの「松山・愛媛の句」を詠む",
-      haikuGenDesc: "道後温泉、みかん、城、海の情景を組み合わせて一句詠んでみましょう。",
+      haikuGenDesc: "道後温泉、石鎚山、みかん、城の情景を組み合わせて一句詠んでみましょう。",
       taimeshiTitle: "あなたの好みはどっち？鯛めし診断",
       taimeshiDesc: "今日のあなたの気分にぴったりの愛媛の鯛めしを提案します。"
     },
@@ -369,23 +390,23 @@ const siteData = {
     siteSubtitle: "Where 3,000 Years of Sacred Onsen, Literature, Vivid Art & Citrus Splendor Converge",
     heroBadge: "The Official Global Portal to Matsuyama & Ehime, Japan",
     heroHeading: "Discover the Depths of Matsuyama & Ehime.",
-    heroSubheading: "From 3,000-Year Ancient Springs to 'Clouds Above the Hill' & the Inland Sea",
-    heroDesc: "From Dogo Onsen—Japan's oldest spa—to modern literary icons Natsume Soseki and Masaoka Shiki, the epic Meiji saga 'Clouds Above the Hill', Mika Ninagawa's floral onsen art, Shimanami Kaido cycling, and the battle of two Sea Bream bowls. Step into an unforgettable Japanese odyssey.",
+    heroSubheading: "From 3,000-Year Ancient Springs to 'Clouds Above the Hill', Sacred Peaks & Vibrant Seas",
+    heroDesc: "Dogo Onsen, Matsuyama Castle Ninomaru Garden, Ryotaro Shiba's epic 'Clouds Above the Hill', Mika Ninagawa's floral onsen art, Mt. Ishizuchi & the UFO Line, Shimanami Kaido, Taimeshi hot pots & Mikan Sea Bream, and the beloved soul-sweet Poème. Step into an extraordinary journey.",
     quickStats: [
       { label: "Dogo Onsen History", value: "3,000+", unit: "Years" },
-      { label: "Public Haiku Postboxes", value: "90+", unit: "Locations" },
+      { label: "Mt. Ishizuchi (Highest Peak)", value: "1,982", unit: "m" },
       { label: "Citrus Varieties in Ehime", value: "40+", unit: "Cultivars" },
       { label: "Matsuyama Castle", value: "1602", unit: "Founded" }
     ],
     tabs: [
       { id: "sakanoue", icon: "cloud", label: "Clouds Above the Hill", subtitle: "Akiyama Brothers, Shiki & Tadao Ando" },
-      { id: "history", icon: "castle", label: "History & Legends", subtitle: "Dogo Onsen, Soseki, Shiki & Castle" },
+      { id: "history", icon: "castle", label: "History & Fortress", subtitle: "Dogo Onsen, Castle Garden, Soseki" },
       { id: "haiku", icon: "feather", label: "Haiku & Words", subtitle: "City of Poetry, Shiki Masaoka, Haiku Koshien" },
-      { id: "art", icon: "palette", label: "Art & Crafts", subtitle: "Mika Ninagawa, Tobe Ware & Imabari Towels" },
+      { id: "art", icon: "palette", label: "Vivid Art & Master Crafts", subtitle: "Mika Ninagawa, Tobe Porcelain, Imabari Towel" },
       { id: "citrus", icon: "citrus", label: "Citrus Kingdom", subtitle: "Mikan, Beni Madonna, Juice from the Tap" },
-      { id: "fishery", icon: "fish", label: "Seafood & Flavors", subtitle: "Uwajima vs Matsuyama Taimeshi, Nabeyaki Udon" },
-      { id: "shimanami", icon: "compass", label: "Scenic Wonders", subtitle: "Shimanami Cycling, Shimonada Station & Osettai" },
-      { id: "trivia", icon: "sparkles", label: "Surprising Trivia", subtitle: "Shiki's Baseball & The Governor Kabuki Rumor" }
+      { id: "fishery", icon: "fish", label: "Seafood & Soul Sweets", subtitle: "Taimeshi History, Mikan Tai, Poème Cake" },
+      { id: "scenic", icon: "compass", label: "Peaks & Island Vistas", subtitle: "Mt. Ishizuchi, UFO Line, Kiro-san, 88 Henro" },
+      { id: "trivia", icon: "sparkles", label: "Surprising Trivia", subtitle: "Shiki Baseball, Governor Kabuki Rumor, Libedai" }
     ],
     sections: {
       sakanoue: {
@@ -427,8 +448,8 @@ Designed by Shichiro Kiko in pure French Neo-Renaissance style, it boasts import
         ]
       },
       history: {
-        title: "3,000 Years of Timeless Springs, Feudal Castle & Literature",
-        desc: "Bathe in holy waters praised by ancient gods, step into Meiji literary masterworks, and gaze over the Inland Sea from an original samurai keep.",
+        title: "3,000-Year Ancient Springs & One of Japan's Most Beautiful Castles",
+        desc: "World-famous Dogo Onsen, Matsuyama Castle rated Top 2 nationwide, and the romantic Ninomaru Garden.",
         items: [
           {
             id: "dogo-onsen",
@@ -436,10 +457,21 @@ Designed by Shichiro Kiko in pure French Neo-Renaissance style, it boasts import
             tag: "National Important Cultural Property",
             summary: "Japan's oldest hot spring with over 3,000 years of verified history. Fully reopened in July 2024 after a meticulous 5.5-year conservation project.",
             image: "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=800&q=80",
-            fullText: `Mentioned in the ancient 8th-century chronicles 'Nihon Shoki' and 'Man'yoshu', Dogo Onsen is revered as Japan's very first spa. Prince Shotoku visited in 596 AD, marveling at its healing waters.
-The crown jewel is the Dogo Onsen Honkan (Main Building), built in 1894 by master carpenter Matahachiro Sakamoto. It is a three-story timber architectural masterpiece said to have inspired Hayao Miyazaki's acclaimed Ghibli film 'Spirited Away'.
-Between 2019 and July 2024, the building underwent an unprecedented conservation and seismic retrofit—staying open for public bathing while work proceeded—and officially celebrated its grand full reopening on July 11, 2024.
-Its uppermost tower, Shinrokaku, houses the Tokidaiko drum, rung three times daily to mark time across the nostalgic hot spring town.`
+            fullText: `Mentioned in ancient chronicles, Dogo Onsen is revered as Japan's very first spa. Prince Shotoku visited in 596 AD, marveling at its healing waters.
+The crown jewel is the Dogo Onsen Honkan, built in 1894 by master carpenter Matahachiro Sakamoto. It is a three-story timber architectural masterpiece said to have inspired Hayao Miyazaki's acclaimed film 'Spirited Away'.
+Between 2019 and July 2024, it underwent an unprecedented conservation and seismic retrofit—staying open for public bathing throughout—and celebrated its grand full reopening on July 11, 2024.`
+          },
+          {
+            id: "matsuyama-castle",
+            title: "Matsuyama Castle & Ninomaru Historical Garden",
+            tag: "Original Keep & Lovers' Sanctuary",
+            summary: "Regularly ranked among Japan's Top 2 Castles. Features the singular Ninomaru Garden where ancient samurai room layouts are re-created with cascading ponds.",
+            image: "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&w=800&q=80",
+            fullText: `[Architectural Splendor]:
+One of only 12 surviving original pre-Edo keeps in Japan, Matsuyama Castle ranks among the Top 2 castles in Japan on TripAdvisor. With 21 designated Important Cultural Properties, its complex linked defense towers offer 360-degree vistas.
+
+[Ninomaru Historical Garden]:
+At the castle foot, this world-unique garden traces the excavated floor plans of the daimyo's mansion using reflecting waters, flowing streams, and Ehime citrus trees. Designated a 'Lovers' Sanctuary' after Russian prisoner-of-war coins engraved with romantic vows were excavated from its ancient well.`
           },
           {
             id: "soseki-botchan",
@@ -448,18 +480,7 @@ Its uppermost tower, Shinrokaku, houses the Tokidaiko drum, rung three times dai
             summary: "Written by Japan's preeminent modern novelist based on his teaching year in Matsuyama, creating a timeless masterpiece of youth rebellion.",
             image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80",
             fullText: `In 1895, at age 28, Natsume Soseki arrived in Matsuyama as an English teacher at the local middle school. He spent 52 days sharing a lodging ('Gudabutsu-an') with his close friend, the dying literary revolutionary Masaoka Shiki, learning haiku and debating philosophy.
-This experience inspired his 1906 classic novel 'Botchan'—a brisk, hilarious story of a brash Tokyo newcomer confronting eccentric small-town teachers.
-Though the novel cheekily roasted Matsuyama's eccentricities and called the steam train a 'matchbox', Soseki loved soaking in Dogo Onsen every day. Today, the town lovingly embraces his legacy with retro 'Botchan Trains' running through city avenues and colorful tri-flavor 'Botchan Dango' sweets.`
-          },
-          {
-            id: "matsuyama-castle",
-            title: "Matsuyama Castle",
-            tag: "1 of 12 Original Keeps in Japan",
-            summary: "Towering atop Mt. Katsuyama at 132m, this magnificent fortress is one of the rare surviving authentic keeps constructed before the Edo era.",
-            image: "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&w=800&q=80",
-            fullText: `Begun in 1602 by samurai warlord Yoshiaki Kato, Matsuyama Castle took 25 years to complete.
-It is celebrated as one of only twelve castles across Japan retaining their authentic pre-Edo wooden main keeps. It features a complex 'Renritsushiki' (connected) structure linking main and sub keeps via defensive turrets.
-Twenty-one structures inside the grounds are designated National Important Cultural Properties. Ascending via modern cable car or single-chair open lift delivers visitors into defensive labyrinth gates and panoramic vistas spanning the emerald Seto Inland Sea.`
+This experience inspired his 1906 classic novel 'Botchan'—a brisk, hilarious story of a brash Tokyo newcomer confronting eccentric small-town teachers.`
           }
         ]
       },
@@ -483,8 +504,7 @@ Even as spinal tuberculosis confined him to a tiny tatami room, he penned breath
             tag: "An Open Canvas for Verses",
             summary: "Postboxes awaiting your 17-syllable thoughts at historic temples, tram stops, onsen baths, and ferry docks.",
             image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80",
-            fullText: `Since the very first red wooden Haiku Postbox was erected atop Matsuyama Castle in 1968, the network has expanded to over 90 locations throughout the city, Matsuyama Airport, high-speed ferries, and even sister cities abroad in Germany and Taiwan.
-Anyone—local resident or foreign traveler—can jot down a poem on provided paper slips and drop it in. Thousands of submissions are judged annually, celebrating the poetic spark in ordinary moments.`
+            fullText: `Since the very first red wooden Haiku Postbox was erected atop Matsuyama Castle in 1968, the network has expanded to over 90 locations throughout the city, Matsuyama Airport, high-speed ferries, and even sister cities abroad in Germany and Taiwan.`
           },
           {
             id: "haiku-koshien",
@@ -492,34 +512,32 @@ Anyone—local resident or foreign traveler—can jot down a poem on provided pa
             tag: "Intellectual Martial Arts",
             summary: "High school teams from across Japan gather in Matsuyama every summer to duel with self-composed haiku and rigorous public debate.",
             image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=800&q=80",
-            fullText: `Inspired by the national high school baseball tournament, the 'Haiku Koshien' pits five-member student squads against one another on stage in Matsuyama.
-Teams present their verses on assigned themes, followed by intense cross-examination scrutinizing each word's rhythm, nuance, and emotional resonance. Judged by leading contemporary poets, it has become a nationwide sensation celebrating the vitality of youth literature.`
+            fullText: `Inspired by high school baseball tournaments, the 'Haiku Koshien' pits five-member student squads against one another on stage in Matsuyama with self-composed verses and fiery public debate.`
           }
         ]
       },
       art: {
-        title: "Where Ancient Bathing Meets Daring Avant-Garde Art & Crafts",
-        desc: "From Mika Ninagawa's kaleidoscopic floral takeovers to 240-year-old Tobe porcelain and world-renowned Imabari towels.",
+        title: "Vivid Contemporary Art & Masterpieces of Japanese Craft",
+        desc: "From Mika Ninagawa's kaleidoscopic floral takeovers to Tobe porcelain celebrated in Paris and NY.",
         items: [
           {
             id: "ninagawa-dogo",
-            title: "Mika Ninagawa × Dogo Onsen",
-            tag: "Vibrant Contemporary Art",
-            summary: "Internationally renowned photographer and film director Mika Ninagawa transformed the historic onsen town into a vivid universe of saturated petals and light.",
+            title: "Mika Ninagawa × Dogo Onsen: Explosion of Saturated Petals",
+            tag: "Icon of Dogo Onsenart",
+            summary: "World-renowned photographer Mika Ninagawa transformed the historic spa with giant outdoor scaffolding photo wraps and an open-air kaleidoscope of blooms at Asuka-no-Yu.",
             image: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=800&q=80",
-            fullText: `Since 2014, Dogo Onsen has boldly embraced modern art with recurrent 'Dogo Onsenart' projects.
-The most breathtaking collaboration occurred with world-acclaimed photographer Mika Ninagawa.
-During Dogo Onsen Honkan's extensive conservation works, Ninagawa wrapped the colossal exterior scaffold screens in a vivid collage of 230 brilliant blooming flowers.
-Inside neighboring ryokan inns, she designed fully immersive artistic guest suites saturated with luminous photography, and covered the courtyard of Asuka-no-Yu with an open-air kaleidoscope of colors.`
+            fullText: `Internationally renowned photographer and film director Mika Ninagawa produced one of the most celebrated contemporary art collaborations in onsen history.
+During the Honkan's preservation project, she wrapped the giant exterior screens in 230 vibrant flower photographs.
+At Asuka-no-Yu, she covered the open courtyard with radiant graphic shades, immersing bathers in an ethereal shower of saturated blossoms and sunlight.`
           },
           {
             id: "tobeyaki-craft",
-            title: "Tobe Ware: 240 Years of Porcelain Art",
-            tag: "Traditional Craft of Japan",
-            summary: "Robust white porcelain hand-painted with deep indigo (Gosu) arabesque motifs. Celebrated by Mingei masters for its supreme functional beauty.",
+            title: "Tobe Ware: From Folk Mingei to Global High-End Porcelain",
+            tag: "National Traditional Craft & Global Art",
+            summary: "Extolled by Yanagi Soetsu and Bernard Leach for its sturdy white-indigo beauty; today, ultra-delicate high-end Tobe creations grace fine dining in Paris and New York.",
             image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80",
-            fullText: `Founded in 1775 under the Matsuyama daimyo, Tobe Ware is known for its reassuring weight, smooth white glaze, and hand-brushed indigo patterns.
-Virtually indestructible for daily kitchen use, it was extolled by folk-craft pioneer Yanagi Soetsu and British potter Bernard Leach as the pinnacle of practical Japanese elegance.`
+            fullText: `Founded in 1775 under the Matsuyama Clan, Tobe Ware began with thick, reassuring white porcelain hand-brushed in deep indigo (Gosu) arabesque motifs.
+While cherished as indestructible daily tableware in Japan, contemporary master ceramicists have evolved the craft into ultra-fine celadon, pierced carvings, and modern tableware exhibited at Maison & Objet in Paris and showcased in Michelin-starred restaurants across the globe.`
           },
           {
             id: "imabari-towel",
@@ -543,11 +561,7 @@ Bleached using ultra-soft waters from the Sosha River, the cotton retains unriva
             summary: "Direct sky sunlight, sea-reflection rays, and stone-wall thermal radiant heat join forces to craft luscious, concentrated sweetness.",
             image: "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&w=800&q=80",
             fullText: `Ehime is renowned across Japan for harvesting more citrus varieties than any other prefecture.
-The secret lies in its 'Three Suns':
-1. Direct brilliant subtropical sunshine pouring from clear Pacific skies.
-2. Sunlight reflecting off the shimmering waters of the Seto Inland Sea and Uwa Sea.
-3. Thermal heat stored in the dry stone retaining walls of stepped hillside orchards.
-Combined with well-drained steep terraced slopes and gentle sea breezes, every season yields a new, delectable specialty.`
+The secret lies in its 'Three Suns': direct sky sunlight, sea reflection from the calm inland seas, and radiant heat from terraced stone walls.`
           },
           {
             id: "premium-citrus",
@@ -556,7 +570,7 @@ Combined with well-drained steep terraced slopes and gentle sea breezes, every s
             summary: "Forget ordinary oranges: taste the jelly-like texture and intoxicating fragrance of Ehime's proprietary cultivars.",
             image: "https://images.unsplash.com/photo-1557800636-894a64c1696f?auto=format&fit=crop&w=800&q=80",
             fullText: `Beyond sweet winter satsuma mikan, Ehime is home to celebrated proprietary cultivars:
-- [Beni Madonna]: Harvested only in December, its pulp has an astonishing, smooth jelly-like texture with virtually zero membrane resistance. Often eaten sliced like fine dessert gelatin.
+- [Beni Madonna]: Harvested only in December, its pulp has an astonishing, smooth jelly-like texture with virtually zero membrane resistance.
 - [Kanpei]: Crisp, bursting juice vesicles packed with astonishing sweetness behind a tissue-thin skin.
 - [Setoka]: Crowned the 'toro of citrus' for its rich, overflowing ambrosial juice and melting flesh.
 - [Iyokan]: Named after Ehime's ancient provincial name Iyo, celebrated for its refreshing perfume and robust flavor.`
@@ -567,85 +581,88 @@ Combined with well-drained steep terraced slopes and gentle sea breezes, every s
             tag: "Must-Try Experience",
             summary: "What started as an urban joke—'Ehime homes have a 3rd tap for mikan juice'—is now an iconic real-life attraction.",
             image: "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&w=800&q=80",
-            fullText: `For decades, a humorous national legend claimed: 'In Ehime, kitchen sinks have three faucets: hot water, cold water, and 100% pure mikan juice.'
-Matsuyama turned this delightful myth into reality!
-At Matsuyama Airport, the Dogo Onsen Information Center, and specialized boutiques along the Matsuyama Castle Ropeway Street (like 10FACTORY), visitors can twist a shiny brass tap and watch rich, ice-cold pure citrus juice pour directly into their glass! Several shops offer tasting flights from different cultivars.`
+            fullText: `At Matsuyama Airport, the Dogo Onsen Information Center, and specialized boutiques along the Matsuyama Castle Ropeway Street (like 10FACTORY), visitors can twist a shiny brass tap and watch rich, ice-cold pure citrus juice pour directly into their glass!`
           }
         ]
       },
       fishery: {
-        title: "Bounties of the Inland Sea: Sea Bream & Coastal Soul Food",
-        desc: "Swirling tides yield Japan's prized Madai (Red Sea Bream). Taste the legendary battle between two distinct styles of Taimeshi.",
+        title: "1,700 Years of Taimeshi, Innovative 'Mikan Tai', & Local Soul Sweets",
+        desc: "From the ancient steamed Sea Bream rice pots to the joint-research Mikan Fish, and the beloved local pastry Poème.",
         items: [
           {
             id: "taimeshi-battle",
-            title: "The Epic Clash of Two 'Taimeshi' Styles",
-            tag: "Ehime's Signature Dish",
-            summary: "[Uwajima Style] Fresh raw sashimi bathed in raw egg & dashi sauce vs [Matsuyama Style] Whole sea bream steamed in dashi clay pots!",
+            title: "The Real History of Taimeshi: Ancient Clay Pots vs Sashimi",
+            tag: "1,700-Year Heritage & Modern Trends",
+            summary: "Legend traces Matsuyama Taimeshi (steamed pot rice) back to Empress Jingu in the 3rd century. In Matsuyama restaurants today, tasting flights of both styles are the #1 best-seller!",
             image: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80",
-            fullText: `Ehime is Japan's undisputed #1 producer of premium Madai (Red Sea Bream). But how it is served depends on where you stand:
-■ [Uwajima Style (South Ehime)]:
-Invented by medieval naval warriors dining on rolling seas without cooking fires. Crisp slices of freshly caught raw sea bream sashimi are marinated in a bowl of dashi-soy broth beaten with a fresh raw egg yolk, sesame seeds, and nori seaweed, then generously poured over steaming hot white rice. Rich, savory, and unforgettable.
-■ [Matsuyama Style (Central Ehime)]:
-A whole, lightly grilled sea bream is placed into a clay pot with rice, kombu kelp broth, and soy sauce, then steamed to perfection. The fragrant fish flakes tenderly through the grains with savory crisped rice ('okoge') at the pot bottom.`
+            fullText: `[Historical Origins]:
+■ Matsuyama Style (Hojo Taimeshi): When Empress Jingu stopped at Kashima Island in Hojo (northern Matsuyama) to pray for military victory over 1,700 years ago, local fishermen steamed whole fresh sea bream in clay pots with rice, salt, and sake. This fragrant pot-steamed rice with crisp 'okoge' crust is Matsuyama's ancient soul food.
+■ Uwajima Style: Invented by medieval naval warriors dining on rolling seas without cooking fires, tossing raw sea bream sashimi with raw egg yolk and dashi-soy sauce.
+
+[What Sells Best in Matsuyama Today?]:
+While Uwajima-style sashimi bowls are sensational for travelers, Matsuyama locals revere traditional steamed clay pots for weddings and celebrations. Top dining establishments like Goshiki offer tasting sets where diners enjoy both styles side-by-side!`
           },
           {
-            id: "jakoten",
-            title: "Jakoten: The Coastal Soul Food of Yawatahama",
-            tag: "Crispy Mineral-Rich Fish Cake",
-            summary: "Whole small coastal fish stone-ground with bones and skins intact, then flash-fried into a deeply savory, textured delicacy.",
-            image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
-            fullText: `Jakoten is made using fresh Haranbo (glowbelly fish) caught in the pristine Uwa Sea. Leaving the delicate bones and skin intact, the meat is stone-ground into a fine paste, pressed into wooden molds, and fried in pure rapeseed oil.
-The first bite yields a delightful crunch from tiny calcium-rich bones and a burst of deep umami. Locals love it lightly toasted over charcoal with grated ginger and a dash of local soy sauce alongside dry sake.`
+            id: "mikan-tai",
+            title: "Joint-Research Breakthrough: 'Mikan Tai' (Citrus Sea Bream)",
+            tag: "Pioneering Fruit-Fish Technology",
+            summary: "Co-developed by Ehime Prefecture, Ehime University, and coastal fish farmers! Feeding sea bream with mikan peel extract eliminates fishiness and yields a delicate citrus scent.",
+            image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+            fullText: `Through an innovative partnership between Ehime University, the Prefectural Fisheries Research Center, and local farmers, 'Mikan Tai' was born.
+By infusing fish feed with antioxidant-rich citrus oil extracted from Ehime mikan peels, the natural fishy odor disappears, replacing it with a subtle, refreshing citrus aroma. It has become a nationwide sensation across top sushi bars and gourmet markets.`
           },
           {
-            id: "nabeyaki-udon",
-            title: "Matsuyama Nabeyaki Udon & Ichiroku Tart",
-            tag: "Beloved Sweet & Savory Classics",
-            summary: "Steaming aluminum pots bubbling with sweetly savory dashi noodles, paired with historical Yuzu sponge roll tarts.",
+            id: "poeme-soulfood",
+            title: "The True Soul Sweet of Locals: 'Poème' (母恵夢)",
+            tag: "Beloved More Than Tarts or Dango",
+            summary: "Ask any local: Poème is the sweet they grew up with. Golden yolk-butter bean paste enveloped in vanilla pastry dough.",
             image: "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=800&q=80",
-            fullText: `In retro alleyways of Matsuyama, locals gather at Kotori or Asahi for Nabeyaki Udon—soft noodles served in bubbling vintage aluminum pots with tender beef and sweet dashi extracted from Seto dried sardines.
-For dessert, Ichiroku Tart originated in the 1600s when Matsuyama's daimyo adopted European sponge cake rolling techniques from Portuguese traders, wrapping red bean paste infused with aromatic Ehime Yuzu citrus.`
+            fullText: `While tourists buy Ichiroku Tarts or Botchan Dango, Matsuyama natives will tell you their true comfort confection is 'Poème' (母恵夢).
+Born in Matsuyama in 1950, it blends fine white bean paste with fresh egg yolks and pure butter, wrapped inside a gentle vanilla-scented biscuit shell. Melt-in-your-mouth comfort pairing exquisitely with tea or espresso.`
           }
         ]
       },
-      shimanami: {
-        title: "Scenic Wonders of the Sea & The Spirit of 'Osettai'",
-        desc: "From the world's greatest island-hopping bike trail to nostalgic sunset stations and 1,200 years of pilgrimage kindness.",
+      scenic: {
+        title: "Peaks of Western Japan & World-Class Lookouts",
+        desc: "From Mt. Ishizuchi and the celestial UFO Line (Kamegamori) to Kengo Kuma's Kiro-san and the 88 Temple Pilgrimage.",
         items: [
           {
-            id: "shimanami-cycling",
-            title: "Setouchi Shimanami Kaido: Global Cycling Paradise",
-            tag: "CNN Top 7 Worldwide Route",
-            summary: "A 70km aerial sea trail connecting Imabari to Onomichi over 6 spectacular suspension bridges spanning emerald island vistas.",
-            image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-            fullText: `The Shimanami Kaido is the only route in Japan where cyclists and pedestrians can traverse massive international expressway suspension bridges across islands.
-Ranked among the world's 7 best cycling trails by CNN, it offers uninterrupted panoramic sea vistas. Governor Tokihiro Nakamura personally spearheaded its international bike infrastructure with dedicated blue cycling lanes, luggage transfer, and waterfront cafes.`
+            id: "ishizuchisan",
+            title: "Mt. Ishizuchi: Highest Peak in Western Japan",
+            tag: "1,982m Sacred Peak of Japan",
+            summary: "One of Japan's Seven Holy Mountains. Scale towering iron chain walls to Tengu-dake's sheer cliffs with 360-degree alpine vistas.",
+            image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80",
+            fullText: `Towering at 1,982m, Mt. Ishizuchi is the highest peak in western Japan and one of Japan's 7 sacred mountains. Hikers can scale exhilarating vertical rock walls using ancient hand-forged iron chains to reach the razor-sharp precipice of Tengu-dake.`
           },
           {
-            id: "shimonada-station",
-            title: "Miracle at Sunset: JR Shimonada Station",
-            tag: "Closest Station to the Sea",
-            summary: "A solitary wooden bench overlooking the endless horizon of the Iyo Sea. A pilgrimage for anime fans, photographers, and dreamers.",
+            id: "kamegamori-ufoline",
+            title: "Kamegamori & The 'UFO Line': Highway in the Clouds",
+            tag: "Japan's Most Spectacular Ridge Road",
+            summary: "Famous from iconic car commercials! A celestial ribbon road perched at 1,700m winding through endless rolling bamboo grass plains.",
+            image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+            fullText: `The Kamegamori Forest Road—dubbed the 'UFO Line'—curves along alpine ridgelines between 1,300m and 1,700m elevation. Featured in national automotive commercials, its sweeping views over the rolling bamboo fields of Himi Nisenkokubara offer an otherworldly mountain driving experience.`
+          },
+          {
+            id: "kirosan-view",
+            title: "Kiro-san Observatory: Kengo Kuma's Invisible Lookout",
+            tag: "Ranked #2 Viewpoint in Japan",
+            summary: "Buried into the mountaintop on Oshima Island, revealing an explosive panorama of the Kurushima Kaikyo Bridges and emerald seas.",
             image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
-            fullText: `Perched right above the waves on the JR Yosan Line, Shimonada is Japan's most cinematic unstaffed rural station.
-When golden hour arrives, the sun sinks straight into the sparkling sea, painting the sky in deep amber and violet hues. Visitors can also board the luxury sightseeing train 'Iyo-Nada Monogatari' to savor local delicacies while gazing at this coastal spectacle.`
+            fullText: `Perched 307m high on Oshima Island along the Shimanami Kaido, Kiro-san was ranked Japan's #2 lookout by TripAdvisor. Master architect Kengo Kuma sank the observation deck directly into the mountain to protect nature, opening up an awe-inspiring sunset view over the world's first triple suspension bridge.`
           },
           {
-            id: "osettai-culture",
-            title: "The 88 Temple Pilgrimage & 'Osettai'",
-            tag: "1,200 Years of Grace",
-            summary: "Following Kobo Daishi's sacred path. The heartwarming tradition where locals gift food and tea to passing pilgrims with zero expectation of return.",
+            id: "shikoku-henro-heritage",
+            title: "The 88 Temple Pilgrimage & 'Osettai': National Treasures",
+            tag: "Japan Heritage No. 1 & World Heritage Hopeful",
+            summary: "A 1,200-year sacred loop. Matsuyama's Ishite-ji Gate is a designated National Treasure! The entire route is certified as Japan Heritage No. 1.",
             image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80",
-            fullText: `Circling Shikoku Island, the 88-temple Henro pilgrimage spans 1,200 years of spiritual history.
-Matsuyama is home to famous temples including Ishite-ji (No. 51) and Joruri-ji (No. 46).
-The heart of this journey is 'Osettai'—the unconditional custom where local residents offer sweet mikan, hot tea, or shelter to white-robed pilgrims. This gentle, selfless hospitality embodies the soul of Matsuyama and Ehime.`
+            fullText: `Circling Shikoku, the 88-temple Henro journey spans 1,200 years. In Matsuyama, Ishite-ji Temple's Nio Gate is a bona fide National Treasure. In 2015, the Agency for Cultural Affairs designated the pilgrimage as Japan Heritage #1, and efforts are underway for UNESCO World Cultural Heritage recognition. The true miracle remains 'Osettai'—the unconditional gift of tea, mikan, and lodging given to passing pilgrims.`
           }
         ]
       },
       trivia: {
-        title: "Fascinating Secrets, Urban Myths & Literary Quirks",
-        desc: "Unravel the unexpected connections that make Matsuyama and Ehime one of Japan's most intriguing regions.",
+        title: "Untold Secrets, Myth-Busting & Modern Movements",
+        desc: "Shiki's baseball passion, Governor Kabuki fact-check, and the rise of local learning communities.",
         items: [
           {
             id: "shiki-baseball",
@@ -663,11 +680,7 @@ Shiki passionately introduced baseball rules to Japanese readers through newspap
 'Runner' -> 走者 (Sosha)
 'Fastball' -> 直球 (Chokkyu)
 'Fly ball' -> 飛球 (Hikyu)
-'Base on balls' -> 四球 (Shikyu)
-He was also the very first person in world history to compose tanka and haiku celebrating baseball: 'Nine men gathering to strike a single ball and sprint—how wondrously delightful!'
-
-[Induction into the Baseball Hall of Fame]
-In 2002, Shiki was officially inducted into the Japanese Baseball Hall of Fame (Special Selection category) in honor of his immense contribution. Today, Matsuyama's premier stadium is proudly named 'Botchan Stadium', hosting professional Nippon Professional Baseball games.`
+'Base on balls' -> 四球 (Shikyu)`
           },
           {
             id: "governor-kabuki",
@@ -681,24 +694,19 @@ The factual answer: No, Governor Tokihiro Nakamura is NOT a Kabuki actor!
 So where did this widespread impression come from? It stems from three fascinating coincidences:
 
 1. Uncanny Resemblance to the Legendary 'Nakamura Tokizo' Lineage:
-In traditional Kabuki, the Yorozuya guild is home to one of the most prestigious onnagata (female role) acting dynasties: 'Nakamura Tokizo' (中村時蔵). In 2024, the 6th Nakamura Tokizo held grand accession ceremonies across Japan. Because the Governor's name is 'Nakamura Tokihiro' (中村時広)—sharing the surname Nakamura and the character 'Toki' (時)—and given the Governor's polished public speaking and refined appearance, people across Japan frequently confuse the two names!
+In traditional Kabuki, the Yorozuya guild is home to one of the most prestigious onnagata (female role) acting dynasties: 'Nakamura Tokizo' (中村時蔵). Because the Governor's name is 'Nakamura Tokihiro' (中村時広)—sharing the surname Nakamura and the character 'Toki' (時)—and given the Governor's refined public presence, people across Japan frequently confuse the two names!
 
 2. Ehime's Historic Uchiko-za Theater & Kabuki Heritage:
-Ehime Prefecture is home to Uchiko-za (built in 1916), one of Japan's most famous surviving authentic wooden Kabuki playhouses, complete with revolving stages, trap doors, and hanamichi walkways. Major Shochiku Kabuki troupes regularly tour here. Ehime's strong cultural association with Kabuki often leads out-of-towners to assume their prominent leader with a Kabuki-sounding name is part of the tradition!
-
-3. Who Governor Tokihiro Nakamura Really Is:
-A graduate of Keio University Faculty of Law, he worked at the major trading conglomerate Mitsubishi Corporation before entering public service. He served in the Ehime Prefectural Assembly, the National Diet of Japan, and as Mayor of Matsuyama for 11 years before being elected Governor of Ehime in 2010 (now in his 4th term). He is famous for transforming Ehime into a global cycling paradise via the Shimanami Kaido!`
+Ehime Prefecture is home to Uchiko-za (built in 1916), one of Japan's most famous surviving authentic wooden Kabuki playhouses. Major Shochiku Kabuki troupes regularly tour here, linking Ehime and Kabuki in the public imagination.`
           },
           {
-            id: "botchan-paradox",
-            title: "Soseki Insulted Matsuyama in 'Botchan'—So Why Do Locals Love Him?",
-            tag: "Warm Matsuyama Humor",
-            summary: "He mocked the town as 'filthy' and the train as a 'toy matchbox'—yet Matsuyama named half the city after his book!",
-            image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80",
-            fullText: `In 'Botchan', the hot-tempered Tokyo narrator mercilessly roasts Matsuyama's countryside habits, calling it a backwater full of scheming troublemakers.
-Any other city might have banned the book in outrage.
-Instead, the sunny, warm-hearted people of Matsuyama erupted with affection! They named their steam train 'Botchan Train', their sweets 'Botchan Dango', their baseball park 'Botchan Stadium', and erected statues of Soseki across the city.
-This open-hearted humor and ability to laugh at oneself perfectly encapsulates the legendary 'Osettai' hospitality of Shikoku.`
+            id: "libedai-modern-scene",
+            title: "Modern Buzz: Liberal Arts University (Libe-Dai) in Ehime",
+            tag: "New Learning Communities",
+            summary: "Japan's largest personal finance online learning community 'Libe-Dai' thrives in Ehime with active meetups and entrepreneurial energy.",
+            image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
+            fullText: `In recent years, Liberal Arts University ('Libe-Dai', hosted by Ryo-Gakucho) has become Japan's leading community for financial literacy, IT skills, and independent living.
+In Ehime and Matsuyama, enthusiastic offline meetups and study groups have sprouted, with community organizers and local leaders fostering entrepreneurship and mutual encouragement across the region.`
           }
         ]
       }
@@ -707,7 +715,7 @@ This open-hearted humor and ability to laugh at oneself perfectly encapsulates t
       quizTitle: "正岡子規の「ベースボール」訳語クイズ",
       quizDesc: "子規が考案・紹介した野球用語を当ててみよう！",
       haikuGenTitle: "あなただけの「松山・愛媛の句」を詠む",
-      haikuGenDesc: "道後温泉、みかん、城、海の情景を組み合わせて一句詠んでみましょう。",
+      haikuGenDesc: "道後温泉、石鎚山、みかん、城の情景を組み合わせて一句詠んでみましょう。",
       taimeshiTitle: "あなたの好みはどっち？鯛めし診断",
       taimeshiDesc: "今日のあなたの気分にぴったりの愛媛の鯛めしを提案します。"
     },
@@ -722,7 +730,7 @@ This open-hearted humor and ability to laugh at oneself perfectly encapsulates t
 
 // Application State
 let currentLang = 'ja';
-let currentTab = 'sakanoue'; // Default to the newly requested Saka no Ue no Kumo feature!
+let currentTab = 'sakanoue';
 
 // Icon Map (Lucide SVGs)
 const icons = {
@@ -749,7 +757,7 @@ function initApp() {
   setupEventListeners();
 }
 
-// Render Navbar (Bright & Clean)
+// Render Navbar
 function renderNavbar() {
   const navContainer = document.getElementById('navbar-container');
   if (!navContainer) return;
@@ -787,15 +795,15 @@ function renderNavbar() {
   `;
 }
 
-// Render Hero Section (Bright, Warm & Premium)
+// Render Hero Section
 function renderHero() {
   const heroContainer = document.getElementById('hero-container');
   if (!heroContainer) return;
 
   const data = siteData[currentLang];
   heroContainer.innerHTML = `
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center z-10">
-      <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-orange-100/90 border border-orange-200 text-orange-700 text-xs font-bold uppercase tracking-wider mb-6 shadow-sm">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20 text-center z-10">
+      <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-orange-100 border border-orange-200 text-orange-700 text-xs font-bold uppercase tracking-wider mb-6 shadow-sm">
         <span>🇯🇵 Matsuyama & Ehime, Japan</span>
         <span class="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
         <span>${data.heroBadge}</span>
@@ -827,7 +835,7 @@ function renderHero() {
   `;
 }
 
-// Render Tabs Navigation (Light Theme)
+// Render Tabs Navigation
 function renderTabs() {
   const tabsContainer = document.getElementById('tabs-container');
   if (!tabsContainer) return;
@@ -835,20 +843,20 @@ function renderTabs() {
   const data = siteData[currentLang];
   tabsContainer.innerHTML = `
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex overflow-x-auto pb-2 gap-2 sm:gap-3 scrollbar-none justify-start md:justify-center">
+      <div class="flex overflow-x-auto pb-2 gap-2 sm:gap-2.5 scrollbar-none justify-start md:justify-center">
         ${data.tabs.map(tab => {
           const isActive = tab.id === currentTab;
           return `
             <button onclick="switchTab('${tab.id}')" 
-              class="flex-shrink-0 flex items-center space-x-2.5 px-4 py-3 rounded-xl border text-sm font-bold transition-all duration-300 ${
+              class="flex-shrink-0 flex items-center space-x-2 px-3.5 py-3 rounded-xl border text-xs sm:text-sm font-bold transition-all duration-300 ${
                 isActive 
                   ? 'active-tab' 
-                  : 'bg-white text-slate-700 border-slate-200 hover:bg-orange-50/60 hover:text-orange-600 hover:border-orange-200 shadow-sm'
+                  : 'bg-white text-slate-700 border-slate-200 hover:bg-orange-50/70 hover:text-orange-600 hover:border-orange-200 shadow-sm'
               }">
               <span class="${isActive ? 'text-white' : 'text-orange-500'}">${icons[tab.icon] || ''}</span>
               <div class="text-left">
                 <span class="block">${tab.label}</span>
-                <span class="block text-[10px] opacity-80 font-normal truncate max-w-[130px] sm:max-w-[180px]">${tab.subtitle}</span>
+                <span class="block text-[10px] opacity-80 font-normal truncate max-w-[110px] sm:max-w-[150px]">${tab.subtitle}</span>
               </div>
             </button>
           `;
@@ -858,7 +866,7 @@ function renderTabs() {
   `;
 }
 
-// Render the Active Category Section
+// Render Active Category Section
 function renderActiveSection() {
   const sectionContainer = document.getElementById('active-section-container');
   if (!sectionContainer) return;
@@ -918,7 +926,7 @@ function renderActiveSection() {
   `;
 }
 
-// Special Highlight Banners for Tab Context (Light Theme)
+// Special Highlight Banners for Tab Context
 function renderTabSpecialBanner(tabId) {
   const isJa = currentLang === 'ja';
 
@@ -947,6 +955,29 @@ function renderTabSpecialBanner(tabId) {
             <div class="text-sm font-bold text-orange-600">正岡子規 (文学)</div>
             <div class="text-[11px] text-slate-500 mt-2 font-medium">${isJa ? '全員が松山城下の同郷の友' : 'All Lifelong Friends from Matsuyama'}</div>
           </div>
+        </div>
+      </div>
+    `;
+  }
+
+  if (tabId === 'history') {
+    return `
+      <div class="mt-12 bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-md">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="space-y-2">
+            <span class="inline-block bg-rose-100 text-rose-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              ${isJa ? '愛の史話：恋人の聖地' : 'Lovers\' Sanctuary'}
+            </span>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 font-serif-jp">
+              ${isJa ? '二之丸庭園の井戸から発見されたロシア将校と看護婦の金貨' : 'The Russian Officer & Nurse Love Coins'}
+            </h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-2xl">
+              ${isJa 
+                ? '日露戦争時、松山は日本初のロシア兵捕虜収容所が置かれた寛容の地でした。捕虜のワシーリー中佐と看護婦タケの純愛を誓うコインが二之丸庭園の大井戸遺構から出土し、現在「恋人の聖地」として多くのカップルを祝福しています。'
+                : 'During the Russo-Japanese War, Matsuyama hosted Russian POWs with renowned humanity. In Ninomaru Garden, gold coins engraved with the names of Russian Commander Boisman and Japanese nurse Take were found in an ancient well, certifying it as a Sanctuary for Lovers.'}
+            </p>
+          </div>
+          <div class="text-4xl text-rose-500 p-4 bg-rose-50 rounded-2xl">💑 🪙</div>
         </div>
       </div>
     `;
@@ -982,34 +1013,10 @@ function renderTabSpecialBanner(tabId) {
     `;
   }
 
-  if (tabId === 'citrus') {
-    return `
-      <div class="mt-12 bg-amber-50/80 rounded-3xl p-6 sm:p-10 border border-amber-200 shadow-sm">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-          <div class="p-4 rounded-xl bg-white border border-amber-100 shadow-sm">
-            <div class="text-3xl mb-2">🚰</div>
-            <div class="font-bold text-slate-900 mb-1">${isJa ? '蛇口スポット 1' : 'Tap Spot 1'}</div>
-            <div class="text-xs text-slate-600">${isJa ? '松山空港 1F到着ロビー / 2F出発ロビー' : 'Matsuyama Airport (1F & 2F)'}</div>
-          </div>
-          <div class="p-4 rounded-xl bg-white border border-amber-100 shadow-sm">
-            <div class="text-3xl mb-2">🍊</div>
-            <div class="font-bold text-slate-900 mb-1">${isJa ? '蛇口スポット 2' : 'Tap Spot 2'}</div>
-            <div class="text-xs text-slate-600">${isJa ? '松山城ロープウェイ街「10 FACTORY」' : '10 FACTORY (Castle Ropeway Street)'}</div>
-          </div>
-          <div class="p-4 rounded-xl bg-white border border-amber-100 shadow-sm">
-            <div class="text-3xl mb-2">♨️</div>
-            <div class="font-bold text-slate-900 mb-1">${isJa ? '蛇口スポット 3' : 'Tap Spot 3'}</div>
-            <div class="text-xs text-slate-600">${isJa ? '道後温泉観光案内所・えひめ愛顔の観光物産館' : 'Dogo Onsen Info Center'}</div>
-          </div>
-        </div>
-      </div>
-    `;
-  }
-
   return '';
 }
 
-// Render Interactive Features Section (Light Theme)
+// Render Interactive Features Section
 function renderInteractiveSection() {
   const container = document.getElementById('interactive-container');
   if (!container) return;
@@ -1062,7 +1069,8 @@ function renderInteractiveSection() {
               <label class="text-xs text-slate-600 block font-medium">${isJa ? 'いまの気分は？' : 'What is your current craving?'}</label>
               <select id="taimeshi-select" onchange="recommendTaimeshi()" class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 text-xs text-slate-800 font-medium focus:ring-2 focus:ring-orange-500">
                 <option value="raw">${isJa ? '新鮮な生魚と卵かけご飯を豪快にかき込みたい！' : 'Fresh raw sashimi bowl with rich egg yolk!'}</option>
-                <option value="steamed">${isJa ? '出汁が香るふっくら炊き込みご飯とおこげを味わいたい！' : 'Fragrant warm steamed rice with savory dashi & crust!'}</option>
+                <option value="steamed">${isJa ? '1700年の歴史！出汁が香るふっくら炊き込み鯛釜飯とおこげ！' : '1,700-year history! Steamed dashi clay pot with crispy rice crust!'}</option>
+                <option value="mikan">${isJa ? '柑橘が香る最新のブランド魚「みかん鯛」を味わいたい！' : 'Innovative citrus-fed Mikan Tai with zero fishiness!'}</option>
               </select>
               <div id="taimeshi-result" class="p-3 bg-sky-50 border border-sky-200 rounded-xl text-xs text-sky-900 mt-3 font-medium">
                 ${isJa ? '👉 おすすめ：【宇和島鯛めし】新鮮な鯛刺身を特製タレと生卵で豪快に！' : '👉 Recommendation: [Uwajima Taimeshi] Sashimi in egg-dashi sauce!'}
@@ -1094,7 +1102,7 @@ function renderInteractiveSection() {
   `;
 }
 
-// Render Footer (Light & Elegant)
+// Render Footer
 function renderFooter() {
   const footerContainer = document.getElementById('footer-container');
   if (!footerContainer) return;
@@ -1136,7 +1144,7 @@ function setLanguage(lang) {
   renderFooter();
 }
 
-// Detail Modal Logic (Light Theme)
+// Detail Modal Logic
 function openModal(itemId) {
   const modalBackdrop = document.getElementById('modal-backdrop');
   const modalBody = document.getElementById('modal-body');
@@ -1218,10 +1226,14 @@ function recommendTaimeshi() {
     res.innerHTML = isJa 
       ? '👉 おすすめ：【宇和島鯛めし】新鮮な鯛刺身を特製タレと生卵で豪快に白米にかき込む絶品！'
       : '👉 Recommendation: [Uwajima Taimeshi] Raw sashimi in egg yolk dashi poured over hot rice!';
+  } else if (select.value === 'steamed') {
+    res.innerHTML = isJa
+      ? '👉 おすすめ：【松山・北条鯛釜飯】神功皇后ゆかりの1700年の伝統！素焼きの真鯛を丸ごと昆布出汁で炊き上げる香ばしいおこげの味！'
+      : '👉 Recommendation: [Matsuyama Taimeshi] 1,700-year traditional steamed whole sea bream pot with crispy savory rice crust!';
   } else {
     res.innerHTML = isJa
-      ? '👉 おすすめ：【松山鯛めし】素焼きの真鯛を一尾丸ごと昆布出汁で炊き上げるふっくら伝統の味！'
-      : '👉 Recommendation: [Matsuyama Taimeshi] Whole sea bream steamed in fragrant dashi clay pot!';
+      ? '👉 おすすめ：【みかん鯛のお造り・鯛めし】愛媛大学と共同研究！生臭さが消えてほんのり柑橘香る次世代フルーツ魚！'
+      : '👉 Recommendation: [Mikan Tai] Innovative joint-research citrus-fed fish with refreshing mikan aroma!';
   }
 }
 
@@ -1230,6 +1242,7 @@ const haikus = {
   ja: [
     "坂の上に / 雲湧く伊予の / 碧き空",
     "湯の街に / みかん薫るや / 城の月",
+    "石鎚の / 嶺に祈るや / 秋の風",
     "柿くへば / 鐘が鳴るなり / 法隆寺 (正岡子規)",
     "春や昔 / 十五万石の / 城下哉 (正岡子規)",
     "松山や / 秋の潮風 / 鯛の味",
@@ -1239,6 +1252,7 @@ const haikus = {
   en: [
     "Above the green hill / White clouds rise into high skies / Blue Shikoku dawn",
     "Ancient steam ascends / Scent of sweet citrus floats high / Moon above castle",
+    "Mt. Ishizuchi crest / Whispering prayers on the wind / Pure autumn sunlight",
     "Eating a persimmon / The bell chimes far and wide / Horyuji Temple (Shiki)",
     "Spring of long ago / Castle town of samurai / Proud fifteen myriad stones (Shiki)",
     "Breeze from Seto Sea / Fresh sea bream on warm white rice / Sweet autumn evening",
