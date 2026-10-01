@@ -1,21 +1,20 @@
 @charset "UTF-8";
 
-/* Custom Fonts & Styles for MATSUYAMA DISCOVERY */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;600;700;800&display=swap');
+/* Custom Fonts & Light-Themed Styles for MATSUYAMA DISCOVERY */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Noto+Sans+JP:wght@300;400;500;600;700;800&family=Shippori+Mincho:wght@400;600;700;800&display=swap');
 
 :root {
-  --color-citrus: #f97316;
-  --color-onsen: #0284c7;
+  --color-citrus-primary: #ea580c;
+  --color-citrus-light: #fff7ed;
+  --color-onsen-primary: #0284c7;
   --color-vermilion: #e11d48;
-  --color-moss: #059669;
-  --color-indigo: #1e1b4b;
-  --color-gold: #d97706;
+  --color-slate-dark: #0f172a;
 }
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  background-color: #0b0f19;
-  color: #f1f5f9;
+  background-color: #fafaf9; /* Warm stone-50 background */
+  color: #1e293b;
   overflow-x: hidden;
 }
 
@@ -32,78 +31,65 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #0b0f19;
+  background: #f5f5f4;
 }
 ::-webkit-scrollbar-thumb {
-  background: #334155;
+  background: #cbd5e1;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #f97316;
+  background: #ea580c;
 }
 
-/* Glassmorphism Classes */
-.glass-panel {
-  background: rgba(17, 24, 39, 0.75);
+/* Light Glassmorphism Classes */
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(226, 232, 240, 0.8);
 }
 
-.glass-card {
-  background: rgba(30, 41, 59, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+.glass-card-light {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.glass-card:hover {
-  border-color: rgba(249, 115, 22, 0.4);
+.glass-card-light:hover {
+  border-color: #fdba74;
   transform: translateY(-4px);
-  box-shadow: 0 12px 30px -10px rgba(249, 115, 22, 0.15);
+  box-shadow: 0 16px 32px -4px rgba(234, 88, 12, 0.12);
 }
 
+/* Active Tab in Light Mode */
 .active-tab {
-  background: linear-gradient(135deg, #f97316, #ea580c) !important;
+  background: linear-gradient(135deg, #ea580c 0%, #f97316 100%) !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 20px -2px rgba(249, 115, 22, 0.5);
+  box-shadow: 0 4px 16px -2px rgba(234, 88, 12, 0.4);
   border-color: transparent !important;
 }
 
-/* Ninagawa Mika Inspired Vibrant Gradient Glow */
-.glow-artistic {
-  background: radial-gradient(circle at 50% 50%, rgba(225, 29, 72, 0.25) 0%, rgba(147, 51, 234, 0.2) 35%, rgba(2, 132, 199, 0.15) 70%, transparent 100%);
-}
-
-.glow-citrus {
-  background: radial-gradient(circle at 50% 50%, rgba(249, 115, 22, 0.2) 0%, rgba(217, 119, 6, 0.1) 50%, transparent 100%);
-}
-
-/* Text Gradients */
-.text-gradient-orange {
-  background: linear-gradient(135deg, #fed7aa 0%, #f97316 50%, #ea580c 100%);
+/* Gradients for Light Theme */
+.text-gradient-citrus {
+  background: linear-gradient(135deg, #c2410c 0%, #ea580c 50%, #f97316 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-art {
-  background: linear-gradient(135deg, #f43f5e 0%, #a855f7 50%, #38bdf8 100%);
+  background: linear-gradient(135deg, #be123c 0%, #7e22ce 50%, #0369a1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Animations */
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
+.bg-pattern-subtle {
+  background-color: #fafaf9;
+  background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
-.animate-float {
-  animation: float 5s ease-in-out infinite;
-}
-
-/* Modal transition */
+/* Modal Transition */
 .modal-backdrop {
   opacity: 0;
   pointer-events: none;

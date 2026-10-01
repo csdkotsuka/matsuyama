@@ -1,11 +1,13 @@
-// MATSUYAMA & EHIME GLOBAL DISCOVERY PORTAL - APP DATA & LOGIC
+// MATSUYAMA & EHIME GLOBAL DISCOVERY PORTAL - APP DATA & LOGIC (LIGHT THEME EDITION)
 
 const siteData = {
   ja: {
     siteTitle: "MATSUYAMA DISCOVERY",
     siteSubtitle: "日本最古の湯と文学、極彩色の美意識、そして瀬戸内・宇和海の恵み",
     heroBadge: "愛媛・松山を世界へ発信する公式ディスカバリーポータル",
-    heroDesc: "3,000年の歴史を誇る道後温泉、近代文学を拓いた正岡子規と夏目漱石、蜷川実花が彩るアートな温泉街、日本一の柑橘王国、そして絶品の鯛めし。知れば知るほど魅了される、松山・愛媛の奥深い物語を巡る旅へ。",
+    heroHeading: "巡る、松山・愛媛の深層。",
+    heroSubheading: "3000年の古湯から、極彩色のアート・美味の海、そして『坂の上の雲』の碧空へ",
+    heroDesc: "3,000年の歴史を誇る道後温泉、近代文学を拓いた正岡子規と夏目漱石、司馬遼太郎の不朽の名作『坂の上の雲』、蜷川実花が彩るアートな温泉街、日本一の柑橘王国、瀬戸内しまなみ海道、そして至高の鯛めし。知れば知るほど魅了される、松山・愛媛の奥深い物語を巡る旅へ。",
     quickStats: [
       { label: "道後温泉の歴史", value: "3,000+", unit: "年" },
       { label: "街中の俳句ポスト", value: "90+", unit: "箇所以上" },
@@ -13,14 +15,57 @@ const siteData = {
       { label: "現存天守の松山城", value: "1602", unit: "年創架" }
     ],
     tabs: [
+      { id: "sakanoue", icon: "cloud", label: "坂の上の雲 特集", subtitle: "秋山兄弟・正岡子規・萬翠荘・安藤忠雄" },
       { id: "history", icon: "castle", label: "歴史と物語", subtitle: "道後温泉・正岡子規・夏目漱石・松山城" },
       { id: "haiku", icon: "feather", label: "俳句と文化", subtitle: "ことばのまち・正岡子規・俳句甲子園" },
-      { id: "art", icon: "palette", label: "芸術と現代アート", subtitle: "蜷川実花・道後オンセナート・建築・音楽" },
+      { id: "art", icon: "palette", label: "芸術と現代アート", subtitle: "蜷川実花・道後オンセナート・砥部焼・今治タオル" },
       { id: "citrus", icon: "citrus", label: "農産物・柑橘王国", subtitle: "みかん・紅まどんな・蛇口からみかんジュース" },
-      { id: "fishery", icon: "fish", label: "水産物・極上の美味", subtitle: "宇和島鯛めし・松山鯛めし・八幡浜じゃこ天" },
+      { id: "fishery", icon: "fish", label: "水産物・極上の美味", subtitle: "宇和島鯛めし・松山鯛めし・鍋焼きうどん" },
+      { id: "shimanami", icon: "compass", label: "絶景と名所巡り", subtitle: "しまなみ海道・下灘駅・四国遍路お接待" },
       { id: "trivia", icon: "sparkles", label: "意外なトリビア", subtitle: "子規と野球・中村知事と歌舞伎役者の真相" }
     ],
     sections: {
+      sakanoue: {
+        title: "坂の上の雲：明治の黎明期を駆け抜けた三人の青春",
+        desc: "司馬遼太郎が描いた日本近代の奇跡。松山が生んだ秋山好古・真之兄弟と正岡子規の足跡、そして華麗なる洋館・萬翠荘へ。",
+        items: [
+          {
+            id: "akiyama-brothers",
+            title: "秋山好古・真之兄弟の不屈の生涯",
+            tag: "松山が生んだ近代日本の英傑",
+            summary: "兄・好古は「日本騎兵の父」、弟・真之は日本海海戦の名参謀。栄達に溺れず、晩年は教育に生きた清廉な武士道精神。",
+            image: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
+            fullText: `【兄・秋山好古（あきやま よしふる）】：
+貧しい松山藩士の家に生まれ、身一つで陸軍士官学校へ進み、フランスへ留学。騎兵の近代化を成し遂げ「日本騎兵の父」と称されました。
+日露戦争では世界最強と恐れられたロシアのコサック騎兵部隊を打ち破る大功を立て、陸軍大将まで昇りつめました。しかし退役後、元帥への推薦を断り、故郷・松山に戻って私立北予中学校（現在の松山北高校）の校長に就任。「男子は名利を求めず、ただ世のため人のために尽くせ」と、質素な生活を貫きながら若者たちの教育に余生を捧げました。
+
+【弟・秋山真之（あきやま さねゆき）】：
+幼少期は悪戯っ子でならすも抜群の頭脳を持ち、正岡子規とともに東京で学んだ後、海軍兵学校へ。首席で卒業し、アメリカへ留学して最新の海戦術を学びました。
+日露戦争の「日本海海戦」において連合艦隊作戦参謀として「七段構えの陣」を考案し、世界最強と言われたロシア・バルチック艦隊を完全撃滅へ導きました。大本営への報告文「本日天気晴朗ナレドモ浪高シ」は、日本軍事史上屈指の名文として今も語り継がれています。`
+          },
+          {
+            id: "sakanoue-museum",
+            title: "坂の上の雲ミュージアム（安藤忠雄建築）",
+            tag: "世界的建築家が描く精神の高み",
+            summary: "松山城の麓に佇む三角形の現代建築。支柱のない「空中階段」が、未来へ坂を登り続ける物語の世界を体現。",
+            image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+            fullText: `松山城の緑豊かな山麓に建つ「坂の上の雲ミュージアム」は、世界的な建築家・安藤忠雄氏の設計により2007年に開館しました。
+建物は松山の歴史と自然に調和するよう、三角形の平面形状を採用。内部に入ると、支柱が一本もないスロープ状の「空中階段（立体トラス構造）」が空間を緩やかに上昇していきます。
+これは、主人公たちが「ただ前へ、坂の上の雲を目指して登り続けた」明治の青雲の志を建築空間として表現したもの。小説の直筆原稿や軍艦三笠の模型、当時の貴重な歴史資料が体系的に展示されています。`
+          },
+          {
+            id: "bansuiso",
+            title: "萬翠荘（ばんすいそう）",
+            tag: "国指定重要文化財",
+            summary: "大正11年建築、愛媛県最古のフランス・ルネサンス風洋館。旧松山藩主子孫・久松定謨伯爵が築いた気品あふれる宮殿。",
+            image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+            fullText: `「坂の上の雲ミュージアム」のすぐ隣、城山の深い緑に包まれて優雅な姿を見せるのが「萬翠荘（ばんすいそう）」です。
+1922年（大正11年）、旧松山藩主の子孫である久松定謨（ひさまつ さだこと）伯爵が別邸として建設しました。設計は愛媛県庁舎なども手がけた木子七郎。
+純フランス・ルネサンス様式の鉄筋コンクリート造3階建てで、正面のステンドグラス、水晶のシャンデリア、大理石のマントルピースなど、当時のヨーロッパ最高峰の美意識がそのまま息づいています。
+昭和天皇が皇太子時代にご宿泊されたほか、各界の名士が集う最高級の社交場として愛され、国の重要文化財に指定されています。`
+          }
+        ]
+      },
       history: {
         title: "3,000年の歴史が息づく、文学と城の都",
         desc: "古代の神話時代から続く温泉、明治の文豪たちが愛した風情、そして街を見守り続ける名城。",
@@ -56,15 +101,6 @@ const siteData = {
 日本にわずか12基しか残っていない「現存天守」の一つであり、大天守・小天守・隅櫓を渡櫓で結んだ「連立式天守」の最高峰と称されます。
 城郭内には重要文化財に指定された建造物が21棟あり、攻守の工夫が凝らされた石垣の美しさは圧巻。
 ロープウェイやリフトで山頂に登ると、瀬戸内海から松山平野までを一望できる大パノラマが広がります。ミシュラン・グリーンガイド・ジャポンでも二つ星を獲得しています。`
-          },
-          {
-            id: "saka-no-ue-no-kumo",
-            title: "『坂の上の雲』の舞台",
-            tag: "司馬遼太郎の歴史小説",
-            summary: "松山出身の秋山好古・真之兄弟と正岡子規。近代日本の黎明期を駆け抜けた三人の青春の記憶。",
-            image: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
-            fullText: `司馬遼太郎の傑作歴史小説『坂の上の雲』。その主人公である日本騎兵の父・秋山好古、日本海海戦の作戦参謀・秋山真之、そして近代文学の革新者・正岡子規は、いずれも松山藩士の家に生まれた同郷の友でした。
-松山市内には、彼らの生誕地や、安藤忠雄氏の設計による三角形の独創的な外観が印象的な「坂の上の雲ミュージアム」があり、明治の近代化を情熱とともに駆け抜けた人々の精神に触れることができます。`
           }
         ]
       },
@@ -106,7 +142,7 @@ const siteData = {
       },
       art: {
         title: "歴史と前衛が交差する、最先端のアートトリップ",
-        desc: "蜷川実花が彩る極彩色の温泉街から、安藤忠雄建築、市民ミュージカル劇場まで。",
+        desc: "蜷川実花が彩る極彩色の温泉街から、240年の歴史を誇る砥部焼、世界的ブランド今治タオルまで。",
         items: [
           {
             id: "ninagawa-dogo",
@@ -120,33 +156,24 @@ const siteData = {
 さらに、道後温泉の旅館客室を丸ごと極彩色の作品空間に仕立てたアートルームや、道後温泉別館「飛鳥乃湯泉」の中庭を鮮やかなフラワーグラフィックで埋め尽くすインスタレーションなど、3,000年の伝統と現代のビビッドな美意識が見事に融合しました。`
           },
           {
-            id: "dogo-onsenart",
-            title: "道後オンセナート & アートフェス",
-            tag: "街歩き型オープンミュージアム",
-            summary: "草間彌生、荒木経惟、大竹伸朗ら世界的アーティストが参加。「温泉×アート」の世界的潮流を創出。",
-            image: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80",
-            fullText: `道後オンセナート（Dogo Onsenart）は、「温泉」と「最先端アート」という一見相反する要素を掛け合わせた画期的なアートフェスティバルです。
-草間彌生のアイコニックな水玉が旅館の部屋を覆い尽くし、荒木経惟の写真が街の行灯を彩り、大竹伸朗や山口晃が浴場空間をインスタレーションへと昇華させました。
-美術館の中に閉じこもるのではなく、浴衣を着て下駄を鳴らしながら街を散策する中で作品に出会える「街歩き型アート」の金字塔となっています。`
+            id: "tobeyaki-craft",
+            title: "国指定伝統的工芸品「砥部焼（とべやき）」",
+            tag: "白磁と藍の美しい用と美",
+            summary: "松山市に隣接する砥部町で240年以上続く陶磁器。ぽってりと厚手で割れにくく、呉須（藍色）の唐草文様が愛される日常の名器。",
+            image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80",
+            fullText: `砥部焼は、安永4年（1775年）に伊予松山藩主・加藤泰候の命によって創始された歴史ある磁器です。
+最大の特徴は、陶石から作られる白磁のぽってりとした温かみある厚みと、頑丈さ。藍色の顔料（呉須）で職人が手描きする「唐草文（からくさもん）」や太陽の文様は、素朴でありながら凛とした美しさを放ちます。
+うどん鉢や蕎麦猪口、日常のカフェカップとして日本中で愛用されており、民藝運動の柳宗悦やバーナード・リーチからも「実用美の極み」と絶賛されました。`
           },
           {
-            id: "ando-architecture",
-            title: "安藤忠雄建築：坂の上の雲ミュージアム",
-            tag: "世界的建築の美",
-            summary: "松山城の麓の自然に溶け込む、空中階段と幾何学三角形のガラス空間。建築ファン必見の名所。",
-            image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
-            fullText: `松山城の緑豊かな山麓に建つ「坂の上の雲ミュージアム」は、世界的な建築家・安藤忠雄氏の設計によるもの。
-三角形の平面形状を採用し、内部には支柱のないスロープ（空中階段）が螺旋状に緩やかに上昇していきます。
-打ち放しコンクリートの静謐な質感と、外の緑を反射する巨大なガラスカーテンウォールが絶妙に調和し、建物そのものが『坂の上の雲』の目指した高みと近代精神を体現しています。`
-          },
-          {
-            id: "botchan-theater",
-            title: "坊っちゃん劇場 & 音楽文化",
-            tag: "地域発信の舞台芸術",
-            summary: "日本で唯一、四国・愛媛の歴史文化を題材にしたオリジナルミュージカルを通年上演する専用劇場。",
-            image: "https://images.unsplash.com/photo-1469488865564-c2de10f69f96?auto=format&fit=crop&w=800&q=80",
-            fullText: `愛媛県東温市（松山市に隣接）にある「坊っちゃん劇場」は、地域の歴史や人物、伝説をモチーフにした本格的なオリジナルミュージカルを1年間にわたり常設ロングラン上演する、日本でも稀有な舞台芸術拠点です。
-また、松山市は「ことばのまち」であると同時に吹奏楽や合唱、クラシック音楽の教育が盛んな文化都市でもあり、愛媛交響楽団や松山市総合コミュニティセンター、市民会館などを舞台に豊かな音楽活動が息づいています。`
+            id: "imabari-towel",
+            title: "世界が認めた最高品質「今治タオル」",
+            tag: "世界ブランドのクラフトマンシップ",
+            summary: "蒼社川の清らかな軟水が育む、奇跡の吸水性と柔らかな肌触り。「5秒ルール」の厳格な品質基準。",
+            image: "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=800&q=80",
+            fullText: `愛媛県今治市は、120年以上の歴史を持つ日本最大のタオル産地です。
+名峰・石鎚山脈から湧き出る蒼社川の極めて不純物の少ない軟水を使って糸を晒すことで、綿本来の柔らかさと繊細な発色を引き出します。
+「タオル片を水に浮かべて5秒以内に沈むかどうか」という独自の厳格な品質基準（5秒ルール）をクリアしたものだけが、あの赤・青・白の認定マークを冠することができます。クリエイティブディレクター・佐藤可士和氏によるブランディングを経て、今や世界最高峰のジャパンブランドとして海外の高級ホテルやギフトで絶大な支持を得ています。`
           }
         ]
       },
@@ -189,8 +216,8 @@ const siteData = {
         ]
       },
       fishery: {
-        title: "瀬戸内海と宇和海がもたらす、至高の海の幸",
-        desc: "潮の流れが育む日本一の真鯛。2大「鯛めし」の文化と、名物「じゃこ天」のソウルフード。",
+        title: "瀬戸内海と宇和海がもたらす、至高の海の幸とソウルフード",
+        desc: "潮の流れが育む日本一の真鯛。2大「鯛めし」から、甘い出汁の松山名物「鍋焼きうどん」まで。",
         items: [
           {
             id: "taimeshi-battle",
@@ -215,14 +242,51 @@ const siteData = {
 軽く炙って生姜醤油や大根おろしを添え、地酒の辛口とともにいただくのが地元流の最高の楽しみ方です。`
           },
           {
-            id: "uwakai-bounty",
-            title: "潮流が生み出す海の宝石（太刀魚・スマ・真珠）",
-            tag: "宇和海・瀬戸内の恵み",
-            summary: "「全身トロ」の幻の高級魚スマ（伊予の媛貴海）、太刀魚の巻焼き、そして世界最高品質の宇和島真珠。",
+            id: "nabeyaki-udon",
+            title: "松山市民のソウルフード「鍋焼きうどん」＆「一六タルト」",
+            tag: "甘くて懐かしい松山の味",
+            summary: "アルミの小鍋でグツグツ煮込まれた甘いイリコ出汁のうどんと、江戸時代南蛮伝来の柚子香る伝統銘菓。",
+            image: "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=800&q=80",
+            fullText: `松山の隠れた大人気グルメが「鍋焼きうどん」です。
+路地裏の老舗「ことり」や「アサヒ」で親しまれるスタイルは、レトロなアルミ製の鍋に、柔らかめのうどん、甘辛く煮た牛肉、油揚げ、かまぼこが入り、瀬戸内海のイリコ（煮干し）から取った優しい甘めのお出汁が特徴。一口飲むとほっと旅の疲れが癒やされます。
+また、松山土産の代名詞「一六タルト」は、江戸時代に松山藩主・松平定行公が長崎から持ち帰った南蛮菓子のカステラ生地に、愛媛特産の柚子を加えたこし餡を「の」の字に巻いた銘菓覚醒の逸品です。`
+          }
+        ]
+      },
+      shimanami: {
+        title: "世界が憧れる絶景と、1200年続く「お接待」の心",
+        desc: "世界一のサイクリングロード「しまなみ海道」、海に最も近い「下灘駅」、そして四国遍路の巡礼文化。",
+        items: [
+          {
+            id: "shimanami-cycling",
+            title: "瀬戸内しまなみ海道：世界のサイクリストの聖地",
+            tag: "CNN世界7大サイクリングコース",
+            summary: "愛媛県今治市から広島県尾道市まで、瀬戸内海の多島美を空中散歩のように島伝いに渡る全長約70kmの海の道。",
             image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-            fullText: `愛媛の海はリアス式海岸と激しい潮流に恵まれ、魚介の宝庫です。
-愛媛県が完全養殖に成功した高級魚スマ「伊予の媛貴海（ひめたかみ）」は、きめ細やかな脂が乗って「全身トロ」と絶賛される極上魚。
-また、瀬戸内海の銀色に輝く太刀魚を竹竹に巻きつけて秘伝のタレで焼いた「太刀魚の巻焼き」や、日本一の生産量を誇る「宇和島真珠（アコヤ真珠）」など、海の恵みが工芸から美食まであふれています。`
+            fullText: `「瀬戸内しまなみ海道」は、日本で唯一、自転車や歩行者が高速道路の橋を渡れる奇跡のサイクリングロードです。
+来島海峡大橋をはじめとする雄大な6つの大橋から見下ろす瀬戸内海の多島美と碧い海は息をのむ美しさ。
+米国CNNの「世界で最も素晴らしい7大サイクリングコース」に選ばれ、世界中からサイクリストが訪れます。愛媛県の中村時広知事自らが先頭に立ち、ブルーラインの整備やレンタサイクル、サイクルオアシスなど世界最高水準の環境を整備しました。`
+          },
+          {
+            id: "shimonada-station",
+            title: "夕暮れの奇跡：JR下灘駅 & 観光列車",
+            tag: "日本一海に近い駅",
+            summary: "ホームの目の前に広がる伊予灘の大パノラマ。夕日が茜色に海を染める時間、世界中から旅人が集うノスタルジーの極み。",
+            image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+            fullText: `JR予讃線の「下灘（しもなだ）駅」は、かつて「日本で一番海に近い駅」として青春18きっぷのポスターや数々の映画・ドラマ・アニメの舞台となった伝説の無人駅です。
+屋根とベンチだけの素朴なホームに座ると、視界を遮るもののない瀬戸内海（伊予灘）が目の前いっぱいに広がります。
+特に夕暮れ時、黄金色の太陽が海へと沈み、空と海が茜色から紫色のグラデーションに染まる瞬間は言葉を失う美しさ。
+また、松山駅から運行されている本格観光列車「伊予灘ものがたり」に乗れば、地元食材の美食を味わいながらこの絶景車窓を満喫できます。`
+          },
+          {
+            id: "osettai-culture",
+            title: "四国遍路と「お接待」の精神",
+            tag: "1200年息づく無償の愛",
+            summary: "弘法大師ゆかりの四国八十八ヶ所霊場。巡礼者（お遍路さん）を家族のように温かく迎える、愛媛が誇る心の文化。",
+            image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80",
+            fullText: `四国八十八ヶ所霊場は、弘法大師（空海）の足跡をたどる1200年以上の歴史を持つ巡礼路です。
+松山市内には、道後温泉の守り寺として知られる「石手寺（第51番）」や「浄瑠璃寺（第46番）」、「八坂寺（第47番）」など由緒ある名刹が点在しています。
+この遍路文化の根底にあるのが「お接待（おせったい）」と呼ばれる無償の善意です。道行く見ず知らずの巡礼者に、地元の人々がお茶やみかん、お菓子を差し出し、道中の無事を祈ります。「見返りを求めず、旅人を慈しむ」この温かい心こそが、松山・愛媛の真髄です。`
           }
         ]
       },
@@ -304,7 +368,9 @@ const siteData = {
     siteTitle: "MATSUYAMA DISCOVERY",
     siteSubtitle: "Where 3,000 Years of Sacred Onsen, Literature, Vivid Art & Citrus Splendor Converge",
     heroBadge: "The Official Global Portal to Matsuyama & Ehime, Japan",
-    heroDesc: "From Dogo Onsen—Japan’s oldest hot spring with 3,000 years of myth—to the birthplace of modern Haiku, Mika Ninagawa's kaleidoscopic floral art, the world's premier citrus kingdom, and the battle of two iconic Sea Bream rice bowls. Uncover the untold stories of Matsuyama.",
+    heroHeading: "Discover the Depths of Matsuyama & Ehime.",
+    heroSubheading: "From 3,000-Year Ancient Springs to 'Clouds Above the Hill' & the Inland Sea",
+    heroDesc: "From Dogo Onsen—Japan's oldest spa—to modern literary icons Natsume Soseki and Masaoka Shiki, the epic Meiji saga 'Clouds Above the Hill', Mika Ninagawa's floral onsen art, Shimanami Kaido cycling, and the battle of two Sea Bream bowls. Step into an unforgettable Japanese odyssey.",
     quickStats: [
       { label: "Dogo Onsen History", value: "3,000+", unit: "Years" },
       { label: "Public Haiku Postboxes", value: "90+", unit: "Locations" },
@@ -312,14 +378,54 @@ const siteData = {
       { label: "Matsuyama Castle", value: "1602", unit: "Founded" }
     ],
     tabs: [
+      { id: "sakanoue", icon: "cloud", label: "Clouds Above the Hill", subtitle: "Akiyama Brothers, Shiki & Tadao Ando" },
       { id: "history", icon: "castle", label: "History & Legends", subtitle: "Dogo Onsen, Soseki, Shiki & Castle" },
       { id: "haiku", icon: "feather", label: "Haiku & Words", subtitle: "City of Poetry, Shiki Masaoka, Haiku Koshien" },
-      { id: "art", icon: "palette", label: "Art & Creativity", subtitle: "Mika Ninagawa, Dogo Onsenart, Tadao Ando" },
+      { id: "art", icon: "palette", label: "Art & Crafts", subtitle: "Mika Ninagawa, Tobe Ware & Imabari Towels" },
       { id: "citrus", icon: "citrus", label: "Citrus Kingdom", subtitle: "Mikan, Beni Madonna, Juice from the Tap" },
-      { id: "fishery", icon: "fish", label: "Seafood & Flavors", subtitle: "Uwajima vs Matsuyama Taimeshi, Jakoten" },
+      { id: "fishery", icon: "fish", label: "Seafood & Flavors", subtitle: "Uwajima vs Matsuyama Taimeshi, Nabeyaki Udon" },
+      { id: "shimanami", icon: "compass", label: "Scenic Wonders", subtitle: "Shimanami Cycling, Shimonada Station & Osettai" },
       { id: "trivia", icon: "sparkles", label: "Surprising Trivia", subtitle: "Shiki's Baseball & The Governor Kabuki Rumor" }
     ],
     sections: {
+      sakanoue: {
+        title: "Clouds Above the Hill: The Dawn of Modern Japan",
+        desc: "Ryotaro Shiba's epic saga of three Matsuyama friends who helped shape modern history: the Akiyama brothers and poet Masaoka Shiki.",
+        items: [
+          {
+            id: "akiyama-brothers",
+            title: "The Indomitable Akiyama Brothers",
+            tag: "Matsuyama's Modern Heroes",
+            summary: "Yoshifuru, father of Japanese cavalry, and Saneyuki, master naval strategist behind the Battle of Tsushima. Men of pure spirit who shunned fame.",
+            image: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
+            fullText: `[Yoshifuru Akiyama (Elder Brother)]:
+Born into a destitute Matsuyama samurai family, Yoshifuru studied cavalry tactics in France and built Japan's modern horse cavalry from scratch.
+In the Russo-Japanese War, his outnumbered units famously checked the fearsome Cossacks. Promoted to full General, he famously declined the supreme rank of Field Marshal after retirement. Instead, he returned to Matsuyama to serve as principal of a modest local middle school (now Matsuyama Kita High School), teaching young students to live with humble integrity for the public good.
+
+[Saneyuki Akiyama (Younger Brother)]:
+Brilliant and mischievous, Saneyuki studied in Tokyo alongside poet Masaoka Shiki before entering the Naval Academy, graduating at the top of his class.
+During the Battle of Tsushima in 1905, he drafted the master tactical plan ('Seven-stage defense') that annihilated the Russian Baltic Fleet. His iconic telegram to the Emperor—'The weather today is clear but the waves are high'—remains one of the most celebrated prose lines in Japanese history.`
+          },
+          {
+            id: "sakanoue-museum",
+            title: "Saka no Ue no Kumo Museum (Tadao Ando)",
+            tag: "Pritzker-Winning Architecture",
+            summary: "A pure triangular glass pavilion beneath Matsuyama Castle. Its column-free floating staircase symbolizes striving ever upward toward the clouds.",
+            image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+            fullText: `Designed by world-acclaimed architect Tadao Ando and opened in 2007, the Saka no Ue no Kumo Museum harmonizes seamlessly with the forested slopes of Mt. Katsuyama.
+The building adopts an acute triangular blueprint. Inside, visitors ascend a dramatic column-free ramped staircase suspended in mid-air—architecturally embodying the characters' relentless climb toward their dreams above the hill. It houses manuscripts, naval artifacts, and immersive exhibits.`
+          },
+          {
+            id: "bansuiso",
+            title: "Bansuiso Villa",
+            tag: "National Important Cultural Property",
+            summary: "Built in 1922, Ehime's oldest French Renaissance-style palace, constructed by Count Sadakoto Hisamatsu, descendant of the Matsuyama Clan.",
+            image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+            fullText: `Standing gracefully beside the Saka no Ue no Kumo Museum among lush greenery, Bansuiso was built in 1922 by Count Sadakoto Hisamatsu, a high-ranking military attaché in France and descendant of the Lord of Matsuyama.
+Designed by Shichiro Kiko in pure French Neo-Renaissance style, it boasts imported stained glass, crystal chandeliers, and carved marble fireplaces. It hosted the Showa Emperor during his crown prince days and remains an architectural jewel of Shikoku.`
+          }
+        ]
+      },
       history: {
         title: "3,000 Years of Timeless Springs, Feudal Castle & Literature",
         desc: "Bathe in holy waters praised by ancient gods, step into Meiji literary masterworks, and gaze over the Inland Sea from an original samurai keep.",
@@ -354,15 +460,6 @@ Though the novel cheekily roasted Matsuyama's eccentricities and called the stea
             fullText: `Begun in 1602 by samurai warlord Yoshiaki Kato, Matsuyama Castle took 25 years to complete.
 It is celebrated as one of only twelve castles across Japan retaining their authentic pre-Edo wooden main keeps. It features a complex 'Renritsushiki' (connected) structure linking main and sub keeps via defensive turrets.
 Twenty-one structures inside the grounds are designated National Important Cultural Properties. Ascending via modern cable car or single-chair open lift delivers visitors into defensive labyrinth gates and panoramic vistas spanning the emerald Seto Inland Sea.`
-          },
-          {
-            id: "saka-no-ue-no-kumo",
-            title: "Clouds Above the Hill ('Saka no Ue no Kumo')",
-            tag: "Epic Modern Epic by Ryotaro Shiba",
-            summary: "The legendary lives of brothers Yoshifuru and Saneyuki Akiyama with Masaoka Shiki, who helped steer Japan into the modern global era.",
-            image: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
-            fullText: `Ryotaro Shiba's best-selling historical epic 'Clouds Above the Hill' chronicles three boys raised in impoverished samurai homes in Matsuyama: Yoshifuru Akiyama (father of Japanese cavalry), his younger brother Saneyuki Akiyama (master strategist of the Battle of Tsushima), and their brilliant classmate Masaoka Shiki.
-The Saka no Ue no Kumo Museum, masterminded by world-renowned architect Tadao Ando, houses artifacts documenting their relentless pursuit of knowledge during the Meiji dawn.`
           }
         ]
       },
@@ -401,8 +498,8 @@ Teams present their verses on assigned themes, followed by intense cross-examina
         ]
       },
       art: {
-        title: "Where Ancient Bathing Meets Daring Avant-Garde Art",
-        desc: "From Mika Ninagawa's kaleidoscopic floral takeovers to Tadao Ando's floating geometric concrete.",
+        title: "Where Ancient Bathing Meets Daring Avant-Garde Art & Crafts",
+        desc: "From Mika Ninagawa's kaleidoscopic floral takeovers to 240-year-old Tobe porcelain and world-renowned Imabari towels.",
         items: [
           {
             id: "ninagawa-dogo",
@@ -416,30 +513,22 @@ During Dogo Onsen Honkan's extensive conservation works, Ninagawa wrapped the co
 Inside neighboring ryokan inns, she designed fully immersive artistic guest suites saturated with luminous photography, and covered the courtyard of Asuka-no-Yu with an open-air kaleidoscope of colors.`
           },
           {
-            id: "dogo-onsenart",
-            title: "Dogo Onsenart & Street-Walking Exhibitions",
-            tag: "Pioneering Spa Biennial",
-            summary: "Yayoi Kusama, Nobuyoshi Araki, Shinro Ohtake and others reimagined onsen culture into interactive open-air galleries.",
-            image: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80",
-            fullText: `Dogo Onsenart proved to the world that an ancient onsen town could serve as a living canvas for daring contemporary art.
-Visitors stroll dressed in traditional cotton yukata robes and wooden geta clogs, stumbling upon polka-dot hotel rooms by Yayoi Kusama, illuminated street lanterns by Nobuyoshi Araki, and striking public sculptures tucked into footbath pavilions.`
+            id: "tobeyaki-craft",
+            title: "Tobe Ware: 240 Years of Porcelain Art",
+            tag: "Traditional Craft of Japan",
+            summary: "Robust white porcelain hand-painted with deep indigo (Gosu) arabesque motifs. Celebrated by Mingei masters for its supreme functional beauty.",
+            image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80",
+            fullText: `Founded in 1775 under the Matsuyama daimyo, Tobe Ware is known for its reassuring weight, smooth white glaze, and hand-brushed indigo patterns.
+Virtually indestructible for daily kitchen use, it was extolled by folk-craft pioneer Yanagi Soetsu and British potter Bernard Leach as the pinnacle of practical Japanese elegance.`
           },
           {
-            id: "ando-architecture",
-            title: "Tadao Ando's Architectural Masterpiece",
-            tag: "Saka no Ue no Kumo Museum",
-            summary: "A pure triangular glass pavilion featuring a column-free floating staircase ascending into lush castle woods.",
-            image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
-            fullText: `Nestled into the verdant hillside beneath Matsuyama Castle, the Saka no Ue no Kumo Museum was designed by Pritzker Prize laureate Tadao Ando.
-Constructed with two superimposed triangles, the interior features an unprecedented unsupported ramp that spirals upward without central pillars. The stark, velvety exposed concrete dialogues harmoniously with reflective glass panes mirroring the surrounding forest.`
-          },
-          {
-            id: "botchan-theater",
-            title: "Botchan Theater & Musical Culture",
-            tag: "Regional Performing Arts",
-            summary: "Japan's only dedicated regional musical theater producing year-round professional productions inspired by Shikoku's lore.",
-            image: "https://images.unsplash.com/photo-1469488865564-c2de10f69f96?auto=format&fit=crop&w=800&q=80",
-            fullText: `Located in neighboring Toon City, the Botchan Theater is a rare cultural gem in Japan, mounting year-round professional Broadway-style musical productions based on historical figures, local folklore, and literary tales of Ehime and Shikoku. Matsuyama itself boasts a passionate musical community with symphony orchestras, choral festivals, and wind ensemble excellence.`
+            id: "imabari-towel",
+            title: "Imabari Towel: Global Benchmark of Softness",
+            tag: "Master Craftsmanship",
+            summary: "Woven using ultra-pure snowmelt spring waters from Mt. Ishizuchi. Certified by the uncompromising '5-second sink' test.",
+            image: "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=800&q=80",
+            fullText: `For over 120 years, Imabari in northern Ehime has reigned as Japan's towel capital.
+Bleached using ultra-soft waters from the Sosha River, the cotton retains unrivaled fluffiness and instant absorbency. Under creative director Kashiwa Sato, Imabari Towel achieved worldwide acclaim as a premier luxury brand featured in leading international hotels.`
           }
         ]
       },
@@ -510,14 +599,47 @@ A whole, lightly grilled sea bream is placed into a clay pot with rice, kombu ke
 The first bite yields a delightful crunch from tiny calcium-rich bones and a burst of deep umami. Locals love it lightly toasted over charcoal with grated ginger and a dash of local soy sauce alongside dry sake.`
           },
           {
-            id: "uwakai-bounty",
-            title: "Jewels of the Deep: Sma Tuna, Swordfish & Akoya Pearls",
-            tag: "Treasures of Uwa Sea",
-            summary: "The rare cultured 'Himetakami' fish praised as 'all-fat tuna', skewered ribbonfish, and world-class Uwajima pearls.",
+            id: "nabeyaki-udon",
+            title: "Matsuyama Nabeyaki Udon & Ichiroku Tart",
+            tag: "Beloved Sweet & Savory Classics",
+            summary: "Steaming aluminum pots bubbling with sweetly savory dashi noodles, paired with historical Yuzu sponge roll tarts.",
+            image: "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=800&q=80",
+            fullText: `In retro alleyways of Matsuyama, locals gather at Kotori or Asahi for Nabeyaki Udon—soft noodles served in bubbling vintage aluminum pots with tender beef and sweet dashi extracted from Seto dried sardines.
+For dessert, Ichiroku Tart originated in the 1600s when Matsuyama's daimyo adopted European sponge cake rolling techniques from Portuguese traders, wrapping red bean paste infused with aromatic Ehime Yuzu citrus.`
+          }
+        ]
+      },
+      shimanami: {
+        title: "Scenic Wonders of the Sea & The Spirit of 'Osettai'",
+        desc: "From the world's greatest island-hopping bike trail to nostalgic sunset stations and 1,200 years of pilgrimage kindness.",
+        items: [
+          {
+            id: "shimanami-cycling",
+            title: "Setouchi Shimanami Kaido: Global Cycling Paradise",
+            tag: "CNN Top 7 Worldwide Route",
+            summary: "A 70km aerial sea trail connecting Imabari to Onomichi over 6 spectacular suspension bridges spanning emerald island vistas.",
             image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-            fullText: `With dramatic ria coastlines and oxygen-rich currents, Ehime's seas produce extraordinary seafood.
-The prize catch is 'Iyo no Himetakami'—farm-raised Sma mackerel-tuna celebrated for meat so decadent it is dubbed '100% otoro'.
-Along the coast, silver ribbonfish (tachiuo) is wound around green bamboo and grilled over binchotan charcoal. Furthermore, Uwajima leads all of Japan in the cultivation of luminous Akoya cultured pearls.`
+            fullText: `The Shimanami Kaido is the only route in Japan where cyclists and pedestrians can traverse massive international expressway suspension bridges across islands.
+Ranked among the world's 7 best cycling trails by CNN, it offers uninterrupted panoramic sea vistas. Governor Tokihiro Nakamura personally spearheaded its international bike infrastructure with dedicated blue cycling lanes, luggage transfer, and waterfront cafes.`
+          },
+          {
+            id: "shimonada-station",
+            title: "Miracle at Sunset: JR Shimonada Station",
+            tag: "Closest Station to the Sea",
+            summary: "A solitary wooden bench overlooking the endless horizon of the Iyo Sea. A pilgrimage for anime fans, photographers, and dreamers.",
+            image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+            fullText: `Perched right above the waves on the JR Yosan Line, Shimonada is Japan's most cinematic unstaffed rural station.
+When golden hour arrives, the sun sinks straight into the sparkling sea, painting the sky in deep amber and violet hues. Visitors can also board the luxury sightseeing train 'Iyo-Nada Monogatari' to savor local delicacies while gazing at this coastal spectacle.`
+          },
+          {
+            id: "osettai-culture",
+            title: "The 88 Temple Pilgrimage & 'Osettai'",
+            tag: "1,200 Years of Grace",
+            summary: "Following Kobo Daishi's sacred path. The heartwarming tradition where locals gift food and tea to passing pilgrims with zero expectation of return.",
+            image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80",
+            fullText: `Circling Shikoku Island, the 88-temple Henro pilgrimage spans 1,200 years of spiritual history.
+Matsuyama is home to famous temples including Ishite-ji (No. 51) and Joruri-ji (No. 46).
+The heart of this journey is 'Osettai'—the unconditional custom where local residents offer sweet mikan, hot tea, or shelter to white-robed pilgrims. This gentle, selfless hospitality embodies the soul of Matsuyama and Ehime.`
           }
         ]
       },
@@ -582,17 +704,17 @@ This open-hearted humor and ability to laugh at oneself perfectly encapsulates t
       }
     },
     interactive: {
-      quizTitle: "Shiki Masaoka's Baseball Terminology Quiz",
-      quizDesc: "Guess which modern baseball terms were coined and translated into Japanese by poet Shiki Masaoka!",
-      haikuGenTitle: "Compose Your Matsuyama Haiku",
-      haikuGenDesc: "Mix and match poetic motifs of Dogo Onsen, Mikan citrus, and the Castle to create an authentic verse.",
-      taimeshiTitle: "Which Taimeshi Matches Your Soul?",
-      taimeshiDesc: "Take the 10-second test to find your ultimate Sea Bream bowl style."
+      quizTitle: "正岡子規の「ベースボール」訳語クイズ",
+      quizDesc: "子規が考案・紹介した野球用語を当ててみよう！",
+      haikuGenTitle: "あなただけの「松山・愛媛の句」を詠む",
+      haikuGenDesc: "道後温泉、みかん、城、海の情景を組み合わせて一句詠んでみましょう。",
+      taimeshiTitle: "あなたの好みはどっち？鯛めし診断",
+      taimeshiDesc: "今日のあなたの気分にぴったりの愛媛の鯛めしを提案します。"
     },
     footer: {
       about: "MATSUYAMA & EHIME DISCOVERY PORTAL",
-      desc: "An open global discovery project celebrating the 3,000-year history, avant-garde art, citrus richness, and surprising cultural heritage of Matsuyama & Ehime, Japan.",
-      githubNote: "Ready for GitHub. Open for global contributions, translations, and cultural exchanges.",
+      desc: "本サイトは、愛媛県松山市および愛媛が誇る歴史・文学・現代アート・食文化・意外な魅力を全世界へ広く紹介するために制作されたオープンプロジェクトです。",
+      githubNote: "GitHub公開対応レポジトリ。世界中からのコントリビューションや翻訳を歓迎します。",
       copyright: "© MATSUYAMA DISCOVERY PROJECT. Crafted with pride for Matsuyama & Ehime."
     }
   }
@@ -600,17 +722,18 @@ This open-hearted humor and ability to laugh at oneself perfectly encapsulates t
 
 // Application State
 let currentLang = 'ja';
-let currentTab = 'history';
+let currentTab = 'sakanoue'; // Default to the newly requested Saka no Ue no Kumo feature!
 
 // Icon Map (Lucide SVGs)
 const icons = {
+  cloud: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>`,
   castle: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 20v-7.5a2 2 0 0 0-2-2h-3v-4a2 2 0 0 0-2-2h-2V2.5a.5.5 0 0 0-1 0V4.5H9a2 2 0 0 0-2 2v4H4a2 2 0 0 0-2 2V20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2Z"/><path d="M18 10.5V8a1 1 0 0 0-1-1h-2"/><path d="M7 8a1 1 0 0 0-1 1v1.5"/><path d="M10 14h4v8h-4z"/></svg>`,
   feather: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg>`,
   palette: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>`,
   citrus: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>`,
   fish: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 12c.94-3.46 4.94-6 8.5-6 3.56 0 6.06 2.54 7 6-.94 3.47-3.44 6-7 6s-7.56-2.53-8.5-6Z"/><path d="M18 12v.5"/><path d="M16 17.93a9.77 9.77 0 0 1 0-11.86"/><path d="M7 10.67C7 8 5.58 5.97 2.73 4 3.1 8.5 2.1 12 1 16c2.5-1 4.5-2.5 6-5.33Z"/></svg>`,
+  compass: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>`,
   sparkles: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>`,
-  globe: `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
   arrowRight: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>`,
   close: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>`
 };
@@ -626,7 +749,7 @@ function initApp() {
   setupEventListeners();
 }
 
-// Render Navbar
+// Render Navbar (Bright & Clean)
 function renderNavbar() {
   const navContainer = document.getElementById('navbar-container');
   if (!navContainer) return;
@@ -634,29 +757,29 @@ function renderNavbar() {
   const data = siteData[currentLang];
   navContainer.innerHTML = `
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <div class="flex items-center space-x-3 cursor-pointer" onclick="switchTab('history')">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 via-orange-500 to-rose-500 flex items-center justify-center text-white shadow-lg shadow-orange-500/30">
+      <div class="flex items-center space-x-3 cursor-pointer" onclick="switchTab('sakanoue')">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 via-orange-500 to-rose-500 flex items-center justify-center text-white shadow-md shadow-orange-500/20">
           <span class="font-display font-bold text-xl">M</span>
         </div>
         <div>
-          <span class="font-display font-bold tracking-wider text-xl text-white">MATSUYAMA</span>
-          <span class="text-xs uppercase tracking-widest text-orange-400 block font-semibold">Discovery Portal</span>
+          <span class="font-display font-bold tracking-wider text-xl text-slate-900">MATSUYAMA</span>
+          <span class="text-xs uppercase tracking-widest text-orange-600 block font-semibold">Discovery Portal</span>
         </div>
       </div>
 
-      <!-- Language Selector & Quick Links -->
+      <!-- Language Selector & GitHub Link -->
       <div class="flex items-center space-x-3">
-        <div class="flex bg-slate-800/80 p-1 rounded-full border border-slate-700/60 shadow-inner">
-          <button id="btn-lang-ja" onclick="setLanguage('ja')" class="px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 ${currentLang === 'ja' ? 'bg-orange-500 text-white shadow' : 'text-slate-400 hover:text-white'}">
+        <div class="flex bg-slate-100 p-1 rounded-full border border-slate-200 shadow-sm">
+          <button id="btn-lang-ja" onclick="setLanguage('ja')" class="px-3.5 py-1 text-xs font-bold rounded-full transition-all duration-200 ${currentLang === 'ja' ? 'bg-orange-500 text-white shadow' : 'text-slate-600 hover:text-slate-900'}">
             日本語
           </button>
-          <button id="btn-lang-en" onclick="setLanguage('en')" class="px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 ${currentLang === 'en' ? 'bg-orange-500 text-white shadow' : 'text-slate-400 hover:text-white'}">
+          <button id="btn-lang-en" onclick="setLanguage('en')" class="px-3.5 py-1 text-xs font-bold rounded-full transition-all duration-200 ${currentLang === 'en' ? 'bg-orange-500 text-white shadow' : 'text-slate-600 hover:text-slate-900'}">
             English
           </button>
         </div>
 
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hidden sm:flex items-center space-x-2 text-xs font-medium text-slate-300 hover:text-orange-400 px-3 py-1.5 rounded-lg border border-slate-700 hover:border-orange-500/50 transition-colors">
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hidden sm:flex items-center space-x-2 text-xs font-semibold text-slate-700 hover:text-orange-600 px-3.5 py-1.5 rounded-lg border border-slate-300 hover:border-orange-500/50 bg-white transition-colors shadow-sm">
+          <svg class="w-4 h-4 fill-current text-slate-800" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
           <span>GitHub Ready</span>
         </a>
       </div>
@@ -664,39 +787,39 @@ function renderNavbar() {
   `;
 }
 
-// Render Hero Section
+// Render Hero Section (Bright, Warm & Premium)
 function renderHero() {
   const heroContainer = document.getElementById('hero-container');
   if (!heroContainer) return;
 
   const data = siteData[currentLang];
   heroContainer.innerHTML = `
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 text-center z-10">
-      <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-semibold uppercase tracking-wider mb-6 animate-pulse">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center z-10">
+      <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-orange-100/90 border border-orange-200 text-orange-700 text-xs font-bold uppercase tracking-wider mb-6 shadow-sm">
         <span>🇯🇵 Matsuyama & Ehime, Japan</span>
-        <span class="w-1.5 h-1.5 rounded-full bg-orange-400"></span>
+        <span class="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
         <span>${data.heroBadge}</span>
       </div>
 
       <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6">
-        <span class="block font-serif-jp text-slate-100">${currentLang === 'ja' ? '巡る、松山・愛媛の深層。' : 'Discover the Spirit of Matsuyama'}</span>
-        <span class="block text-gradient-orange text-3xl sm:text-5xl lg:text-6xl mt-2 font-display">
-          ${currentLang === 'ja' ? '3000年の古湯から、極彩色のアート・美味の海へ' : 'Where 3,000-Year Heritage Meets Vivid Art'}
+        <span class="block font-serif-jp text-slate-900">${data.heroHeading}</span>
+        <span class="block text-gradient-citrus text-2xl sm:text-4xl lg:text-5xl mt-3 font-serif-jp">
+          ${data.heroSubheading}
         </span>
       </h1>
 
-      <p class="max-w-3xl mx-auto text-base sm:text-lg text-slate-300 leading-relaxed font-light mb-12">
+      <p class="max-w-3xl mx-auto text-base sm:text-lg text-slate-600 leading-relaxed font-normal mb-12">
         ${data.heroDesc}
       </p>
 
-      <!-- Quick Metrics -->
+      <!-- Quick Metrics in Bright White Glass Cards -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
         ${data.quickStats.map(stat => `
-          <div class="glass-card rounded-2xl p-4 text-center">
-            <div class="text-2xl sm:text-3xl font-extrabold text-orange-400 font-display">
-              ${stat.value}<span class="text-xs sm:text-sm font-normal text-slate-400 ml-1">${stat.unit}</span>
+          <div class="glass-card-light rounded-2xl p-4 text-center">
+            <div class="text-2xl sm:text-3xl font-extrabold text-orange-600 font-display">
+              ${stat.value}<span class="text-xs sm:text-sm font-semibold text-slate-500 ml-1">${stat.unit}</span>
             </div>
-            <div class="text-xs text-slate-300 mt-1 font-medium">${stat.label}</div>
+            <div class="text-xs text-slate-600 mt-1 font-semibold">${stat.label}</div>
           </div>
         `).join('')}
       </div>
@@ -704,7 +827,7 @@ function renderHero() {
   `;
 }
 
-// Render Tabs Navigation
+// Render Tabs Navigation (Light Theme)
 function renderTabs() {
   const tabsContainer = document.getElementById('tabs-container');
   if (!tabsContainer) return;
@@ -712,20 +835,20 @@ function renderTabs() {
   const data = siteData[currentLang];
   tabsContainer.innerHTML = `
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex overflow-x-auto pb-4 gap-2 sm:gap-3 scrollbar-none justify-start md:justify-center">
+      <div class="flex overflow-x-auto pb-2 gap-2 sm:gap-3 scrollbar-none justify-start md:justify-center">
         ${data.tabs.map(tab => {
           const isActive = tab.id === currentTab;
           return `
             <button onclick="switchTab('${tab.id}')" 
-              class="flex-shrink-0 flex items-center space-x-2.5 px-4 py-3 rounded-xl border text-sm font-semibold transition-all duration-300 ${
+              class="flex-shrink-0 flex items-center space-x-2.5 px-4 py-3 rounded-xl border text-sm font-bold transition-all duration-300 ${
                 isActive 
                   ? 'active-tab' 
-                  : 'bg-slate-800/60 text-slate-300 border-slate-700/80 hover:bg-slate-850 hover:border-slate-600'
+                  : 'bg-white text-slate-700 border-slate-200 hover:bg-orange-50/60 hover:text-orange-600 hover:border-orange-200 shadow-sm'
               }">
-              <span class="${isActive ? 'text-white' : 'text-orange-400'}">${icons[tab.icon] || ''}</span>
+              <span class="${isActive ? 'text-white' : 'text-orange-500'}">${icons[tab.icon] || ''}</span>
               <div class="text-left">
                 <span class="block">${tab.label}</span>
-                <span class="block text-[10px] opacity-75 font-normal truncate max-w-[120px] sm:max-w-[180px]">${tab.subtitle}</span>
+                <span class="block text-[10px] opacity-80 font-normal truncate max-w-[130px] sm:max-w-[180px]">${tab.subtitle}</span>
               </div>
             </button>
           `;
@@ -748,10 +871,10 @@ function renderActiveSection() {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <h2 class="text-2xl sm:text-4xl font-extrabold text-white font-serif-jp mb-4">
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 font-serif-jp mb-3">
           ${section.title}
         </h2>
-        <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
           ${section.desc}
         </p>
       </div>
@@ -759,12 +882,12 @@ function renderActiveSection() {
       <!-- Cards Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         ${section.items.map(item => `
-          <div class="glass-card rounded-2xl overflow-hidden flex flex-col group cursor-pointer" onclick="openModal('${item.id}')">
+          <div class="glass-card-light rounded-2xl overflow-hidden flex flex-col group cursor-pointer" onclick="openModal('${item.id}')">
             <!-- Image with Overlay Tag -->
-            <div class="relative h-52 sm:h-60 overflow-hidden">
+            <div class="relative h-52 sm:h-60 overflow-hidden bg-slate-100">
               <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-              <span class="absolute top-4 left-4 bg-orange-500/90 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-md shadow-md">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+              <span class="absolute top-4 left-4 bg-orange-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
                 ${item.tag}
               </span>
             </div>
@@ -772,15 +895,15 @@ function renderActiveSection() {
             <!-- Content -->
             <div class="p-6 flex-1 flex flex-col justify-between">
               <div>
-                <h3 class="text-xl font-bold text-white group-hover:text-orange-400 transition-colors mb-2 font-serif-jp">
+                <h3 class="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-orange-600 transition-colors mb-2 font-serif-jp">
                   ${item.title}
                 </h3>
-                <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
                   ${item.summary}
                 </p>
               </div>
 
-              <div class="pt-4 border-t border-slate-700/50 flex items-center justify-between text-xs font-semibold text-orange-400">
+              <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-orange-600">
                 <span>${currentLang === 'ja' ? '詳しく読む・物語を開く' : 'Read Full Story'}</span>
                 <span class="transform transition-transform group-hover:translate-x-1">${icons.arrowRight}</span>
               </div>
@@ -795,35 +918,64 @@ function renderActiveSection() {
   `;
 }
 
-// Special Highlight Banners for Tab Context
+// Special Highlight Banners for Tab Context (Light Theme)
 function renderTabSpecialBanner(tabId) {
   const isJa = currentLang === 'ja';
 
-  if (tabId === 'trivia') {
+  if (tabId === 'sakanoue') {
     return `
-      <div class="mt-12 glass-panel rounded-3xl p-6 sm:p-10 border border-orange-500/30 relative overflow-hidden">
-        <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-rose-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="mt-12 bg-gradient-to-br from-amber-50 via-orange-50 to-sky-50 rounded-3xl p-6 sm:p-10 border border-orange-200/80 shadow-md">
         <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
           <div class="space-y-4 max-w-2xl">
-            <span class="inline-block bg-rose-500/20 text-rose-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+            <span class="inline-block bg-orange-600 text-white text-xs font-bold px-3.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
+              ${isJa ? '名言集：明治の若き群像' : 'Immortal Words'}
+            </span>
+            <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 font-serif-jp">
+              ${isJa ? '「本日天気晴朗ナレドモ浪高シ」' : '"The Weather Today is Clear, But the Waves Are High"'}
+            </h3>
+            <p class="text-slate-700 text-sm leading-relaxed">
+              ${isJa
+                ? '秋山真之が日露戦争・日本海海戦の直前に大本営へ打電したあまりにも有名な名文。視界良好で敵艦隊を捉えられる幸運と、波が高く小型艦の雷撃には困難を伴う戦況の厳しさをわずか14文字で表現した、文学と軍事の奇跡の融合です。'
+                : 'Saneyuki Akiyama’s legendary cable to the Imperial Headquarters just before the Battle of Tsushima. In just a few words, it captured both supreme clarity of vision to spot the fleet and the daunting fury of the high seas.'}
+            </p>
+          </div>
+          <div class="flex-shrink-0 bg-white p-5 rounded-2xl border border-orange-200 shadow-sm max-w-xs text-center">
+            <div class="text-3xl mb-2">☁️ ⚔️ 🏛️</div>
+            <div class="text-xs text-slate-500 uppercase tracking-widest font-bold">${isJa ? '松山の三偉人' : 'Three Visionaries'}</div>
+            <div class="text-sm font-bold text-slate-900 mt-1">秋山好古 (騎兵)</div>
+            <div class="text-sm font-bold text-slate-900">秋山真之 (作戦)</div>
+            <div class="text-sm font-bold text-orange-600">正岡子規 (文学)</div>
+            <div class="text-[11px] text-slate-500 mt-2 font-medium">${isJa ? '全員が松山城下の同郷の友' : 'All Lifelong Friends from Matsuyama'}</div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  if (tabId === 'trivia') {
+    return `
+      <div class="mt-12 bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-lg relative overflow-hidden">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+          <div class="space-y-4 max-w-2xl">
+            <span class="inline-block bg-rose-100 text-rose-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-rose-200">
               ${isJa ? '検証コラム：噂の真相' : 'Fact-Check Feature'}
             </span>
-            <h3 class="text-2xl sm:text-3xl font-bold text-white font-serif-jp">
+            <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 font-serif-jp">
               ${isJa ? '「中村知事は歌舞伎役者？」噂の真相まとめ' : 'Governor Tokihiro Nakamura & Kabuki: The Verdict'}
             </h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
+            <p class="text-slate-600 text-sm leading-relaxed">
               ${isJa 
                 ? '歌舞伎の名門「六代目 中村時蔵」氏との名前の酷似、大正時代から続く現役芝居小屋「内子座」の存在、そして知事の知的な存在感が合わさって生まれた愛媛の有名な勘違いネタ。実際は慶應大・三菱商事・松山市長を経て愛媛を導くリーダーです！'
                 : 'A widespread mix-up created by his uncanny name resemblance to prominent Kabuki star Nakamura Tokizo and Ehime’s famous historic Uchiko-za theater. Governor Tokihiro Nakamura is actually a dedicated public leader driving cycling and international tourism!'}
             </p>
           </div>
-          <div class="flex-shrink-0 bg-slate-800/80 p-5 rounded-2xl border border-slate-700 max-w-xs text-center">
+          <div class="flex-shrink-0 bg-slate-50 p-5 rounded-2xl border border-slate-200 max-w-xs text-center shadow-sm">
             <div class="text-3xl mb-2">🎭 ⇄ 🏛️</div>
-            <div class="text-xs text-slate-400 uppercase tracking-widest font-semibold">${isJa ? '名前の比較' : 'Name Comparison'}</div>
-            <div class="text-sm font-bold text-white mt-1">六代目 中村時蔵 (Kabuki)</div>
+            <div class="text-xs text-slate-500 uppercase tracking-widest font-bold">${isJa ? '名前の比較' : 'Name Comparison'}</div>
+            <div class="text-sm font-bold text-slate-800 mt-1">六代目 中村時蔵 (Kabuki)</div>
             <div class="text-xs text-slate-400">vs</div>
-            <div class="text-sm font-bold text-orange-400">中村時広 知事 (Governor)</div>
-            <div class="text-[11px] text-emerald-400 mt-2 font-medium">${isJa ? '謎が解けてスッキリ！' : 'Mystery Solved!'}</div>
+            <div class="text-sm font-bold text-orange-600">中村時広 知事 (Governor)</div>
+            <div class="text-[11px] text-emerald-600 mt-2 font-bold">${isJa ? '謎が解けてスッキリ！' : 'Mystery Solved!'}</div>
           </div>
         </div>
       </div>
@@ -832,22 +984,22 @@ function renderTabSpecialBanner(tabId) {
 
   if (tabId === 'citrus') {
     return `
-      <div class="mt-12 glass-panel rounded-3xl p-6 sm:p-10 border border-amber-500/30">
+      <div class="mt-12 bg-amber-50/80 rounded-3xl p-6 sm:p-10 border border-amber-200 shadow-sm">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-          <div class="p-4 rounded-xl bg-slate-800/50 border border-slate-700">
+          <div class="p-4 rounded-xl bg-white border border-amber-100 shadow-sm">
             <div class="text-3xl mb-2">🚰</div>
-            <div class="font-bold text-white mb-1">${isJa ? '蛇口スポット 1' : 'Tap Spot 1'}</div>
-            <div class="text-xs text-slate-300">${isJa ? '松山空港 1F到着ロビー / 2F出発ロビー' : 'Matsuyama Airport (1F & 2F)'}</div>
+            <div class="font-bold text-slate-900 mb-1">${isJa ? '蛇口スポット 1' : 'Tap Spot 1'}</div>
+            <div class="text-xs text-slate-600">${isJa ? '松山空港 1F到着ロビー / 2F出発ロビー' : 'Matsuyama Airport (1F & 2F)'}</div>
           </div>
-          <div class="p-4 rounded-xl bg-slate-800/50 border border-slate-700">
+          <div class="p-4 rounded-xl bg-white border border-amber-100 shadow-sm">
             <div class="text-3xl mb-2">🍊</div>
-            <div class="font-bold text-white mb-1">${isJa ? '蛇口スポット 2' : 'Tap Spot 2'}</div>
-            <div class="text-xs text-slate-300">${isJa ? '松山城ロープウェイ街「10 FACTORY」' : '10 FACTORY (Castle Ropeway Street)'}</div>
+            <div class="font-bold text-slate-900 mb-1">${isJa ? '蛇口スポット 2' : 'Tap Spot 2'}</div>
+            <div class="text-xs text-slate-600">${isJa ? '松山城ロープウェイ街「10 FACTORY」' : '10 FACTORY (Castle Ropeway Street)'}</div>
           </div>
-          <div class="p-4 rounded-xl bg-slate-800/50 border border-slate-700">
+          <div class="p-4 rounded-xl bg-white border border-amber-100 shadow-sm">
             <div class="text-3xl mb-2">♨️</div>
-            <div class="font-bold text-white mb-1">${isJa ? '蛇口スポット 3' : 'Tap Spot 3'}</div>
-            <div class="text-xs text-slate-300">${isJa ? '道後温泉観光案内所・えひめ愛顔の観光物産館' : 'Dogo Onsen Info Center'}</div>
+            <div class="font-bold text-slate-900 mb-1">${isJa ? '蛇口スポット 3' : 'Tap Spot 3'}</div>
+            <div class="text-xs text-slate-600">${isJa ? '道後温泉観光案内所・えひめ愛顔の観光物産館' : 'Dogo Onsen Info Center'}</div>
           </div>
         </div>
       </div>
@@ -857,7 +1009,7 @@ function renderTabSpecialBanner(tabId) {
   return '';
 }
 
-// Render Interactive Features Section
+// Render Interactive Features Section (Light Theme)
 function renderInteractiveSection() {
   const container = document.getElementById('interactive-container');
   if (!container) return;
@@ -868,51 +1020,51 @@ function renderInteractiveSection() {
   container.innerHTML = `
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="text-center max-w-2xl mx-auto mb-12">
-        <span class="text-orange-400 text-xs font-bold uppercase tracking-widest block mb-2">
+        <span class="text-orange-600 text-xs font-bold uppercase tracking-widest block mb-2">
           ${isJa ? '体験型ディスカバリー' : 'Interactive Discovery'}
         </span>
-        <h2 class="text-3xl font-extrabold text-white font-serif-jp">
+        <h2 class="text-3xl font-extrabold text-slate-900 font-serif-jp">
           ${isJa ? '松山・愛媛をもっと楽しむインタラクティブ体験' : 'Engage with Matsuyama Culture'}
         </h2>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <!-- Feature 1: Baseball Terms Quiz -->
-        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+        <div class="glass-card-light rounded-2xl p-6 flex flex-col justify-between">
           <div>
-            <div class="w-10 h-10 rounded-xl bg-rose-500/20 text-rose-400 flex items-center justify-center font-bold mb-4">
+            <div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center font-bold mb-4 shadow-sm">
               ⚾
             </div>
-            <h3 class="text-lg font-bold text-white mb-2 font-serif-jp">${data.interactive.quizTitle}</h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4">${data.interactive.quizDesc}</p>
+            <h3 class="text-lg font-bold text-slate-900 mb-2 font-serif-jp">${data.interactive.quizTitle}</h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">${data.interactive.quizDesc}</p>
             <div id="quiz-question-box" class="space-y-2">
-              <p class="text-xs text-orange-300 font-semibold mb-2">Q: ${isJa ? '子規が名付け親となった次の言葉のうち、正しいのは？' : 'Which baseball term was translated into Japanese by Shiki?'}</p>
-              <button onclick="handleQuizAnswer(true)" class="w-full text-left text-xs bg-slate-800 hover:bg-orange-500/20 p-2.5 rounded-lg border border-slate-700 transition">
+              <p class="text-xs text-orange-700 font-semibold mb-2">Q: ${isJa ? '子規が名付け親となった次の言葉のうち、正しいのは？' : 'Which baseball term was translated into Japanese by Shiki?'}</p>
+              <button onclick="handleQuizAnswer(true)" class="w-full text-left text-xs bg-slate-50 hover:bg-orange-100/70 p-3 rounded-xl border border-slate-200 transition font-medium text-slate-800">
                 A. ${isJa ? '打者 (Batter)・走者 (Runner)・直球 (Fastball)' : 'Batter, Runner & Fastball'}
               </button>
-              <button onclick="handleQuizAnswer(false)" class="w-full text-left text-xs bg-slate-800 hover:bg-orange-500/20 p-2.5 rounded-lg border border-slate-700 transition">
+              <button onclick="handleQuizAnswer(false)" class="w-full text-left text-xs bg-slate-50 hover:bg-orange-100/70 p-3 rounded-xl border border-slate-200 transition font-medium text-slate-800">
                 B. ${isJa ? '審判 (Umpire)・捕手 (Catcher)' : 'Umpire & Pitcher'}
               </button>
-              <div id="quiz-result" class="text-xs mt-3 hidden"></div>
+              <div id="quiz-result" class="text-xs mt-3 hidden p-3 rounded-xl"></div>
             </div>
           </div>
         </div>
 
         <!-- Feature 2: Taimeshi Matchmaker -->
-        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+        <div class="glass-card-light rounded-2xl p-6 flex flex-col justify-between">
           <div>
-            <div class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold mb-4">
+            <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center font-bold mb-4 shadow-sm">
               🐟
             </div>
-            <h3 class="text-lg font-bold text-white mb-2 font-serif-jp">${data.interactive.taimeshiTitle}</h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4">${data.interactive.taimeshiDesc}</p>
+            <h3 class="text-lg font-bold text-slate-900 mb-2 font-serif-jp">${data.interactive.taimeshiTitle}</h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">${data.interactive.taimeshiDesc}</p>
             <div class="space-y-3">
-              <label class="text-xs text-slate-300 block">${isJa ? 'いまの気分は？' : 'What is your current craving?'}</label>
-              <select id="taimeshi-select" onchange="recommendTaimeshi()" class="w-full bg-slate-800 border border-slate-700 rounded-lg p-2.5 text-xs text-white">
+              <label class="text-xs text-slate-600 block font-medium">${isJa ? 'いまの気分は？' : 'What is your current craving?'}</label>
+              <select id="taimeshi-select" onchange="recommendTaimeshi()" class="w-full bg-slate-50 border border-slate-300 rounded-xl p-2.5 text-xs text-slate-800 font-medium focus:ring-2 focus:ring-orange-500">
                 <option value="raw">${isJa ? '新鮮な生魚と卵かけご飯を豪快にかき込みたい！' : 'Fresh raw sashimi bowl with rich egg yolk!'}</option>
                 <option value="steamed">${isJa ? '出汁が香るふっくら炊き込みご飯とおこげを味わいたい！' : 'Fragrant warm steamed rice with savory dashi & crust!'}</option>
               </select>
-              <div id="taimeshi-result" class="p-3 bg-sky-950/40 border border-sky-800/40 rounded-xl text-xs text-sky-200 mt-3">
+              <div id="taimeshi-result" class="p-3 bg-sky-50 border border-sky-200 rounded-xl text-xs text-sky-900 mt-3 font-medium">
                 ${isJa ? '👉 おすすめ：【宇和島鯛めし】新鮮な鯛刺身を特製タレと生卵で豪快に！' : '👉 Recommendation: [Uwajima Taimeshi] Sashimi in egg-dashi sauce!'}
               </div>
             </div>
@@ -920,18 +1072,18 @@ function renderInteractiveSection() {
         </div>
 
         <!-- Feature 3: Haiku Generator -->
-        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+        <div class="glass-card-light rounded-2xl p-6 flex flex-col justify-between">
           <div>
-            <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold mb-4">
+            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold mb-4 shadow-sm">
               ✍️
             </div>
-            <h3 class="text-lg font-bold text-white mb-2 font-serif-jp">${data.interactive.haikuGenTitle}</h3>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4">${data.interactive.haikuGenDesc}</p>
+            <h3 class="text-lg font-bold text-slate-900 mb-2 font-serif-jp">${data.interactive.haikuGenTitle}</h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">${data.interactive.haikuGenDesc}</p>
             <div class="space-y-3">
-              <div id="generated-haiku-box" class="p-4 bg-slate-850 border border-slate-700/80 rounded-xl text-center font-serif-jp text-sm text-amber-300">
-                ${isJa ? '湯の街に / みかん薫るや / 城の月' : 'Ancient steam ascends / Scent of sweet citrus floats high / Moon above castle'}
+              <div id="generated-haiku-box" class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl text-center font-serif-jp text-sm text-slate-800 font-semibold shadow-inner">
+                ${isJa ? '坂の上に / 雲湧く伊予の / 碧き空' : 'Above the green hill / White clouds rise into high skies / Blue Shikoku dawn'}
               </div>
-              <button onclick="generateRandomHaiku()" class="w-full py-2 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-semibold rounded-lg text-xs shadow-md transition">
+              <button onclick="generateRandomHaiku()" class="w-full py-2.5 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-bold rounded-xl text-xs shadow-md transition">
                 ${isJa ? '🎲 別の句を詠む' : '🎲 Generate Another Verse'}
               </button>
             </div>
@@ -942,24 +1094,24 @@ function renderInteractiveSection() {
   `;
 }
 
-// Render Footer
+// Render Footer (Light & Elegant)
 function renderFooter() {
   const footerContainer = document.getElementById('footer-container');
   if (!footerContainer) return;
 
   const data = siteData[currentLang];
   footerContainer.innerHTML = `
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-slate-200">
       <div class="flex flex-col md:flex-row items-center justify-between gap-6">
         <div>
-          <span class="font-display font-bold text-white tracking-wider text-lg">${data.footer.about}</span>
-          <p class="text-xs text-slate-400 mt-1 max-w-lg leading-relaxed">${data.footer.desc}</p>
+          <span class="font-display font-bold text-slate-900 tracking-wider text-lg">${data.footer.about}</span>
+          <p class="text-xs text-slate-600 mt-1 max-w-lg leading-relaxed">${data.footer.desc}</p>
         </div>
         <div class="flex flex-col sm:flex-row items-center gap-4">
-          <div class="text-xs text-orange-400/90 font-medium">${data.footer.githubNote}</div>
+          <div class="text-xs text-orange-600 font-bold">${data.footer.githubNote}</div>
         </div>
       </div>
-      <div class="mt-8 pt-8 border-t border-slate-850 text-center text-[11px] text-slate-500">
+      <div class="mt-8 pt-8 border-t border-slate-200 text-center text-xs text-slate-500">
         ${data.footer.copyright}
       </div>
     </div>
@@ -984,7 +1136,7 @@ function setLanguage(lang) {
   renderFooter();
 }
 
-// Detail Modal Logic
+// Detail Modal Logic (Light Theme)
 function openModal(itemId) {
   const modalBackdrop = document.getElementById('modal-backdrop');
   const modalBody = document.getElementById('modal-body');
@@ -1004,16 +1156,16 @@ function openModal(itemId) {
   if (!foundItem) return;
 
   modalBody.innerHTML = `
-    <div class="relative">
-      <button onclick="closeModal()" class="absolute top-4 right-4 z-20 p-2 bg-slate-900/80 text-slate-300 hover:text-white rounded-full border border-slate-700/60 transition">
+    <div class="relative bg-white rounded-2xl overflow-hidden shadow-2xl">
+      <button onclick="closeModal()" class="absolute top-4 right-4 z-20 p-2 bg-white/90 text-slate-700 hover:text-slate-900 rounded-full border border-slate-200 shadow-md transition">
         ${icons.close}
       </button>
 
-      <div class="relative h-64 sm:h-80 overflow-hidden rounded-t-2xl">
+      <div class="relative h-64 sm:h-80 overflow-hidden bg-slate-100">
         <img src="${foundItem.image}" alt="${foundItem.title}" class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
         <div class="absolute bottom-6 left-6 right-6">
-          <span class="inline-block bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2 shadow">
+          <span class="inline-block bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2 shadow">
             ${foundItem.tag}
           </span>
           <h2 class="text-2xl sm:text-3xl font-bold text-white font-serif-jp">${foundItem.title}</h2>
@@ -1021,8 +1173,8 @@ function openModal(itemId) {
       </div>
 
       <div class="p-6 sm:p-8 space-y-4 max-h-[60vh] overflow-y-auto">
-        <p class="text-orange-300 font-medium text-sm leading-relaxed">${foundItem.summary}</p>
-        <div class="text-slate-300 text-sm sm:text-base leading-relaxed whitespace-pre-line space-y-3 font-light">
+        <p class="text-orange-700 font-semibold text-sm leading-relaxed">${foundItem.summary}</p>
+        <div class="text-slate-700 text-sm sm:text-base leading-relaxed whitespace-pre-line space-y-3 font-normal">
           ${foundItem.fullText}
         </div>
       </div>
@@ -1047,9 +1199,11 @@ function handleQuizAnswer(isCorrect) {
   if (!res) return;
   res.classList.remove('hidden');
   if (isCorrect) {
-    res.innerHTML = `<span class="text-emerald-400 font-bold">🎉 正解！ Correct!</span><br><span class="text-slate-300">子規は「打者」「走者」「直球」「四球」「飛球」などを考案し、野球普及に尽力しました。</span>`;
+    res.className = "text-xs mt-3 p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900";
+    res.innerHTML = `<span class="text-emerald-700 font-bold">🎉 正解！ Correct!</span><br><span class="text-slate-700">子規は「打者」「走者」「直球」「四球」「飛球」などを考案し、野球普及に尽力しました。</span>`;
   } else {
-    res.innerHTML = `<span class="text-rose-400 font-bold">惜しい！ Try Again!</span><br><span class="text-slate-300">正解はAです。「打者」「走者」「直球」は子規が翻訳・考案した用語です。</span>`;
+    res.className = "text-xs mt-3 p-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-900";
+    res.innerHTML = `<span class="text-rose-700 font-bold">惜しい！ Try Again!</span><br><span class="text-slate-700">正解はAです。「打者」「走者」「直球」は子規が翻訳・考案した用語です。</span>`;
   }
 }
 
@@ -1074,6 +1228,7 @@ function recommendTaimeshi() {
 // Haiku Random Generator
 const haikus = {
   ja: [
+    "坂の上に / 雲湧く伊予の / 碧き空",
     "湯の街に / みかん薫るや / 城の月",
     "柿くへば / 鐘が鳴るなり / 法隆寺 (正岡子規)",
     "春や昔 / 十五万石の / 城下哉 (正岡子規)",
@@ -1082,6 +1237,7 @@ const haikus = {
     "球音の / 響く伊予路の / 秋高し"
   ],
   en: [
+    "Above the green hill / White clouds rise into high skies / Blue Shikoku dawn",
     "Ancient steam ascends / Scent of sweet citrus floats high / Moon above castle",
     "Eating a persimmon / The bell chimes far and wide / Horyuji Temple (Shiki)",
     "Spring of long ago / Castle town of samurai / Proud fifteen myriad stones (Shiki)",
