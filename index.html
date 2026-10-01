@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MATSUYAMA DISCOVERY | 巡る、松山・愛媛の深層</title>
+  <meta name="description" content="松山・愛媛の魅力を世界へ。道後温泉・正岡子規・夏目漱石・蜷川実花アート・柑橘王国・鯛めし・意外なトリビアを多言語で巡るポータルサイト。">
+  <meta property="og:title" content="MATSUYAMA DISCOVERY | 巡る、松山・愛媛の深層">
+  <meta property="og:description" content="3,000年の古湯から、極彩色のアート・美味の海へ。松山・愛媛の奥深い魅力を世界に発信。">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            slate: {
+              850: '#151e2e',
+              950: '#070b13',
+            },
+            citrus: {
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-orange-500 selection:text-white relative min-h-screen flex flex-col">
+
+  <!-- Ambient Artistic Background Glows (Ninagawa & Citrus Inspired) -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-orange-500/15 rounded-full blur-[128px]"></div>
+    <div class="absolute top-1/3 -right-40 w-96 h-96 bg-rose-500/15 rounded-full blur-[128px]"></div>
+    <div class="absolute bottom-10 left-1/4 w-[32rem] h-[32rem] bg-indigo-600/10 rounded-full blur-[140px]"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header id="navbar-container" class="sticky top-0 z-40 glass-panel border-b border-slate-800/80"></header>
+
+  <!-- Main Content -->
+  <main class="flex-grow z-10">
+    <!-- Hero Section -->
+    <section id="hero-container" class="relative"></section>
+
+    <!-- Category Tabs Navigation -->
+    <section id="tabs-container" class="sticky top-20 z-30 py-4 glass-panel border-y border-slate-800/60 shadow-lg"></section>
+
+    <!-- Active Category Content Section -->
+    <section id="active-section-container" class="transition-opacity duration-300"></section>
+
+    <!-- Interactive Experience Section -->
+    <section id="interactive-container" class="border-t border-slate-850 bg-slate-900/30"></section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer id="footer-container" class="z-10 bg-slate-950"></footer>
+
+  <!-- Detail Story Modal -->
+  <div id="modal-backdrop" class="modal-backdrop fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+    <div id="modal-body" class="modal-content glass-panel border border-slate-700/80 rounded-2xl w-full max-w-2xl overflow-hidden shadow-2xl relative">
+      <!-- Injected by JavaScript -->
+    </div>
+  </div>
+
+  <!-- Application Logic -->
+  <script src="./app.js"></script>
+</body>
+</html>
