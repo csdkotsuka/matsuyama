@@ -16,6 +16,7 @@ const siteData = {
       { label: "松山城・現存天守", value: "1602", unit: "年創架" }
     ],
     tabs: [
+      { id: "itineraries", icon: "map", label: "観光モデルコース", subtitle: "日帰り・1泊・2泊 Google Map付" },
       { id: "sakanoue", icon: "cloud", label: "坂の上の雲 特集", subtitle: "秋山兄弟・正岡子規・萬翠荘・安藤忠雄" },
       { id: "history", icon: "castle", label: "歴史と名城", subtitle: "道後温泉・松山城二之丸庭園・夏目漱石" },
       { id: "haiku", icon: "feather", label: "俳句と文化", subtitle: "ことばのまち・正岡子規・俳句甲子園" },
@@ -420,6 +421,7 @@ const siteData = {
       { label: "Matsuyama Castle", value: "1602", unit: "Founded" }
     ],
     tabs: [
+      { id: "itineraries", icon: "map", label: "Model Itineraries", subtitle: "Day Trip, 1-Night, 2-Nights with Google Maps" },
       { id: "sakanoue", icon: "cloud", label: "Clouds Above the Hill", subtitle: "Akiyama Brothers, Shiki & Tadao Ando" },
       { id: "history", icon: "castle", label: "History & Fortress", subtitle: "Dogo Onsen, Castle Garden, Soseki" },
       { id: "haiku", icon: "feather", label: "Haiku & Words", subtitle: "City of Poetry, Shiki Masaoka, Haiku Koshien" },
@@ -771,6 +773,12 @@ let currentTab = 'sakanoue';
 
 // Icon Map (Lucide SVGs)
 const icons = {
+  map: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>`,
+  externalLink: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`,
+  clock: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`,
+  pin: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>`,
+  car: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C2.1 10.7 2 10.9 2 11v5c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>`,
+  train: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="3" rx="2"/><path d="M4 11h16"/><path d="M12 3v8"/><path d="m8 19-2 3"/><path d="m18 22-2-3"/><circle cx="8" cy="15" r="1"/><circle cx="16" cy="15" r="1"/></svg>`,
   cloud: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>`,
   castle: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 20v-7.5a2 2 0 0 0-2-2h-3v-4a2 2 0 0 0-2-2h-2V2.5a.5.5 0 0 0-1 0V4.5H9a2 2 0 0 0-2 2v4H4a2 2 0 0 0-2 2V20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2Z"/><path d="M18 10.5V8a1 1 0 0 0-1-1h-2"/><path d="M7 8a1 1 0 0 0-1 1v1.5"/><path d="M10 14h4v8h-4z"/></svg>`,
   feather: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg>`,
@@ -812,8 +820,12 @@ function renderNavbar() {
         </div>
       </div>
 
-      <!-- Language Selector & GitHub Link -->
+      <!-- Language Selector, Itinerary Button & GitHub Link -->
       <div class="flex items-center space-x-3">
+        <button onclick="switchTab('itineraries')" class="hidden sm:inline-flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold text-orange-600 bg-orange-50 hover:bg-orange-100 border border-orange-200 transition shadow-sm">
+          <span>🗺️ ${currentLang === 'ja' ? '観光モデルコース' : 'Model Routes'}</span>
+        </button>
+
         <div class="flex bg-slate-100 p-1 rounded-full border border-slate-200 shadow-sm">
           <button id="btn-lang-ja" onclick="setLanguage('ja')" class="px-3.5 py-1 text-xs font-bold rounded-full transition-all duration-200 ${currentLang === 'ja' ? 'bg-orange-500 text-white shadow' : 'text-slate-600 hover:text-slate-900'}">
             日本語
@@ -868,6 +880,14 @@ function renderHero() {
           </div>
         `).join('')}
       </div>
+
+      <!-- Action Button to Itineraries -->
+      <div class="mt-10 flex flex-wrap justify-center gap-4">
+        <button onclick="switchTab('itineraries')" class="inline-flex items-center space-x-2.5 px-7 py-3.5 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-extrabold text-xs sm:text-sm shadow-xl shadow-orange-500/25 transition-all hover:scale-105">
+          <span>🗺️ ${currentLang === 'ja' ? '目的・日程別の観光モデルコースを見る（Google Mapルート付）' : 'Explore Model Itineraries (with Google Maps Routes)'}</span>
+          <span class="text-xs">→</span>
+        </button>
+      </div>
     </div>
   `;
 }
@@ -907,6 +927,11 @@ function renderTabs() {
 function renderActiveSection() {
   const sectionContainer = document.getElementById('active-section-container');
   if (!sectionContainer) return;
+
+  if (currentTab === 'itineraries' && typeof renderItinerariesSection === 'function') {
+    sectionContainer.innerHTML = renderItinerariesSection();
+    return;
+  }
 
   const data = siteData[currentLang];
   const section = data.sections[currentTab];
