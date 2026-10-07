@@ -25,6 +25,7 @@ const siteData = {
       { id: "citrus", icon: "citrus", label: "柑橘王国", subtitle: "みかん・紅まどんな・蛇口からみかんジュース" },
       { id: "fishery", icon: "fish", label: "水産・郷土の美味", subtitle: "鯛釜飯歴史・みかん鯛・じゃこ天・母恵夢" },
       { id: "scenic", icon: "compass", label: "四国山地＆海の絶景", subtitle: "石鎚山・瓶ヶ森UFOライン・亀老山・下灘駅・四国遍路" },
+      { id: "henro", icon: "temple", label: "四国八十八ヶ所 遍路", subtitle: "全図・日数・作法・名刹" },
       { id: "trivia", icon: "sparkles", label: "意外なトリビア", subtitle: "子規と野球・中村知事歌舞伎の真相・現代の話題" }
     ],
     sections: {
@@ -472,6 +473,158 @@ const siteData = {
           }
         ]
       },
+      henro: {
+        title: "四国八十八ヶ所霊場 特設ガイド：1200年の祈りと「同行二人」の世界へ",
+        desc: "弘法大師（空海）の足跡を辿る全長約1,400kmの巡礼路。そもそもの目的と心づもり、正式な参拝作法、巡拝用品の揃え方、そして一生に一度は訪れたい屈指の名刹・建築美まで完全網羅。",
+        items: [
+          {
+            id: "henro-philosophy",
+            title: "四国遍路の目的・意味と「同行二人」の心づもり",
+            tag: "1200年受け継がれる祈りの道",
+            summary: "なぜ人は四国を巡るのか？自分を見つめ直す4つの道場（発心・修行・菩提・涅槃）と、弘法大師が常に寄り添う「同行二人」、無償の愛「お接待」の精神。",
+            image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Gate_of_Ryozenji_Temple_in_Naruto%2C_Tokushima.jpg/1280px-Gate_of_Ryozenji_Temple_in_Naruto%2C_Tokushima.jpg",
+            fullText: `【そもそもの目的と歴史的背景】：
+四国八十八ヶ所霊場（お遍路）は、今から約1200年前、平安時代初期に真言宗の開祖・弘法大師（空海）が四国の山野で修行し、人々を救済するために開創したとされる巡礼路です。
+古くは修行僧が自らを極限の自然に置いて悟りを開く修験の道でしたが、江戸時代以降は一般の庶民にも広く開かれ、現世利益の祈願、先祖供養や病気平癒、そして人生の迷いを断ち切って「本当の自分を取り戻す再生の旅」として現代に受け継がれています。
+
+【四国全体がひとつの大曼荼羅：4つの道場】：
+四国4県は、仏道修行の階梯になぞらえて4つの「道場」に位置づけられています。
+① 徳島県【発心の道場（ほっしん）】1番〜23番：
+　仏道を志し、心を奮い立たせて旅を始めるスタートの地。
+② 高知県【修行の道場（しゅぎょう）】24番〜39番：
+　室戸岬から足摺岬へ、荒波打ち寄せる太平洋沿いの長大な距離を歩み、孤独と向き合い心身を鍛える地。
+③ 愛媛県【菩提の道場（ぼだい）】40番〜65番：
+　松山・石手寺や山岳の岩屋寺を擁し、煩悩を断ち切って迷いから目覚め、心の平穏を得る地。
+④ 香川県【涅槃の道場（ねはん）】66番〜88番：
+　弘法大師生誕の善通寺を経て、結願（けちがん）の地・大窪寺へ。究極の悟りと感謝に到達する地。
+
+【「同行二人（どうぎょうににん）」の心づもり】：
+お遍路の菅笠や白衣に記されている「同行二人」という言葉。これは「たとえ一人で歩いていても、常に弘法大師があなたの隣に寄り添い、共に歩んでくださっている」という意味です。
+金剛杖はお大師さまの化身そのものとされ、橋の上では杖をつかない（橋の下でお大師さまが休まれているという伝承への敬意）、宿に入るときは真っ先に杖の泥を拭い床の間に安置するなど、深い敬意を払います。
+
+【見返りを求めない「お接待」の文化】：
+四国では、道行くお遍路さんに地元の方々がお茶や果物、お菓子を差し入れたり、時には道案内や宿泊の施しをしてくださる「お接待（おせったい）」が日常に息づいています。
+お接待をする側は「お遍路さんを労うことで、弘法大師に功徳を積ませていただいている」という信仰心から行っており、お遍路さんは感謝を込めて両手で受け取り、「納札（おさめふだ）」を1枚手渡してお礼とするのが伝統の礼儀作法です。`
+          },
+          {
+            id: "henro-manners-gear",
+            title: "参拝の正式作法＆必要な巡拝用品（どこで買える？）",
+            tag: "初心者必読！完全参拝マニュアル",
+            summary: "山門の一礼から手水・鐘楼・本堂・大師堂・納経所（7:00〜17:00）までの正しい参拝順序。第1番霊山寺で一式揃う必須アイテムリストも徹底案内。",
+            image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Isiteji20220325_1.jpg/1280px-Isiteji20220325_1.jpg",
+            fullText: `【正しい参拝の手順（7つの基本ステップ）】：
+お寺に到着したら、いきなり本堂へ向かったり御朱印を求めたりしてはいけません。以下の手順を心に留めて参拝しましょう。
+
+1. 【山門（仁王門）で一礼】：
+　境内に入る前に立ち止まり、合掌して一礼。左足から敷居を踏まずに跨ぎます。
+2. 【手水舎（てみずや）で身を清める】：
+　左手、右手、口をすすぎ、柄杓の柄を清めて戻します。
+3. 【鐘楼（しょうろう）で鐘を衝く（※重要注意！）】：
+　鐘は「参拝前」に衝きます。一突き心を込めて鳴らします。
+　※参拝後に衝く「戻り鐘」は、功徳が消える、または死者の野辺送りを連想させるため【絶対にNG（禁忌）】です。また夜間や早朝、鐘を衝いてはいけない寺院もあります。
+4. 【本堂（ほんどう）へのお参り】：
+　・ろうそく1本（知恵の光）、線香3本（仏・法・僧への供養）を立てる。
+　・納札（おさめふだ）を納札箱に入れ、お賽銭を入れる。
+　・合掌して読経（開経偈、般若心経、本尊真言、光明真言、大師宝号など）。
+5. 【大師堂（だいしどう）へのお参り】：
+　本堂と同様に、ろうそく・線香・納札・お賽銭を捧げ、読経（特に弘法大師への祈り「南無大師遍照金剛」を三唱）します。
+6. 【納経所（のうきょうじょ）でご朱印・墨書をいただく】：
+　・必ず「本堂・大師堂の参拝を終えた後」に納経所へ向かいます（スタンプラリーではありません）。
+　・【時間厳守：原則 7:00〜17:00】（時間外は受け付けてもらえませんので旅程管理が重要です）。
+　・納経料：納経帳（御朱印）1ヶ寺500円。
+7. 【山門を出て一礼】：
+　境内を出て本堂に向き直り、無事の参拝に感謝して合掌一礼します。
+
+【必要な巡拝用品と「どこで買えるか」】：
+本格的な白装束からカジュアルな服装まで自由ですが、最低限の「お遍路三種の神器」があると巡礼の心が引き締まります。
+
+■ 【どこで一式買えるか？】：
+徳島県の【第1番札所・霊山寺（りょうぜんじ）】の門前売店（大型遍路用品店）にて、頭のてっぺんから足の先まですべての巡拝用品がフルセットで販売されています。店員さんが身につけ方やサイズ選びを丁寧にアドバイスしてくれます。また、主要な札所（第75番善通寺や松山の第51番石手寺など）の売店やオンラインでも購入可能です。
+
+■ 【揃えておきたい基本用品リスト】：
+① 白衣（はくえ/びゃくえ）：仏の前で皆平等であることを示す純白の衣服。
+② 輪袈裟（わげさ）：首からかける簡略化された袈裟。これをつけるだけで正装となります。
+③ 金剛杖（こんごうづえ）：弘法大師の化身。歩行を支える杖であると同時に礼拝の対象。
+④ 菅笠（すげがさ）：日差しや雨を防ぐ。笠には「迷故三界城 悟故十方空 同行二人」と記されます。
+⑤ 納経帳（のうきょうちょう）：各札所で墨書と朱印をいただく帳面。家宝として大切にされます。
+⑥ 納札（おさめふだ）：自分の氏名や願い事を書き、各寺の納札箱に納めたり、お接待のお礼に渡す札（巡拝回数により白→緑→赤→銀→金→錦と色が変わります）。
+⑦ 線香・ろうそく・ライター：参拝の都度灯すため必携。
+⑧ 経本（きょうほん）：般若心経やお経が書かれた手のひらサイズの蛇腹折り本。
+⑨ 数珠（じゅず）：持仏への礼拝に使用。`
+          },
+          {
+            id: "henro-ishiteji",
+            title: "第51番 石手寺（松山市）：国宝仁王門と神秘のマントラ洞窟",
+            tag: "国宝・重要文化財・ミシュラン1ツ星",
+            summary: "道後温泉から徒歩約15分。鎌倉時代の国宝仁王門、三重塔、衛門三郎の伝説が息づく愛媛を代表する屈指の名刹。",
+            image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Isiteji20220325_1.jpg/1280px-Isiteji20220325_1.jpg",
+            fullText: `【国宝・仁王門と衛門三郎の伝説】：
+松山市の道後温泉からほど近い「石手寺（いしてじ）」は、四国八十八ヶ所の中でも屈指の知名度と寺格を誇る第51番札所です。
+境内入口に構える「仁王門」は、1318年（文保2年・鎌倉時代後期）に建立された正真正銘の【国宝】！三間一戸の雄大で端正な二重門建築は、四国の木造寺院建築の頂点と評されます。
+寺名の由来となった「衛門三郎（えもんさぶろう）」の伝説でも有名です。強欲だった豪族・衛門三郎が弘法大師を追い求めて四国を20回以上巡礼し、死の間際にお大師さまと再会。「来世は領主に生まれ変わって民を救いたい」と願い、手の中に石を握ったまま息を引き取りました。その後、領主の子として生まれた赤ん坊が握りしめていた石に「衛門三郎再来」と刻まれていたことから、寺号を「安養寺」から「石手寺」へと改めたと伝えられます。
+
+【神秘の地下空間・マントラ洞窟】：
+石手寺のもうひとつの名物が、本堂の裏手に口を開ける全長約160mの「マントラ洞窟（地獄極楽洞）」です。
+真っ暗な岩肌のトンネルに無数の仏像や梵字、曼荼羅が安置され、薄明かりの中を進む体験はまさに異界の胎内巡り。ミシュラン・グリーンガイド・ジャポンでも1ツ星を獲得し、国内外の旅人を魅了しています。`
+          },
+          {
+            id: "henro-zentsuji",
+            title: "第75番 善通寺（香川県）：弘法大師誕生の聖地と大五重塔",
+            tag: "真言宗善通寺派総本山",
+            summary: "総面積約45,000㎡の大伽藍。お大師さまがお生まれになった地にそびえる高さ43mの五重塔と、完全暗黒の「戒壇めぐり」。",
+            image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Zentsu-ji_Temple_Five-storied_Pagoda_001.jpg/1280px-Zentsu-ji_Temple_Five-storied_Pagoda_001.jpg",
+            fullText: `【お大師さま誕生の聖地】：
+香川県善通寺市にある第75番札所「善通寺（ぜんつうじ）」は、弘法大師（空海）が宝亀5年（774年）にこの世に誕生された聖地であり、和歌山県の高野山、京都の東寺と並ぶ「三大霊場」の一つです。
+東院（伽藍）と西院（誕生院）に分かれる境内は約45,000㎡におよび、四国八十八ヶ所の中で最大級の規模を誇ります。
+
+【高さ43mの木造五重塔と国宝・重要文化財】：
+東院に悠然とそびえ立つ「五重塔」は高さ43mにおよび、国内の木造塔として屈指の威容を誇ります（重要文化財）。大楠が茂る境内の厳かな佇まいは圧巻の一言です。
+また、西院の御影堂地下には、長さ約100mの漆黒の回廊を手探りで進む「戒壇めぐり（かいだんめぐり）」があります。光が一切届かない完全な暗黒の中、左手を壁に当てて進み、中央の弘法大師尊像の真下に位置する小部屋でお題目をお唱えすることで、自己の罪障を消滅させ大師と一体になる感動的な精神体験ができます。`
+          },
+          {
+            id: "henro-iwayaji",
+            title: "第45番 岩屋寺（愛媛県久万高原町）：奇岩の絶壁に埋め込まれた山岳霊場",
+            tag: "国指定重要文化財・四国屈指の難所",
+            summary: "標高700mの霊峰。天を突く巨大な礫岩峰の岩肌にへばりつくように建つ本堂。梯子を登って入る「法華仙人堂跡」の絶壁修行場。",
+            image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Iwayazi21.jpg/1280px-Iwayazi21.jpg",
+            fullText: `【巨岩の胎内に抱かれた霊場】：
+愛媛県の中央部、冷涼な久万高原の深い山奥に位置する第45番札所「海岸山 岩屋寺（いわやじ）」。
+駐車場から急な坂道と階段を登り詰めた先に突如として現れるのは、天を突くようにそびえ立つ無数の奇岩怪石の断崖絶壁です。本堂はその巨大な岩肌のくぼみにすっぽりと埋め込まれるように建立されており、その光景はまるで水墨画の世界。国の重要文化財に指定されています。
+
+【鎖と梯子で登る仙人の修行窟】：
+弘法大師がこの地を訪れた際、神通力を持つ女性行者「法華仙人」から山を譲り受け、不動明王を刻んで山全体を霊場としたと伝えられます。
+本堂の脇には長い木製梯子が掛けられており、岩壁をよじ登って「法華仙人堂跡」へと入ることができます。眼下に広がる四国山地の深い谷を見下ろすと、かつての修験者たちが命懸けで祈りを捧げた厳しい修行の凄まじさを全身で実感できます。「八十八ヶ所の中で最も神秘的で心揺さぶられる」と多くの巡礼者が口を揃える屈指の名刹です。`
+          },
+          {
+            id: "henro-unpenji",
+            title: "第66番 雲辺寺（徳島/香川）：標高911m・天空の最高峰札所",
+            tag: "八十八ヶ所最高峰 ＆ 雲辺寺ロープウェイ",
+            summary: "八十八ヶ所中もっとも高い標高に位置する「遍路ころがし」の霊場。日本最大級ロープウェイで登る山頂からは瀬戸内海と天空の絶景！",
+            image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Mt.Unpenji.jpg/1280px-Mt.Unpenji.jpg",
+            fullText: `【八十八ヶ所最高地点・標高911m】：
+徳島県三好市と香川県観音寺市の境に位置する第66番札所「雲辺寺（うんぺんじ）」は、全88ヶ寺の中で最も標高が高い（911m）山頂に鎮座する霊場です。
+昔は険しい山道を登り詰める屈指の難所「遍路ころがし」として恐れられましたが、現在は山麓から日本最大級（定員101名・秒速10m）の「雲辺寺ロープウェイ」でわずか7分で雲の上の境内へ到達できます。
+
+【五百羅漢と天空のブランコ】：
+境内には表情豊かな石造の「五百羅漢像」が等身大でずらりと並び、厳かな祈りの空間を形成しています。
+また山頂公園には、眼下に広がる広大な讃岐平野と瀬戸内海、瀬戸大橋を一望できる「天空のブランコ」やフォトフレームが整備され、巡礼者だけでなく絶景を求める若者や観光客の間でもSNSで大人気スポットとなっています。冬には白銀の樹氷が輝くなど、四季折々の荘厳なパノラマが広がります。`
+          },
+          {
+            id: "henro-chikurinji",
+            title: "第31番 竹林寺（高知県）：五台山の紅葉と名勝庭園・文殊菩薩の知恵",
+            tag: "国指定名勝庭園・五重塔",
+            summary: "聖武天皇の勅願寺。土佐の名峰・五台山に鎮座し、美しい朱塗りの五重塔と四季を映す名勝庭園、学問成就の知恵を授ける名刹。",
+            image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Tikurinji_05.jpg/1280px-Tikurinji_05.jpg",
+            fullText: `【五台山に抱かれた土佐屈指の学問・祈りの聖地】：
+高知市の中心部からほど近い五台山山頂付近に建つ第31番札所「五台山 竹林寺（ちくりんじ）」。
+神亀元年（724年）、聖武天皇の勅願により行基菩薩が開創したと伝わる由緒ある名刹で、本尊は「知恵の仏様」として信仰を集める文殊菩薩（重要文化財）。合格祈願や学業成就を願う参拝者が全国から絶えません。
+
+【朱塗りの五重塔と夢窓国師の名勝庭園】：
+緑豊かな木立の間にひときわ鮮やかにそびえる総高31mの「五重塔」は、鎌倉時代の様式を忠実に再現した美しい純木造建築。
+さらに、鎌倉時代の高僧・夢窓国師が作庭したと伝えられる書院庭園は国の名勝に指定されており、池を取り囲む苔の緑と秋の燃えるような紅葉のコントラストは息を呑む美しさです。牧野富太郎博士ゆかりの高知県立牧野植物園が隣接しており、静寂と知性に満ちた時間を過ごせます。`
+          }
+        ]
+      },
       trivia: {
         title: "知られざる松山・愛媛の意外な真実、噂の解明と現代の話題",
         desc: "子規の野球愛、中村知事歌舞伎の真相、そしてリベラルアーツ大学の話題まで徹底解剖！",
@@ -603,6 +756,7 @@ const siteData = {
       { id: "citrus", icon: "citrus", label: "Citrus Kingdom", subtitle: "Mikan, Beni Madonna, Juice from the Tap" },
       { id: "fishery", icon: "fish", label: "Seafood & Soul Sweets", subtitle: "Taimeshi History, Mikan Tai, Poème Cake" },
       { id: "scenic", icon: "compass", label: "Peaks & Island Vistas", subtitle: "Mt. Ishizuchi, UFO Line, Kiro-san, 88 Henro" },
+      { id: "henro", icon: "temple", label: "88 Shikoku Pilgrimage", subtitle: "Map, Days, Rituals & Temples" },
       { id: "trivia", icon: "sparkles", label: "Surprising Trivia", subtitle: "Shiki Baseball, Governor Kabuki Rumor, Libedai" }
     ],
     sections: {
@@ -988,6 +1142,141 @@ All-in-one cycling resort offering ocean-view dome glamping, cottage rooms, cafe
           }
         ]
       },
+      henro: {
+        title: "The 88 Sacred Temple Pilgrimage: 1,200 Years of Devotion & Dogyo Ninin",
+        desc: "A 1,400km sacred circuit tracing the footsteps of Kobo Daishi (Kukai). Master the philosophy, solemn etiquette, essential attire, and legendary architectural wonders.",
+        items: [
+          {
+            id: "henro-philosophy",
+            title: "Purpose, Four Training Grounds & 'Dogyo Ninin'",
+            tag: "1,200 Years of Spiritual Heritage",
+            summary: "Why do pilgrims walk Shikoku? The four spiritual provinces (Awakening, Austerity, Enlightenment, Nirvana), walking hand-in-hand with Kukai ('Dogyo Ninin'), and sacred Osettai hospitality.",
+            image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Gate_of_Ryozenji_Temple_in_Naruto%2C_Tokushima.jpg/1280px-Gate_of_Ryozenji_Temple_in_Naruto%2C_Tokushima.jpg",
+            fullText: `[Origins & Spiritual Purpose]:
+The Shikoku 88 Temple Pilgrimage (Ohenro) was established approximately 1,200 years ago during the early Heian period by Kobo Daishi (Kukai), the founder of Shingon Esoteric Buddhism.
+Originally an arduous ascetic route for wandering monks testing themselves against the elements, it opened to common pilgrims during the Edo era. Today, travelers embark on the journey to pray for loved ones, seek solace, heal grief, or discover their authentic self through deep contemplation.
+
+[The Four Spiritual Training Grounds (Dojo)]:
+Shikoku's four prefectures form a giant living mandala:
+1. Tokushima [Hosshin - Awakening of Faith] Temples 1-23:
+   The inspirational starting point where pilgrims take their first steps and resolve their vows.
+2. Kochi [Shugyo - Ascetic Discipline] Temples 24-39:
+   Long, solitary coastal treks along the Pacific surf between Cape Muroto and Cape Ashizuri, purifying body and mind through sheer perseverance.
+3. Ehime [Bodai - Attaining Enlightenment] Temples 40-65:
+   Home to Ishiteji in Matsuyama and mountain crags like Iwayaji, severing worldly delusions and attaining inner peace.
+4. Kagawa [Nehan - Entering Nirvana] Temples 66-88:
+   Visiting Kukai's birthplace at Zentsuji before reaching the final completion (Kechigan) at Okuboji with profound gratitude.
+
+['Dogyo Ninin' - Two Traveling Together]:
+Inscribed on every pilgrim's sedge hat and white coat, 'Dogyo Ninin' means: 'Even if walking alone, Kobo Daishi is always by your side, sharing your every step.'
+The wooden staff (Kongo-zue) is considered the living embodiment of Kukai itself. By custom, pilgrims never tap their staff while crossing bridges (out of reverence for legends of Kukai resting under bridges) and carefully wash its tip before resting at night.
+
+[The Miracle of 'Osettai']:
+Across Shikoku, locals offer pilgrims tea, fresh mikan, snacks, or even lodging without expecting anything in return. Known as 'Osettai', locals believe that serving a pilgrim is an act of devotion to Kukai himself. Pilgrims accept these gifts with bowed hands and present a paper name slip (Osamefuda) in heartfelt gratitude.`
+          },
+          {
+            id: "henro-manners-gear",
+            title: "Pilgrimage Rituals & Essential Gear (Where to Buy)",
+            tag: "Essential Guide for First-Timers",
+            summary: "The 7-step temple etiquette (bowing, water purification, bell striking before worship, sutra chanting, and nokyo stamps 7:00-17:00), plus full starter kit available at Temple #1 Ryozenji.",
+            image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Isiteji20220325_1.jpg/1280px-Isiteji20220325_1.jpg",
+            fullText: `[The 7 Standard Steps of Temple Etiquette]:
+Visiting a sacred temple requires mindfulness and deliberate sequence:
+
+1. Bow at the Sanmon Gate: Stop at the entrance, clasp hands (gassho), bow once, and step across the threshold without treading on the sill.
+2. Purify at the Temizuya: Cleanse hands and mouth with sacred ladle water.
+3. Strike the Temple Bell (Crucial Rule!): Ring the bell ONCE before praying. Never ring the bell when leaving ('Modori-gane' is believed to cancel blessings or symbolize funerals).
+4. Worship at the Main Hall (Hondo): Light 1 candle and 3 incense sticks, deposit an Osamefuda slip, offer coins, and chant the Heart Sutra (Hannya Shingon).
+5. Worship at the Daishi Hall (Daishido): Repeat the ritual for Kobo Daishi, chanting the sacred mantra 'Namu Daishi Henjo Kongo' 3 times.
+6. Receive Calligraphy & Stamp at Nokyocho: Visit the stamp office strictly AFTER praying. Hours are strictly 7:00 AM - 5:00 PM. Fee is ¥500 per temple.
+7. Bow Farewell at the Outer Gate: Turn back toward the main hall and bow with gratitude.
+
+[Where to Buy Your Henro Gear]:
+You can obtain a complete pilgrim set at the large pilgrim shop at Temple No. 1 Ryōzen-ji (Naruto, Tokushima). Friendly staff assist with sizing and explaining usage. Also available at major temples like #75 Zentsuji and #51 Ishiteji.
+
+[Core Henro Gear Checklist]:
+1. Hakue: White pilgrim coat symbolizing spiritual purity and equality.
+2. Wagesa: Ceremonial neck stole indicating sacred intention.
+3. Kongo-zue: Pilgrimage wooden staff symbolizing Kobo Daishi.
+4. Sugegasa: Conical sedge hat shielding against sun and rain.
+5. Nokyocho: Stamp book collecting temple calligraphy and vermilion seals.
+6. Osamefuda: Name slips deposited at halls and given to locals as thank-you tokens for Osettai.
+7. Incense, Candles & Lighter: Offered at every temple altar.
+8. Kyohon (Sutra Book): Pocket-sized accordion book for recitation.
+9. Juzu: Buddhist prayer beads.`
+          },
+          {
+            id: "henro-ishiteji",
+            title: "#51 Ishiteji (Matsuyama): National Treasure Gate & Mantra Cave",
+            tag: "National Treasure & Michelin 1-Star",
+            summary: "15 min walk from Dogo Onsen. Kamakura-era Niomon Gate, 3-story pagoda, Emon Saburo rebirth legend, and an atmospheric 160m cave underworld.",
+            image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Isiteji20220325_1.jpg/1280px-Isiteji20220325_1.jpg",
+            fullText: `[National Treasure Niomon & The Legend of Emon Saburo]:
+Located within walking distance of Dogo Onsen in Matsuyama, Temple #51 Ishiteji is one of the most famous pilgrimage stops.
+Its magnificent Niomon Gate, constructed in 1318 during the late Kamakura era, is designated as a National Treasure of Japan, hailed as the finest surviving medieval gate in Shikoku.
+The temple is also the setting for the legend of Emon Saburo, a wealthy and arrogant samurai who repented his sins and circled Shikoku over 20 times in search of Kukai. Upon death, Kukai granted him rebirth as an enlightened lord; the baby was born holding a stone engraved 'Emon Saburo Reborn', prompting the temple's renaming to 'Stone Hand Temple' (Ishiteji).
+
+[The Mystical Mantra Cave (Hell & Paradise Pass)]:
+Behind the main hall lies a 160-meter underground tunnel carved into bedrock. Lined with hundreds of dimly lit statues, mandalas, and Sanskrit inscriptions, this surreal subterranean journey simulates spiritual rebirth. Ishiteji holds 1 star in the Michelin Green Guide Japan.`
+          },
+          {
+            id: "henro-zentsuji",
+            title: "#75 Zentsuji (Kagawa): Birthplace of Kukai & 43m Pagoda",
+            tag: "Head Temple of Shingon Zentsuji Sect",
+            summary: "Massive 45,000m² complex where Kobo Daishi was born in 774. Features a towering 43m wooden pagoda and the complete-darkness Kaidan-meguri tunnel.",
+            image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Zentsu-ji_Temple_Five-storied_Pagoda_001.jpg/1280px-Zentsu-ji_Temple_Five-storied_Pagoda_001.jpg",
+            fullText: `[The Sacred Birthplace of Kobo Daishi]:
+Located in Zentsuji City, Kagawa, Temple #75 is the sacred birthplace of Kukai (born 774 AD) and stands alongside Mt. Koya (Wakayama) and Toji (Kyoto) as one of the three holiest Shingon sites.
+Covering 45,000 square meters across its Eastern (Garan) and Western (Tanjyoin) precincts, it is the largest complex in the 88-temple network.
+
+[The 43-Meter Pagoda & Pitch-Black Tunnel (Kaidan-meguri)]:
+The Eastern Precinct is dominated by a majestic 43-meter five-storied wooden pagoda (Important Cultural Property).
+Beneath the Western Precinct's Mieido hall lies the 100-meter Kaidan-meguri: a corridor in pitch darkness. Pilgrims feel their way along the wall with their left hand in total sensory deprivation until reaching the sacred chamber beneath Kukai's statue, emerging feeling spiritually reborn.`
+          },
+          {
+            id: "henro-iwayaji",
+            title: "#45 Iwayaji (Kumakogen, Ehime): Cliff-Embedded Mountain Sanctuary",
+            tag: "Important Cultural Property",
+            summary: "Perched at 700m elevation against colossal sheer rock walls. Pilgrims climb wooden ladders into ancient ascetic hermit caves overlooking deep valleys.",
+            image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Iwayazi21.jpg/1280px-Iwayazi21.jpg",
+            fullText: `[Sanctuary Carved into Sheer Cliffs]:
+Deep in the highlands of Kumakogen in central Ehime, Temple #45 Iwayaji is nestled directly against soaring conglomerate cliffs at an elevation of 700 meters.
+The main hall is literally embedded into hollowed recesses of the mountain crag, creating an awe-inspiring vista reminiscent of traditional ink paintings.
+
+[Ascetic Ladders & Hermit Caves]:
+Legend holds that Kukai received the sacred mountain from a mystical female hermit named Hokke Sennin.
+Next to the main hall, a tall wooden ladder allows adventurous visitors to ascend to ancient meditation crevices. Looking down into the misty mountain valleys, one directly feels the intense devotion of early ascetics. Many pilgrims cite Iwayaji as the most atmospheric and soul-stirring temple on the entire circuit.`
+          },
+          {
+            id: "henro-unpenji",
+            title: "#66 Unpenji (Tokushima/Kagawa): Highest Summit Temple (911m)",
+            tag: "Summit of the 88 & Unpenji Ropeway",
+            summary: "The highest elevation temple (911m) on the pilgrimage. Ascend via giant ropeway to view 500 life-sized Arhat statues and the panoramic Sky Swing.",
+            image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Mt.Unpenji.jpg/1280px-Mt.Unpenji.jpg",
+            fullText: `[The Highest Point of the 88 Temples]:
+Straddling the border between Tokushima and Kagawa prefectures, Temple #66 Unpenji sits at an altitude of 911 meters—the highest elevation among all 88 temples.
+Historically known as an exhausting 'Henro-korogashi' mountain trial, today pilgrims ascend in just 7 minutes via the Unpenji Ropeway, one of Japan's largest cable cars.
+
+[500 Stone Arhats & The Sky Swing]:
+The temple grounds feature 500 life-sized stone Arhat statues (disciples of Buddha), each with uniquely expressive facial gestures.
+On the mountain summit park, the famous 'Sky Swing' offers boundless views over the Sanuki plains, Seto Inland Sea, and the Great Seto Bridge, making it beloved by pilgrims and nature lovers alike.`
+          },
+          {
+            id: "henro-chikurinji",
+            title: "#31 Chikurinji (Kochi): Godai-san Pagoda & Scenic Garden",
+            tag: "National Scenic Garden & Wisdom Deity",
+            summary: "Commissioned by Emperor Shomu in 724. Nestled in Mt. Godai with a vermilion 5-story pagoda, a classic Kamakura-era moss garden, and prayers for wisdom.",
+            image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Tikurinji_05.jpg/1280px-Tikurinji_05.jpg",
+            fullText: `[Sanctuary of Wisdom on Mt. Godai]:
+Overlooking Kochi City atop Mt. Godai, Temple #31 Chikurinji was established in 724 by Gyoki at the imperial command of Emperor Shomu.
+Its principal deity is Monju Bosatsu (the Bodhisattva of Wisdom), attracting thousands of students and scholars seeking success in examinations and clarity of mind.
+
+[Vermilion Pagoda & Master Garden]:
+Its striking 31-meter wooden five-storied pagoda stands elegantly against lush greenery.
+The adjoining landscape garden, attributed to 14th-century Zen master Muso Soseki, is designated a National Place of Scenic Beauty. With velvety moss grounds and vivid autumn foliage reflecting across its koi pond, Chikurinji offers deep serenity right next to the Makino Botanical Garden.`
+          }
+        ]
+      },
       trivia: {
         title: "Untold Secrets, Myth-Busting & Modern Movements",
         desc: "Shiki's baseball passion, Governor Kabuki fact-check, and the rise of local learning communities.",
@@ -1114,7 +1403,8 @@ const icons = {
   arrowRight: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>`,
   close: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>`,
   onsen: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v2a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6v-2a1 1 0 0 1 1-1Z"/><path d="M8 4c0 2-1 3-1 4"/><path d="M12 2c0 2-1 3-1 4"/><path d="M16 4c0 2-1 3-1 4"/></svg>`,
-  bike: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>`
+  bike: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>`,
+  temple: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10h20"/><path d="M4 10V6l8-4 8 4v4"/><path d="M6 10v10"/><path d="M10 10v10"/><path d="M14 10v10"/><path d="M18 10v10"/><path d="M2 20h20"/></svg>`
 };
 
 // Initialize Application
@@ -1440,8 +1730,317 @@ function renderTabSpecialBanner(tabId) {
     `;
   }
 
+  if (tabId === 'henro') {
+    return `
+      <!-- Henro Island-Wide Map & Circuit Architecture -->
+      <div class="mt-12 bg-white rounded-3xl p-6 sm:p-10 border border-amber-200/90 shadow-xl overflow-hidden relative">
+        <div class="space-y-4 max-w-3xl mb-8">
+          <div class="flex items-center gap-2">
+            <span class="inline-block bg-amber-600 text-white text-xs font-bold px-3.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
+              ${isJa ? '四国全図 遍路マップ ＆ 4つの道場' : 'All-Shikoku Henro Map & The Four Spiritual Provinces'}
+            </span>
+            <span class="text-xs font-semibold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">
+              ${isJa ? '全長 約1,400km / 全88ヶ所' : 'Total 1,400km / 88 Sacred Temples'}
+            </span>
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 font-serif-jp">
+            ${isJa ? '四国全体がひとつの大曼荼羅：円環を描く祈りの道' : 'Shikoku as a Living Mandala: The Grand Circular Circuit'}
+          </h3>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            ${isJa
+              ? '四国遍路は時計回りに徳島（発心）から高知（修行）、愛媛（菩提）、香川（涅槃）へと巡る「順打ち（じゅんうち）」が基本です。各県が仏道修行の段階と呼応し、四国霊場会公認の全88札所が海と山をつないでいます。'
+              : 'The classical pilgrimage proceeds clockwise (Jun-uchi): Tokushima (Awakening), Kochi (Discipline), Ehime (Enlightenment), and Kagawa (Nirvana). Together they form a harmonious circuit encompassing coastlines and mountain ridges.'}
+          </p>
+        </div>
+
+        <!-- Four Provinces Visual Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+          <!-- Tokushima -->
+          <div class="p-5 rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50/60 border border-emerald-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-extrabold text-emerald-800 uppercase tracking-wider">第1番 〜 第23番</span>
+                <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded font-bold">徳島県</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-900 font-serif-jp mb-1">${isJa ? '発心の道場（ほっしん）' : 'Dojo of Awakening'}</h4>
+              <p class="text-[11px] text-slate-600 leading-relaxed mb-3">
+                ${isJa ? '鳴門・第1番霊山寺で遍路装束を整え旅立ち。大誓願を立てて一歩を踏み出す祈りの起点。' : 'Begin at Temple #1 Ryozenji in Naruto with fresh pilgrim attire, resolving heart and spirit.'}
+              </p>
+            </div>
+            <div class="pt-2 border-t border-emerald-200/60 text-[11px] font-bold text-emerald-800">
+              ${isJa ? '主要札所：#1 霊山寺 / #12 焼山寺 / #21 太龍寺' : 'Key: #1 Ryozenji, #12 Shosanji'}
+            </div>
+          </div>
+
+          <!-- Kochi -->
+          <div class="p-5 rounded-2xl bg-gradient-to-br from-sky-50 to-blue-50/60 border border-sky-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-extrabold text-sky-800 uppercase tracking-wider">第24番 〜 第39番</span>
+                <span class="text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded font-bold">高知県</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-900 font-serif-jp mb-1">${isJa ? '修行の道場（しゅぎょう）' : 'Dojo of Discipline'}</h4>
+              <p class="text-[11px] text-slate-600 leading-relaxed mb-3">
+                ${isJa ? '室戸岬から足摺岬へ。札所間の距離が最も長く、打ち寄せる太平洋の怒濤と孤独に対峙する試練の道。' : 'From Cape Muroto to Ashizuri. Longest distances between temples, testing body & resolve.'}
+              </p>
+            </div>
+            <div class="pt-2 border-t border-sky-200/60 text-[11px] font-bold text-sky-800">
+              ${isJa ? '主要札所：#24 最御崎寺 / #31 竹林寺 / #38 金剛福寺' : 'Key: #24 Hotsumisakiji, #31 Chikurinji'}
+            </div>
+          </div>
+
+          <!-- Ehime -->
+          <div class="p-5 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50/60 border border-amber-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-extrabold text-amber-800 uppercase tracking-wider">第40番 〜 第65番</span>
+                <span class="text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded font-bold">愛媛県</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-900 font-serif-jp mb-1">${isJa ? '菩提の道場（ぼだい）' : 'Dojo of Enlightenment'}</h4>
+              <p class="text-[11px] text-slate-600 leading-relaxed mb-3">
+                ${isJa ? '宇和海から松山城下、道後温泉へ。山岳霊場・岩屋寺や国宝仁王門の石手寺で心の迷いを取り払う。' : 'Traversing Uwajima to Dogo Onsen & Matsuyama. Mountain crag Iwayaji & historic Ishiteji.'}
+              </p>
+            </div>
+            <div class="pt-2 border-t border-amber-200/60 text-[11px] font-bold text-amber-800">
+              ${isJa ? '主要札所：#45 岩屋寺 / #51 石手寺 / #60 横峰寺' : 'Key: #45 Iwayaji, #51 Ishiteji'}
+            </div>
+          </div>
+
+          <!-- Kagawa -->
+          <div class="p-5 rounded-2xl bg-gradient-to-br from-purple-50 to-rose-50/60 border border-purple-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-extrabold text-purple-800 uppercase tracking-wider">第66番 〜 第88番</span>
+                <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded font-bold">香川県</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-900 font-serif-jp mb-1">${isJa ? '涅槃の道場（ねはん）' : 'Dojo of Nirvana'}</h4>
+              <p class="text-[11px] text-slate-600 leading-relaxed mb-3">
+                ${isJa ? '最高峰・雲辺寺から大師生誕の善通寺を経て、結願の第88番大窪寺へ。大いなる達成と感謝の終着点。' : 'Ascend summit Unpenji, visit Kukai birth site Zentsuji, completing vows at #88 Okuboji.'}
+              </p>
+            </div>
+            <div class="pt-2 border-t border-purple-200/60 text-[11px] font-bold text-purple-800">
+              ${isJa ? '主要札所：#66 雲辺寺 / #75 善通寺 / #88 大窪寺' : 'Key: #66 Unpenji, #75 Zentsuji, #88 Okuboji'}
+            </div>
+          </div>
+        </div>
+
+        <!-- Transportation Days Comparison Simulation -->
+        <div class="mt-8 pt-8 border-t border-slate-200">
+          <div class="text-center max-w-2xl mx-auto mb-8">
+            <span class="text-amber-700 text-xs font-bold uppercase tracking-widest block mb-1">
+              ${isJa ? '一気に全周回する場合の所要日数比較' : 'Full Circuit Duration by Transport'}
+            </span>
+            <h4 class="text-xl sm:text-2xl font-bold text-slate-900 font-serif-jp">
+              ${isJa ? '「車」「自転車」「徒歩」何日かかる？徹底シミュレーション' : 'Car vs. Bicycle vs. Walking: Days Required'}
+            </h4>
+            <p class="text-slate-500 text-xs mt-1">
+              ${isJa ? '全88ヶ所（全長約1,400km）を一度の旅で巡拝（通し打ち）する場合の目安' : 'Estimated pacing for completing all 88 temples in a single continuous journey'}
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Mode 1: Car -->
+            <div class="bg-gradient-to-b from-slate-50 to-white rounded-2xl p-6 border-2 border-orange-200 shadow-md relative hover:shadow-lg transition">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-3xl">🚗</span>
+                <span class="text-[11px] font-bold bg-orange-100 text-orange-800 px-3 py-1 rounded-full uppercase">
+                  ${isJa ? '最も現実的＆人気' : 'Most Popular'}
+                </span>
+              </div>
+              <h5 class="text-lg font-bold text-slate-900 mb-1 font-serif-jp">
+                ${isJa ? '自動車・レンタカー' : 'Car / Rental Car'}
+              </h5>
+              <div class="text-2xl font-black text-orange-600 font-display mb-2">
+                10 〜 12 <span class="text-sm font-semibold text-slate-600">${isJa ? '日間' : 'Days'}</span>
+              </div>
+              <ul class="text-xs text-slate-600 space-y-2 leading-relaxed">
+                <li class="flex items-start gap-1.5">
+                  <span class="text-orange-500 font-bold">✔</span>
+                  <span><strong>${isJa ? '巡拝ペース' : 'Pacing'}:</strong> ${isJa ? '1日あたり 7〜9ヶ寺（納経時間 7:00〜17:00 厳守）' : '7-9 temples daily (strictly 7am-5pm)'}</span>
+                </li>
+                <li class="flex items-start gap-1.5">
+                  <span class="text-orange-500 font-bold">✔</span>
+                  <span><strong>${isJa ? '走行距離' : 'Driving'}:</strong> ${isJa ? '総走行約1,400〜1,600km（1日120〜160km運転）' : 'Total 1,400-1,600km (120-160km/day)'}</span>
+                </li>
+                <li class="flex items-start gap-1.5">
+                  <span class="text-amber-600 font-bold">▲</span>
+                  <span><strong>${isJa ? '注意点' : 'Caution'}:</strong> ${isJa ? '第12番焼山寺や第60番横峰寺など狭隘な山岳路や駐車場代（300〜500円）が頻発' : 'Narrow mountain passes & temple parking fees'}</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Mode 2: Bicycle -->
+            <div class="bg-gradient-to-b from-slate-50 to-white rounded-2xl p-6 border-2 border-sky-200 shadow-md relative hover:shadow-lg transition">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-3xl">🚲</span>
+                <span class="text-[11px] font-bold bg-sky-100 text-sky-800 px-3 py-1 rounded-full uppercase">
+                  ${isJa ? '達成感と風を感じる' : 'Sportive & Scenic'}
+                </span>
+              </div>
+              <h5 class="text-lg font-bold text-slate-900 mb-1 font-serif-jp">
+                ${isJa ? '自転車（ロード / E-bike）' : 'Bicycle / E-bike'}
+              </h5>
+              <div class="text-2xl font-black text-sky-600 font-display mb-2">
+                14 〜 20 <span class="text-sm font-semibold text-slate-600">${isJa ? '日間' : 'Days'}</span>
+              </div>
+              <ul class="text-xs text-slate-600 space-y-2 leading-relaxed">
+                <li class="flex items-start gap-1.5">
+                  <span class="text-sky-500 font-bold">✔</span>
+                  <span><strong>${isJa ? '巡拝ペース' : 'Pacing'}:</strong> ${isJa ? '1日あたり 4〜6ヶ寺（走行距離 60〜80km/日）' : '4-6 temples daily (60-80km ride/day)'}</span>
+                </li>
+                <li class="flex items-start gap-1.5">
+                  <span class="text-sky-500 font-bold">✔</span>
+                  <span><strong>${isJa ? '体力目安' : 'Fitness'}:</strong> ${isJa ? '高低差の激しい四国山地を登坂できる脚力、またはE-bike' : 'Hill climb endurance or high-torque E-bike'}</span>
+                </li>
+                <li class="flex items-start gap-1.5">
+                  <span class="text-amber-600 font-bold">▲</span>
+                  <span><strong>${isJa ? '注意点' : 'Caution'}:</strong> ${isJa ? '山岳札所では自転車を麓に駐輪して急坂登山が必要な寺院あり' : 'Steep hike up mountain gates after parking bike'}</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Mode 3: Walking -->
+            <div class="bg-gradient-to-b from-slate-50 to-white rounded-2xl p-6 border-2 border-emerald-200 shadow-md relative hover:shadow-lg transition">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-3xl">🚶</span>
+                <span class="text-[11px] font-bold bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full uppercase">
+                  ${isJa ? '古来の正統・真の再生' : 'Traditional Pilgrimage'}
+                </span>
+              </div>
+              <h5 class="text-lg font-bold text-slate-900 mb-1 font-serif-jp">
+                ${isJa ? '歩き遍路（徒歩）' : 'Walking Henro (Foot)'}
+              </h5>
+              <div class="text-2xl font-black text-emerald-600 font-display mb-2">
+                40 〜 50 <span class="text-sm font-semibold text-slate-600">${isJa ? '日間' : 'Days'}</span>
+              </div>
+              <ul class="text-xs text-slate-600 space-y-2 leading-relaxed">
+                <li class="flex items-start gap-1.5">
+                  <span class="text-emerald-500 font-bold">✔</span>
+                  <span><strong>${isJa ? '巡拝ペース' : 'Pacing'}:</strong> ${isJa ? '1日あたり 25〜30km歩行（約35,000〜45,000歩）' : '25-30km daily walking (~40,000 steps)'}</span>
+                </li>
+                <li class="flex items-start gap-1.5">
+                  <span class="text-emerald-500 font-bold">✔</span>
+                  <span><strong>${isJa ? '総歩行距離' : 'Total Walk'}:</strong> ${isJa ? '約 1,200〜1,400km（途中で靴を1〜2足履き潰す）' : 'Approx 1,200-1,400km (wear out 1-2 pairs of shoes)'}</span>
+                </li>
+                <li class="flex items-start gap-1.5">
+                  <span class="text-emerald-600 font-bold">♥</span>
+                  <span><strong>${isJa ? '特別な体験' : 'Experience'}:</strong> ${isJa ? '地元のお接待や他の歩き遍路との絆、人生観が根本から変わる深遠な体験' : 'Life-altering introspection & warm Osettai hospitality'}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recommended "Early Morning Arrival in Shikoku" Route & Schedule Plan -->
+        <div class="mt-12 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-amber-500/10 border border-amber-300">
+          <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+            <div class="space-y-3 max-w-3xl">
+              <span class="inline-block bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                ${isJa ? '【実践ルート計画】午前中の早いうちに四国入りした場合' : 'Practical Recommended Plan: Arriving in Shikoku Early Morning'}
+              </span>
+              <h4 class="text-xl sm:text-2xl font-bold text-slate-900 font-serif-jp">
+                ${isJa ? '最速スタートで無駄なし！車・レンタカー「11日間 順打ち完全走破」黄金モデル' : 'Fast-Track Golden 11-Day Car Circuit Starting Early Morning'}
+              </h4>
+              <p class="text-slate-700 text-xs sm:text-sm leading-relaxed">
+                ${isJa
+                  ? '明石海峡大橋・大鳴門橋を経由して朝8:00〜9:00に徳島（鳴門IC）へ到着すれば、初日午前のうちに第1番霊山寺で全装備を揃え、その日のうちに第1番〜第6番（または第10番）まで巡拝可能です！以下が最も無理のないステージ展開です。'
+                  : 'Crossing from Kobe/Awaji to Naruto IC by 8:00-9:00 AM allows you to gear up at #1 Ryozenji by morning, completing Temples #1 through #6-10 on Day 1. Below is the optimized 11-day stage blueprint.'}
+              </p>
+            </div>
+            <div class="flex-shrink-0 bg-white p-4 rounded-xl border border-amber-200 text-center shadow-sm">
+              <div class="text-xs text-slate-500 font-semibold">${isJa ? '推奨スタート地点' : 'Recommended Entry'}</div>
+              <div class="text-base font-bold text-orange-600 mt-0.5">徳島・鳴門IC</div>
+              <div class="text-[11px] text-slate-600 mt-1">${isJa ? '第1番 霊山寺へ車10分' : '10 min to #1 Ryozenji'}</div>
+            </div>
+          </div>
+
+          <!-- Day-by-Day Stage Timeline -->
+          <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+            <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm">
+              <div class="font-bold text-amber-700 mb-1">${isJa ? '第1日：徳島入り＆発心' : 'Day 1: Arrival & Hosshin'}</div>
+              <div class="text-slate-700 leading-snug">
+                ${isJa ? '朝9:00 #1霊山寺で装束購入 → #2〜#6（余裕あれば#10切幡寺まで）参拝。徳島市内に宿泊。' : '9:00 AM gear up at #1 Ryozenji -> visit #2-#6. Stay in Tokushima City.'}
+              </div>
+            </div>
+
+            <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm">
+              <div class="font-bold text-amber-700 mb-1">${isJa ? '第2日：阿波の難所巡り' : 'Day 2: Mountain Trails'}</div>
+              <div class="text-slate-700 leading-snug">
+                ${isJa ? '山岳屈指の難所 #12焼山寺（一本杉大師）→ #21太龍寺（西日本最長ロープウェイ）→ 阿南・日和佐泊。' : 'Challenge #12 Shosanji -> #21 Tairyuji ropeway -> stay in Hiwasa.'}
+              </div>
+            </div>
+
+            <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm">
+              <div class="font-bold text-sky-700 mb-1">${isJa ? '第3日：土佐・室戸岬へ' : 'Day 3: Muroto Coast'}</div>
+              <div class="text-slate-700 leading-snug">
+                ${isJa ? '#23薬王寺（徳島結び）→ 室戸岬へロングドライブ → #24最御崎寺・#26金剛頂寺 → 安芸泊。' : '#23 Yakuoji -> scenic drive to Cape Muroto -> #24 & #26 -> stay in Aki.'}
+              </div>
+            </div>
+
+            <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm">
+              <div class="font-bold text-sky-700 mb-1">${isJa ? '第4日：高知市内と南下' : 'Day 4: Kochi Temples'}</div>
+              <div class="text-slate-700 leading-snug">
+                ${isJa ? '#28大日寺〜#30善楽寺 → #31竹林寺（五重塔と庭園）→ #33雪蹊寺〜#36青龍寺 → 須崎・中土佐泊。' : 'Visit #28-#30 -> #31 Chikurinji pagoda -> #33-#36 -> stay in Susaki.'}
+              </div>
+            </div>
+
+            <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm">
+              <div class="font-bold text-sky-700 mb-1">${isJa ? '第5日：足摺岬と伊予境' : 'Day 5: Cape Ashizuri'}</div>
+              <div class="text-slate-700 leading-snug">
+                ${isJa ? '四国最南端 #38金剛福寺（大絶景）→ 竜串海岸経由 → #39延光寺 → 愛媛・宿毛/宇和島泊。' : '#38 Kongo-fukuji at southern tip -> #39 Enkoji -> stay in Uwajima.'}
+              </div>
+            </div>
+
+            <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm">
+              <div class="font-bold text-orange-700 mb-1">${isJa ? '第6日：南予から久万高原' : 'Day 6: Nanyo & Highlands'}</div>
+              <div class="text-slate-700 leading-snug">
+                ${isJa ? '#40観自在寺〜#43明石寺 → 標高700mの奇岩霊場 #44大寶寺・#45岩屋寺（梯子修行）→ 久万高原/松山泊。' : '#40-#43 -> highland crags #44 Daihoji & #45 Iwayaji -> stay in Matsuyama.'}
+              </div>
+            </div>
+
+            <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm">
+              <div class="font-bold text-orange-700 mb-1">${isJa ? '第7日：松山市内＆道後温泉' : 'Day 7: Matsuyama & Dogo'}</div>
+              <div class="text-slate-700 leading-snug">
+                ${isJa ? '#46浄瑠璃寺〜#51石手寺（国宝仁王門＆マントラ洞窟）〜#53円明寺 → 夜は道後温泉本館で名湯浴！' : '#46-#51 Ishiteji (National Treasure Gate) -> #53 -> relax in Dogo Onsen!'}
+              </div>
+            </div>
+
+            <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm">
+              <div class="font-bold text-orange-700 mb-1">${isJa ? '第8日：今治＆東予霊場' : 'Day 8: Imabari & Toyo'}</div>
+              <div class="text-slate-700 leading-snug">
+                ${isJa ? '#54延命寺〜#59国分寺 → 西日本最高峰・石鎚山麓の #60横峰寺（山岳霊場）〜#64前神寺 → 新居浜泊。' : '#54-#59 -> Mt. Ishizuchi foothills #60 Yokomineji -> #64 -> stay in Niihama.'}
+              </div>
+            </div>
+
+            <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm">
+              <div class="font-bold text-purple-700 mb-1">${isJa ? '第9日：天空・雲辺寺と讃岐' : 'Day 9: Unpenji Summit'}</div>
+              <div class="text-slate-700 leading-snug">
+                ${isJa ? '#65三角寺 → 最高峰標高911m #66雲辺寺（ロープウェイ）→ #67大興寺〜#71弥谷寺 → 琴平・丸亀泊。' : '#65 -> highest summit #66 Unpenji (ropeway) -> #67-#71 -> stay in Kotohira.'}
+              </div>
+            </div>
+
+            <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm">
+              <div class="font-bold text-purple-700 mb-1">${isJa ? '第10日：大師生誕・善通寺' : 'Day 10: Kukai Birthplace'}</div>
+              <div class="text-slate-700 leading-snug">
+                ${isJa ? '#72曼荼羅寺〜#75善通寺（43m五重塔・戒壇めぐり）〜#80国分寺〜#84屋島寺（源平古戦場）→ 高松泊。' : '#75 Zentsuji (43m pagoda & tunnel) -> #80 -> #84 Yashimaji -> stay in Takamatsu.'}
+              </div>
+            </div>
+
+            <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm col-span-1 md:col-span-2">
+              <div class="font-bold text-purple-800 mb-1">${isJa ? '第11日：結願（けちがん）大窪寺 ＆ 満願の祈り' : 'Day 11: Kechigan at #88 Okuboji & Full Vow Fulfilled'}</div>
+              <div class="text-slate-700 leading-snug">
+                ${isJa ? '#85八栗寺〜#87長尾寺を経て、最後の札所・第88番大窪寺へ！金剛杖を奉納して結願。讃岐うどんを味わい、瀬戸大橋または神戸淡路鳴門道から帰路へ。' : 'Through #85-#87, reach final Temple #88 Okuboji! Dedicate your staff, celebrate with Sanuki Udon, and return via Seto Bridge.'}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
   return '';
 }
+
 
 // Render Interactive Features Section
 function renderInteractiveSection() {
