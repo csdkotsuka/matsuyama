@@ -404,6 +404,41 @@ const siteData = {
       desc: "本サイトは、愛媛県松山市および愛媛が誇る歴史・文学・現代アート・食文化・意外な魅力を全世界へ広く紹介するために制作されたオープンプロジェクトです。",
       githubNote: "GitHub公開対応レポジトリ。世界中からのコントリビューションや翻訳を歓迎します。",
       copyright: "© MATSUYAMA DISCOVERY PROJECT. Crafted with pride for Matsuyama & Ehime."
+    },
+    partners: {
+      badge: "TRAVEL & LOCAL SUPPORT",
+      prBadge: "PR / 提携サービス",
+      heading: "松山・愛媛の旅をサポートするおすすめサービス",
+      subheading: "道後温泉の旅館・ホテル予約や格安航空券の手配、愛媛の特産品が楽しめるふるさと納税など、旅と地域を応援する提携サービスです。",
+      items: [
+        {
+          id: "jalan",
+          icon: "🏨",
+          category: "宿泊予約",
+          title: "じゃらんnet",
+          tagline: "道後温泉の老舗旅館・松山市内ホテル",
+          desc: "お得な宿泊プランや温泉旅館を簡単検索・即時予約。ポイント還元も充実。",
+          bannerHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4BEAWZ+9GJZKQ+14CS+674EP" rel="nofollow"><img border="0" width="468" height="60" alt="じゃらんnet" src="https://www23.a8.net/svt/bgt?aid=261007811572&wid=002&eno=01&mid=s00000005230001041000&mc=1"></a><img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4BEAWZ+9GJZKQ+14CS+674EP" alt="">`
+        },
+        {
+          id: "airtrip",
+          icon: "✈️",
+          category: "航空券・ツアー",
+          title: "エアトリ",
+          tagline: "全国から松山空港（MYJ）への最安値比較",
+          desc: "各航空会社のチケットを一括比較・予約！松山への旅行・出張をスマートに手配。",
+          bannerHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4BEAWZ+A6R26Y+AD2+2T8JPD" rel="nofollow"><img border="0" width="468" height="60" alt="エアトリ" src="https://www26.a8.net/svt/bgt?aid=261007811616&wid=002&eno=01&mid=s00000001343017004000&mc=1"></a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4BEAWZ+A6R26Y+AD2+2T8JPD" alt="">`
+        },
+        {
+          id: "furusato",
+          icon: "🍊",
+          category: "ふるさと納税",
+          title: "au PAY ふるさと納税",
+          tagline: "愛媛みかん・今治タオル・鯛めし返礼品",
+          desc: "愛媛県・松山市を美味しく応援！旬の高級柑橘や今治タオルなど豪華なご当地返礼品。",
+          bannerHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4BEAWZ+AF34NU+54OC+5Z6WX" rel="nofollow"><img border="0" width="468" height="60" alt="au PAY ふるさと納税" src="https://www26.a8.net/svt/bgt?aid=261007811630&wid=002&eno=01&mid=s00000023934001004000&mc=1"></a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BEAWZ+AF34NU+54OC+5Z6WX" alt="">`
+        }
+      ]
     }
   },
 
@@ -763,6 +798,41 @@ In Ehime and Matsuyama, enthusiastic offline meetups and study groups have sprou
       desc: "本サイトは、愛媛県松山市および愛媛が誇る歴史・文学・現代アート・食文化・意外な魅力を全世界へ広く紹介するために制作されたオープンプロジェクトです。",
       githubNote: "GitHub公開対応レポジトリ。世界中からのコントリビューションや翻訳を歓迎します。",
       copyright: "© MATSUYAMA DISCOVERY PROJECT. Crafted with pride for Matsuyama & Ehime."
+    },
+    partners: {
+      badge: "TRAVEL & LOCAL SUPPORT",
+      prBadge: "PR / Affiliate Partners",
+      heading: "Recommended Services for Your Matsuyama Trip",
+      subheading: "Convenient services for booking hot spring stays in Dogo, reserving flights to Matsuyama, and discovering local Ehime specialties.",
+      items: [
+        {
+          id: "jalan",
+          icon: "🏨",
+          category: "Accommodation",
+          title: "Jalan.net",
+          tagline: "Dogo Onsen Ryokans & City Hotels",
+          desc: "Book traditional onsen ryokans and modern hotels across Matsuyama with ease.",
+          bannerHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4BEAWZ+9GJZKQ+14CS+674EP" rel="nofollow"><img border="0" width="468" height="60" alt="じゃらんnet" src="https://www23.a8.net/svt/bgt?aid=261007811572&wid=002&eno=01&mid=s00000005230001041000&mc=1"></a><img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4BEAWZ+9GJZKQ+14CS+674EP" alt="">`
+        },
+        {
+          id: "airtrip",
+          icon: "✈️",
+          category: "Flights & Travel",
+          title: "AirTrip",
+          tagline: "Compare Domestic Flights to Matsuyama (MYJ)",
+          desc: "Compare lowest airfares across domestic airlines to Matsuyama.",
+          bannerHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4BEAWZ+A6R26Y+AD2+2T8JPD" rel="nofollow"><img border="0" width="468" height="60" alt="エアトリ" src="https://www26.a8.net/svt/bgt?aid=261007811616&wid=002&eno=01&mid=s00000001343017004000&mc=1"></a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4BEAWZ+A6R26Y+AD2+2T8JPD" alt="">`
+        },
+        {
+          id: "furusato",
+          icon: "🍊",
+          category: "Local Gifts & Tax",
+          title: "au PAY Furusato Nozei",
+          tagline: "Ehime Citrus & Imabari Towel Gifts",
+          desc: "Support Ehime Prefecture and Matsuyama City while receiving premium local gifts.",
+          bannerHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4BEAWZ+AF34NU+54OC+5Z6WX" rel="nofollow"><img border="0" width="468" height="60" alt="au PAY ふるさと納税" src="https://www26.a8.net/svt/bgt?aid=261007811630&wid=002&eno=01&mid=s00000023934001004000&mc=1"></a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BEAWZ+AF34NU+54OC+5Z6WX" alt="">`
+        }
+      ]
     }
   }
 };
@@ -798,6 +868,7 @@ function initApp() {
   renderTabs();
   renderActiveSection();
   renderInteractiveSection();
+  renderPartners();
   renderFooter();
   setupEventListeners();
 }
@@ -1164,6 +1235,70 @@ function renderInteractiveSection() {
   `;
 }
 
+// Render Travel Partners & Affiliate Banners
+function renderPartners() {
+  const container = document.getElementById('partners-container');
+  if (!container) return;
+
+  const data = siteData[currentLang];
+  if (!data.partners) return;
+
+  const p = data.partners;
+
+  container.innerHTML = `
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100/80 border border-orange-200/90 text-orange-800 text-xs font-bold tracking-wide uppercase mb-3">
+          <span>${p.badge}</span>
+          <span class="w-1 h-1 rounded-full bg-orange-400"></span>
+          <span class="text-orange-600 font-semibold">${p.prBadge}</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 font-serif-jp tracking-tight">
+          ${p.heading}
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+          ${p.subheading}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        ${p.items.map(item => `
+          <div class="glass-card-light rounded-2xl p-5 flex flex-col justify-between border border-slate-200/80 hover:border-orange-300 transition shadow-sm bg-white/90">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200">
+                  <span>${item.icon}</span>
+                  <span>${item.category}</span>
+                </span>
+                <span class="text-[10px] text-slate-400 font-medium tracking-wide">PR</span>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 font-serif-jp">
+                ${item.title}
+              </h3>
+              <p class="text-xs font-semibold text-orange-600 mt-0.5">
+                ${item.tagline}
+              </p>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                ${item.desc}
+              </p>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-slate-100 flex flex-col items-center justify-center">
+              <div class="affiliate-banner-box w-full flex justify-center items-center">
+                ${item.bannerHtml}
+              </div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+
+      <div class="mt-6 text-center text-[11px] text-slate-400">
+        ※ 提携リンクから各外部サービスの公式サイトへ移動して予約・申込が可能です。
+      </div>
+    </div>
+  `;
+}
+
 // Render Footer
 function renderFooter() {
   const footerContainer = document.getElementById('footer-container');
@@ -1203,6 +1338,7 @@ function setLanguage(lang) {
   renderTabs();
   renderActiveSection();
   renderInteractiveSection();
+  renderPartners();
   renderFooter();
 }
 

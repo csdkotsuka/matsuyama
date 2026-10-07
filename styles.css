@@ -109,3 +109,31 @@ body {
 .modal-backdrop.open .modal-content {
   transform: scale(1) translateY(0);
 }
+
+/* Affiliate Partner Banners Responsive Styling */
+.affiliate-banner-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.affiliate-banner-box a {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.affiliate-banner-box a img:not([width="1"]) {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.affiliate-banner-box a:hover img:not([width="1"]) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(234, 88, 12, 0.2);
+}
+
