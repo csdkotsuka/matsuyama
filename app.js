@@ -1222,10 +1222,14 @@ function renderTabs() {
   const tabsContainer = document.getElementById('tabs-container');
   if (!tabsContainer) return;
 
+  // Preserve user's current horizontal scroll position
+  const existingWrapper = document.getElementById('tabs-scroll-wrapper');
+  const savedScrollLeft = existingWrapper ? existingWrapper.scrollLeft : 0;
+
   const data = siteData[currentLang];
   tabsContainer.innerHTML = `
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div id="tabs-scroll-wrapper" class="flex overflow-x-auto py-1 px-1 sm:px-2 gap-2 sm:gap-2.5 scrollbar-none justify-start md:justify-center scroll-smooth overscroll-x-contain">
+    <div class="max-w-7xl mx-auto">
+      <div id="tabs-scroll-wrapper" class="tabs-scroll-container scrollbar-none justify-start md:justify-center overscroll-x-contain">
         ${data.tabs.map(tab => {
           const isActive = tab.id === currentTab;
           return `
@@ -1246,6 +1250,12 @@ function renderTabs() {
       </div>
     </div>
   `;
+
+  // Restore horizontal scroll position without jumping
+  const newWrapper = document.getElementById('tabs-scroll-wrapper');
+  if (newWrapper && savedScrollLeft > 0) {
+    newWrapper.scrollLeft = savedScrollLeft;
+  }
 }
 
 // Render Active Category Section
@@ -1615,14 +1625,6 @@ function switchTab(tabId) {
   currentTab = tabId;
   renderTabs();
   renderActiveSection();
-
-  // Ensure active tab button is fully visible in scroll container
-  setTimeout(() => {
-    const activeBtn = document.getElementById(`tab-btn-${tabId}`);
-    if (activeBtn) {
-      activeBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-    }
-  }, 50);
 }
 
 // Switch Language
