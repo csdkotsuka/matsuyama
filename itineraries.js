@@ -380,7 +380,8 @@ const itinerariesData = {
           "spot": "しまなみ海道サイクリングロード",
           "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Kurushimakaikyou_ohashi01.jpg/1280px-Kurushimakaikyou_ohashi01.jpg",
           "desc": "世界中のサイクリストが憧れるCNN選定の世界7大サイクリングコース。E-bike（電動アシスト）なら初心者でも爽快に島々を渡れます。",
-          "mapLink": "https://www.google.com/maps/search/?api=1&query=サンライズ糸山"
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=サンライズ糸山",
+          "modalId": "shimanami-cycling-guide"
         }
       ],
       "hostTip": "UFOラインは例年11月末〜4月中旬まで冬季通行止めとなるため、5月〜10月の新緑・夏空・紅葉シーズンがベストです！"
@@ -730,7 +731,8 @@ const itinerariesData = {
           "spot": "Shimanami Kaido Cycling Highway",
           "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Kurushimakaikyou_ohashi01.jpg/1280px-Kurushimakaikyou_ohashi01.jpg",
           "desc": "Traverse the islands on designated elevated cycling lanes suspended over ocean currents. Rental E-bikes make the 70km route accessible even to casual riders.",
-          "mapLink": "https://www.google.com/maps/search/?api=1&query=サンライズ糸山"
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=サンライズ糸山",
+          "modalId": "shimanami-cycling-guide"
         }
       ],
       "hostTip": "The UFO Line is closed during winter from late November to mid-April. Visit between May and October for fresh green pastures, crystal summer skies, or blazing autumn foliage!"

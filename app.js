@@ -18,7 +18,8 @@ const siteData = {
     tabs: [
       { id: "itineraries", icon: "map", label: "観光モデルコース", subtitle: "日帰り・1泊・2泊 Google Map付" },
       { id: "sakanoue", icon: "cloud", label: "坂の上の雲 特集", subtitle: "秋山兄弟・正岡子規・萬翠荘・安藤忠雄" },
-      { id: "history", icon: "castle", label: "歴史と名城", subtitle: "道後温泉・松山城二之丸庭園・夏目漱石" },
+      { id: "onsen", icon: "onsen", label: "道後温泉・泉質と湯治", subtitle: "3000年の古湯・美肌の湯・正しい入浴法" },
+      { id: "history", icon: "castle", label: "歴史と名城", subtitle: "松山城・二之丸庭園・夏目漱石" },
       { id: "haiku", icon: "feather", label: "俳句と文化", subtitle: "ことばのまち・正岡子規・俳句甲子園" },
       { id: "art", icon: "palette", label: "極彩色アート＆工芸", subtitle: "蜷川実花道後・砥部焼最高峰・今治タオル" },
       { id: "citrus", icon: "citrus", label: "柑橘王国", subtitle: "みかん・紅まどんな・蛇口からみかんジュース" },
@@ -65,6 +66,95 @@ const siteData = {
 1922年（大正11年）、旧松山藩主の子孫である久松定謨（ひさまつ さだこと）伯爵が別邸として建設しました。設計は愛媛県庁舎なども手がけた木子七郎。
 純フランス・ルネサンス様式の鉄筋コンクリート造3階建てで、正面のステンドグラス、水晶のシャンデリア、大理石のマントルピースなど、当時のヨーロッパ最高峰の美意識がそのまま息づいています。
 昭和天皇が皇太子時代にご宿泊されたほか、各界の名士が集う最高級の社交場として愛され、国の重要文化財に指定されています。`
+          }
+        ]
+      },
+      onsen: {
+        title: "道後温泉：3,000年の古湯が誇る「アルカリ性単純温泉」と心身をととのえる湯治法",
+        desc: "聖徳太子や歴代天皇、文豪が愛した日本最古の名湯。肌にやさしいアルカリ性単純泉の秘密から他県名湯（草津・有馬・別府）との徹底比較、体調別の効能、入浴前後の完全マニュアルまで。",
+        items: [
+          {
+            id: "dogo-spring-science",
+            title: "道後温泉の泉質科学：なぜ「美人の湯」「刺激ゼロ」と呼ばれるのか？",
+            tag: "アルカリ性単純温泉（pH 9.1）の秘密",
+            summary: "無色透明・無加水・無加温の源泉かけ流し。角質をやさしく落とす天然のクレンジング作用と、他県名湯（草津・有馬・別府）との決定的な違いを解説。",
+            image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/D%C5%8Dgo_Onsen.jpg/1280px-D%C5%8Dgo_Onsen.jpg",
+            fullText: `【道後温泉の泉質データ】：
+■ 泉質：アルカリ性単純温泉（低張性・アルカリ性・高温泉）
+■ pH値：約 9.1（弱アルカリ性を超える本格的なアルカリ性）
+■ 源泉温度：約 20℃〜55℃（29本の源泉を集中管理し、42℃前後の適温で無加水・無加温供給）
+■ 主な含有成分：ナトリウムイオン、重炭酸イオン、メタケイ酸
+
+【泉質の特長と「美人の湯」の理由】：
+道後温泉の湯は、まるで極上の化粧水のように肌にしっとり馴染むのが最大の特徴です。
+アルカリ性（pH 9.1）の湯は、肌表面の古い角質や皮脂汚れをやさしく乳化・溶解させて落とす「天然の石鹸・クレンジング作用」を持っています。さらに、保湿成分として名高い「メタケイ酸」が豊富に含まれており、湯上がりの肌は陶器のようにすべすべ、もちもちとした透明感を取り戻します。
+
+【他県の有名温泉地との徹底比較】：
+① vs 草津温泉（群馬県・強酸性塩化物硫酸塩泉 / pH 1.5〜2.0）：
+・草津は「五寸釘も溶かす」と言われる強酸性で、強力な殺菌力とピリピリとした刺激が特徴。皮膚病や切り傷に劇的な効果がある一方、長湯や肌の弱い人・高齢者には刺激が強すぎることがあります。
+・これに対し道後は「赤ちゃんからシニアまで安心して入れる優しい湯」。刺激が極めて少なく、湯あたりしにくいため、ゆったりと心身を癒やすのに最適です。
+
+② vs 有馬温泉（兵庫県・含鉄ナトリウム塩化物強塩泉 / 金泉）：
+・有馬の金泉は赤褐色で、海水より濃い超濃厚な塩分と鉄分を含み、皮膚に塩の被膜を作って強烈な保温力を発揮します。
+・道後は無色透明で無臭。成分が強すぎず体に負担をかけないため、旅の途中でも疲れを残さず爽快にリフレッシュできます。
+
+③ vs 別府温泉（大分県・多種多様な泉質群）：
+・別府は硫黄泉や炭酸泉など多様な泉質が揃う温泉デパート。硫黄の香りと湯の花が温泉情緒を醸します。
+・道後は純粋で清らかなアルカリ性単純泉に特化。匂い移りもなく、入浴後にそのまま街歩きや懐石料理を堪能するのに最も適した上品な湯です。`
+          },
+          {
+            id: "dogo-bathing-mastery",
+            title: "道後温泉を120%極める！「正しい入浴前後の完全マニュアル」",
+            tag: "入浴前・入浴中・入浴後の科学",
+            summary: "かけ湯の順序、入浴時間（1回10〜15分）、分割浴の極意、水分補給、そして湯上がりの柑橘ジュースまで。効果を最大化する入浴法。",
+            image: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=80",
+            fullText: `せっかくの名湯も、正しい入り方を知らなければ効果が半減したり湯あたりを起こしたりします。温泉ソムリエや医学的見地に基づく「道後の湯ととのいマニュアル」をご紹介します。
+
+【① 入浴前の準備（30分前〜直前）】：
+■ 水分補給：入浴中は1回の入浴で約500ml〜800mlの汗が失われます。入浴の15〜30分前に必ずコップ1〜2杯の常温水や白湯を飲んでおきましょう。
+■ 食後・飲酒直後は避ける：食後すぐ（30分以内）は消化器官に血液が集まるため、入浴すると消化不良の原因になります。また、飲酒直後の入浴は血圧急変動による脳貧血や心臓発作の危険があるため厳禁です。
+■ トイレを済ませる：血行促進により利尿作用が高まるため、事前に行っておきましょう。
+
+【② 入浴中の手順と作法】：
+■ 「かけ湯」は心臓から遠い部位から：
+足先・手先 → ふくらはぎ・太もも → 腰・お腹 → 肩・胸の順に、湯温に体を慣らします。急激な血圧上昇（ヒートショック）を防ぐ最重要ステップです。
+■ 半身浴から全身浴へ：
+いきなり肩まで浸からず、まずはみぞおちまでの「半身浴」で2〜3分。体が温まったら肩まで浸かる「全身浴」へ移行します。
+■ 入浴時間と「分割浴」の極意：
+・1回の浸湯時間は【10分〜15分以内】が黄金律。額にじんわりと汗がにじむ程度がベストです。
+・長時間の1回浸湯よりも、「5分浸かる → 湯から上がって休憩 → また5分浸かる」という【分割浴（ぶんかつよく）】のほうが、体への負担が少なく深部体温が芯まで上がります。
+
+【③ 入浴後のケア】：
+■ 上がり湯はシャワーで流さない：
+道後温泉の湯はアルカリ性美肌成分（メタケイ酸など）が肌を包み込んでいます。水道水のシャワーで洗い流さず、そのままタオルでやさしく水分を拭き取るのが「すべすべ美肌」を長持ちさせる秘訣です（※肌が極端に敏感な方を除く）。
+■ 休息と水分補給：
+湯上がり後最低30分間は、涼しい場所で浴衣を羽織って安静に過ごします。ここで冷たい愛媛の温州みかんジュース（蛇口みかんジュース）を飲むと、失われた水分とビタミンC、クエン酸が身体に染み渡り、疲労回復が劇的に促進されます！`
+          },
+          {
+            id: "dogo-health-caution",
+            title: "泉質と体調の関係・ベストな入浴時間帯・注意事項",
+            tag: "自律神経をととのえる医学と注意点",
+            summary: "朝風呂（交感神経ON）と夜風呂（副交感神経ON）の使い分け。高血圧・疲労困憊・発熱時の注意と、道後温泉の歴史的効能。",
+            image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80",
+            fullText: `【時間帯別の入浴効果と体調のコントロール】：
+■ 【朝風呂（6:00〜8:00）】：
+道後温泉本館の朝6時の「刻太鼓（ときだいこ）」とともに浸かる朝風呂。
+やや高めの温度（41〜42℃）にサッと短め（5〜8分程度）浸かることで、自律神経の「交感神経」が刺激され、頭と体がすっきりと覚醒します。旅の一日を活動的にスタートするのに最適です。
+■ 【夕方・就寝前の夜風呂（20:00〜22:00）】：
+ぬるめ〜適温（39〜40℃）で10〜15分ゆったり浸かることで、「副交感神経」が優位になり、全身の筋肉の緊張が解けます。入浴後90分ほど経つと深部体温が下がり始め、極上の熟睡・深い眠りへと誘われます。
+
+【泉質と体調の関係・適応症】：
+■ 適応症（効能）：
+神経痛、筋肉痛、関節痛、五十肩、運動麻痺、関節のこわばり、うちみ、くじき、慢性消化器病、冷え性、病後回復期、疲労回復、健康増進。
+特に「低張性」の湯であるため、浸透圧が人間の体液より低く、水分が細胞内にやさしく吸収され、体の強張りを解くリラクゼーション効果が抜群です。
+
+【注意が必要な体調・禁忌事項】：
+■ 疲労困憊の直後：
+長距離移動や登山・サイクリング直後の「極度の疲労状態」でいきなり熱い湯に入ると、心臓に過度な負担がかかります。30分以上休憩し、水分を摂って息を整えてから入浴してください。
+■ 発熱時・急性疾患・重度の高血圧：
+急激な血行変化が症状を悪化させるおそれがあります。
+■ 湯あたり（浴中反応）：
+温泉に入りすぎてだるさや頭痛を感じたら、それは湯あたりです。すぐに横になって安静にし、水分を補給して体を冷やさないように毛布などをかけて休みましょう。1日2〜3回までの入浴回数を守ることが健康湯治の鉄則です。`
           }
         ]
       },
@@ -331,6 +421,54 @@ const siteData = {
 
 【1200年息づく「お接待」の奇跡】：
 遍路文化の最大の魅力は、見ず知らずの巡礼者に地元の人々がお茶やみかん、お菓子を差し出し、見返りを求めずに道中の無事を祈る「お接待（おせったい）」の精神です。この無償の優しさこそが、四国・愛媛が世界に誇る宝です。`
+          },
+          {
+            id: "shimanami-cycling-guide",
+            title: "世界が絶賛するサイクリストの聖地：しまなみ海道完全走破ガイド",
+            tag: "CNN世界7大サイクリングコース ＆ ナショナルサイクルルート",
+            summary: "メジャー拠点のレンタサイクル発着、距離と所要時間、生口島・耕三寺や名旅館への立ち寄り、準備物・注意点まで徹底解説！「一生に一度は走りたい」感動の瀬戸内ライド。",
+            image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Kurushimakaikyou_ohashi01.jpg/1280px-Kurushimakaikyou_ohashi01.jpg",
+            fullText: `アメリカCNNトラベルが「世界で最も素晴らしい7大サイクリングコース」に選定し、日本を代表する「ナショナルサイクルルート」第1号に指定された「瀬戸内しまなみ海道」。
+今治と尾道を結ぶ全長約70kmの海の道は、自転車専用道が整備され、碧い海と島々を空から渡るような奇跡の浮遊感を味わえます。
+
+【① 起点となるメジャーなレンタルサイクル店舗】：
+■ 「サンライズ糸山」（JR今治駅からバスまたはタクシー約15分）：
+愛媛側の絶対的ベースキャンプ！「しまなみサイクルオアシス」の中核施設で、クロスバイク、ロードバイクはもちろん、初心者や体力に自信のない方に一番人気の【E-bike（最新電動アシスト付きスポーツ車）】やタンデム自転車まで豊富に揃います。来島海峡大橋の真下に位置し、出発した瞬間から大迫力の絶景が広がります。
+■ 「JR今治駅前サイクリングターミナル」：
+電車で到着してすぐに乗り出せる利便性が魅力（しまなみレンタサイクル加盟）。
+※乗り捨て（ターミナル間返却）が可能な一般クロスバイクと、乗り捨て不可の高級E-bikeがあるので旅程に合わせて選びましょう。
+
+【② 所要時間と走行距離の目安（ただ橋を往復するだけで終わらせない！）】：
+■ 初心者・ハーフ体験（今治・糸山 ⇄ 大島・伯方島：往復約20〜35km / 所要3〜4時間）：
+世界初の3連吊橋「来島海峡大橋」を渡り、伯方島の「道の駅 伯方S・Cパーク」で名物「伯方の塩ソフト」を味わう王道爽快コース。
+■ 本格縦断（今治 ⇄ 尾道 全線走破：片道約70km / 所要5〜7時間、E-bikeやロードバイクなら初心者でも1日走破可能）：
+アップダウンのある橋へのアプローチスロープ（勾配3%程度で設計）も、E-bikeのアシストがあれば誰でも笑顔で登れます！
+
+【③ 時間があれば絶対に立ち寄るべき魅惑のスポット】：
+■ 【生口島（いくちじま）の耕三寺（こうさんじ）＆ 未来心の丘】：
+今治から約40km（尾道から約30km）。実業家・耕三寺耕三が母への感謝を込めて建立した絢爛豪華な寺院。日光東照宮や宇治平等院を模した極彩色の伽藍群に圧倒されます。
+さらに寺の山頂には、彫刻家・杭谷一東氏が手がけた5,000㎡の広大な大理石庭園「未来心の丘（みらいしんのおか）」が広がり、イタリア・カッラーラ産白大理石と瀬戸内の青空が織りなすエーゲ海のような純白の世界はSNSでも世界的人気！
+■ レモン谷＆ジェラート名店「ドルチェ」：
+国産レモン発祥の地・生口島の海岸線で食べるレモンジェラートはライドの最高のエネルギー源。
+■ 大三島「大山祇神社（おおやまづみじんじゃ）」：
+日本全国の山祇神社総本社。国宝・重要文化財の武具・甲冑の約4割（源義経や弁慶の鎧など）が眠る日本最強のパワースポット。
+
+【④ 見どころのあるおすすめ旅館・宿泊ステイ】：
+日帰りで急ぐのではなく、島で一泊することでしまなみの真の美しさに浸れます。
+■ 「Azumi Setoda（アズミ瀬田）」（生口島・瀬戸田）：
+アマン創業者エイドリアン・ゼッカ氏が手がけた、豪商「堀内家」の築140年の数奇屋屋敷を再生した至高のラグジュアリー旅館。古民家の温もりと世界的洗練が融合。
+■ 「富士見園（ふじみえん）」（大三島）：
+しまなみサイクリストの聖地とも呼ばれる温泉海鮮旅館。来島海峡の荒波で揉まれた活魚料理が舟盛りで供され、天然温泉も完備。
+■ 「WAKKA（ワッカ）」（大三島）：
+サイクリング総合リゾート。全室オーシャンビューのコテージやドームテント、カフェがあり、サイクリング中のサポートカーやボートタクシーも手配可能。
+
+【⑤ 準備物と重要な注意点】：
+■ 持ち物：吸汗速乾ウェア、お尻の痛みを軽減するクッション入りインナーパンツ、サングラス、日焼け止め、指切りグローブ、ウインドブレーカー（橋の上は海風が強く肌寒くなります）、リュックではなくサドルバッグ等の身軽な装備。
+■ 注意点：
+・「ブルーライン」に沿って左側走行を徹底（路面の青い誘導線に従えば迷いません）。
+・橋の上の強風注意（横風にあおられないようスピードを落とす）。
+・水分補給はこまめに（自販機や島ごとの「サイクルオアシス」を活用）。
+・万が一のパンクや体力限界時は「しまなみ島走レスキュー」や路線バス・高速船でのエスケープルートを事前確認しておくと安心です。`
           }
         ]
       },
@@ -458,7 +596,8 @@ const siteData = {
     tabs: [
       { id: "itineraries", icon: "map", label: "Model Itineraries", subtitle: "Day Trip, 1-Night, 2-Nights with Google Maps" },
       { id: "sakanoue", icon: "cloud", label: "Clouds Above the Hill", subtitle: "Akiyama Brothers, Shiki & Tadao Ando" },
-      { id: "history", icon: "castle", label: "History & Fortress", subtitle: "Dogo Onsen, Castle Garden, Soseki" },
+      { id: "onsen", icon: "onsen", label: "Dogo Onsen & Thermal Cure", subtitle: "3,000-Yr Spring, Alkaline Waters & Etiquette" },
+      { id: "history", icon: "castle", label: "History & Fortress", subtitle: "Matsuyama Castle, Ninomaru Garden, Soseki" },
       { id: "haiku", icon: "feather", label: "Haiku & Words", subtitle: "City of Poetry, Shiki Masaoka, Haiku Koshien" },
       { id: "art", icon: "palette", label: "Vivid Art & Master Crafts", subtitle: "Mika Ninagawa, Tobe Porcelain, Imabari Towel" },
       { id: "citrus", icon: "citrus", label: "Citrus Kingdom", subtitle: "Mikan, Beni Madonna, Juice from the Tap" },
@@ -502,6 +641,81 @@ The building adopts an acute triangular blueprint. Inside, visitors ascend a dra
             image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Bansui-so_2016-04-30.jpg/1280px-Bansui-so_2016-04-30.jpg",
             fullText: `Standing gracefully beside the Saka no Ue no Kumo Museum among lush greenery, Bansuiso was built in 1922 by Count Sadakoto Hisamatsu, a high-ranking military attaché in France and descendant of the Lord of Matsuyama.
 Designed by Shichiro Kiko in pure French Neo-Renaissance style, it boasts imported stained glass, crystal chandeliers, and carved marble fireplaces. It hosted the Showa Emperor during his crown prince days and remains an architectural jewel of Shikoku.`
+          }
+        ]
+      },
+      onsen: {
+        title: "Dogo Onsen: 3,000 Years of Alkaline Springs & Healing Rituals",
+        desc: "Japan's oldest thermal haven cherished by ancient emperors and samurai. Discover the scientific properties of pH 9.1 waters, regional comparisons (Kusatsu, Arima, Beppu), and the complete pre/post bath etiquette guide.",
+        items: [
+          {
+            id: "dogo-spring-science",
+            title: "The Chemistry of Dogo: Why Pure Alkaline Spring is Called 'Skin Beautifier'",
+            tag: "Pure Alkaline Simple Spring (pH 9.1)",
+            summary: "Colorless, odorless, unheated, undiluted 100% pure thermal flow. Mild natural exfoliating cleansing action compared with Kusatsu, Arima, and Beppu.",
+            image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/D%C5%8Dgo_Onsen.jpg/1280px-D%C5%8Dgo_Onsen.jpg",
+            fullText: `[Scientific Spring Analysis]:
+- Spring Type: Alkaline Simple Spring (Hypotonic, alkaline, high-temperature thermal spring)
+- pH Level: Approx. 9.1 (True alkaline spring)
+- Temperature at Source: 20°C–55°C (29 central sources combined and distributed at an optimal 42°C with zero artificial heating or tap water addition)
+- Key Minerals: Sodium ions, Bicarbonate ions, Metasilicic acid (natural skin moisturizer)
+
+[Why It Leaves Skin Silky Smooth]:
+Dogo's alkaline waters act as a mild, natural cosmetic cleanser. The pH 9.1 alkalinity gently emulsifies sebum and sloughs off dead skin cells, while high concentrations of metasilicic acid lock in cellular hydration.
+
+[Comparison with Japan's Other Famous Hot Springs]:
+1. vs Kusatsu (Gunma Prefecture - Extremely Acidic / pH 1.5–2.0):
+Kusatsu's volcanic sulfur waters are intensely acidic and antiseptic—famous for dissolving iron nails. While magical for skin conditions, it can irritate sensitive skin. Dogo, by contrast, is completely non-irritating and universally safe for babies, seniors, and long tranquil soaks.
+
+2. vs Arima (Hyogo Prefecture - Hypertonic Iron-Salt Golden Spring):
+Arima's famous 'Kinsen' (Gold Spring) is reddish-brown and twice as salty as seawater, forming an insulating mineral shield. Dogo's waters are clear, odorless, and gentle, leaving you energized rather than heavily fatigued.
+
+3. vs Beppu (Oita Prefecture - Diverse Volcanic Steam Wells):
+Beppu is a geothermal theme park with sulfur, carbonic, and mud springs with pungent aromas. Dogo is a refined, pure, odorless alkaline spring that lets you stroll through town or enjoy fine banquet dining immediately after your bath.`
+          },
+          {
+            id: "dogo-bathing-mastery",
+            title: "Mastering the Sacred Bath: Complete Pre & Post-Bathing Rituals",
+            tag: "The Science of Japanese Thermal Bathing",
+            summary: "From pre-hydration to Kakeyu order, ideal soaking duration (10–15 min), divided bathing sessions, and finishing with chilled Ehime mikan juice.",
+            image: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=80",
+            fullText: `Follow this certified Onsen Sommelier guide to maximize health benefits and avoid dizziness:
+
+[Phase 1: Pre-Bath Preparation]:
+- Hydration: You lose 500–800ml of fluids per bath. Drink 1–2 glasses of room-temperature water 15–30 minutes beforehand.
+- Avoid Direct Post-Meal/Alcohol: Wait at least 30 minutes after dining. Never bathe while intoxicated due to sudden blood pressure drops.
+
+[Phase 2: Proper In-Bath Technique]:
+- 'Kakeyu' (Pouring Water from Extremities):
+Pour warm water starting from toes and fingertips -> thighs -> stomach -> shoulders to prevent cardiovascular shock.
+- Partial Soak to Full Soak:
+Submerge only up to your chest for the first 2–3 minutes before relaxing to shoulder depth.
+- The 10–15 Minute Rule & Divided Soaks:
+Never soak continuously past 15 minutes. The most revitalizing method is 'divided bathing': soak for 5 minutes, rest on the edge for a few minutes, then soak another 5 minutes.
+
+[Phase 3: Post-Bath Care]:
+- Do Not Rinse Off: Dogo's mineral veil protects your skin. Gently pat dry with a towel without washing off the thermal coat with tap water.
+- Cool Down & Citrus Replenishment: Rest for at least 30 minutes in a yukata robe. Drink chilled 100% Ehime Unshu mikan juice: its citric acid and vitamin C speed up cellular recovery and replenish electrolytes instantly!`
+          },
+          {
+            id: "dogo-health-caution",
+            title: "Thermal Waters & Your Body: Timings, Benefits & Contraindications",
+            tag: "Balancing the Autonomic Nervous System",
+            summary: "Morning bath for energetic focus vs. evening bath for deep sleep. Precautions for exhaustion, hypertension, and hot spring fatigue.",
+            image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80",
+            fullText: `[Timing Your Soak for Optimal Health]:
+- Morning Soak (6:00 AM – 8:00 AM):
+Listen to the 6:00 AM sacred Tokidaiko drums at Dogo Onsen Honkan. A brief 5–8 minute dip in 41°C–42°C water activates the sympathetic nervous system, waking up brain alertness and metabolic circulation for sightseeing.
+- Evening Soak (8:00 PM – 10:00 PM):
+A relaxed 10–15 minute soak in milder water (39°C–40°C) stimulates the parasympathetic nervous system, easing muscle tension. As your core body temperature gently drops 90 minutes later, you will slip into deep, restorative sleep.
+
+[Health Indications]:
+Alleviates neuralgia, muscle soreness, joint stiffness, chronic digestive sluggishness, poor circulation, and physical exhaustion.
+
+[Essential Precautions & Contraindications]:
+- Extreme Exhaustion: Do NOT enter hot baths immediately after vigorous cycling or mountain climbing; rest 30 minutes first.
+- Fevers & Severe Hypertension: Avoid hot baths during acute illnesses.
+- Thermal Fatigue (Yu-atari): If you feel lightheaded, lie down immediately, hydrate, and keep warm with a blanket. Limit baths to 2–3 times per day.`
           }
         ]
       },
@@ -731,6 +945,46 @@ Born in Matsuyama in 1950, it blends fine white bean paste with fresh egg yolks 
             summary: "A 1,200-year sacred loop. Matsuyama's Ishite-ji Gate is a designated National Treasure! The entire route is certified as Japan Heritage No. 1.",
             image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Isiteji20220325_1.jpg/1280px-Isiteji20220325_1.jpg",
             fullText: `Circling Shikoku, the 88-temple Henro journey spans 1,200 years. In Matsuyama, Ishite-ji Temple's Nio Gate is a bona fide National Treasure. In 2015, the Agency for Cultural Affairs designated the pilgrimage as Japan Heritage #1, and efforts are underway for UNESCO World Cultural Heritage recognition. The true miracle remains 'Osettai'—the unconditional gift of tea, mikan, and lodging given to passing pilgrims.`
+          },
+          {
+            id: "shimanami-cycling-guide",
+            title: "World-Acclaimed Cyclist Sanctuary: Complete Shimanami Kaido Ride Guide",
+            tag: "CNN Top 7 Global Route & National Cycle Route",
+            summary: "Major rental bicycle hubs, realistic distances and times, detour to Ikuchijima Kosanji & iconic inns, essential gear and cycling tips. An unforgettable sky-over-sea experience.",
+            image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Kurushimakaikyou_ohashi01.jpg/1280px-Kurushimakaikyou_ohashi01.jpg",
+            fullText: `Designated by CNN Travel as one of the 'World's 7 Best Cycling Routes' and Japan's first official National Cycle Route, the Shimanami Kaido spans 70 km connecting Imabari (Ehime) and Onomichi (Hiroshima). Floating across emerald straits on dedicated elevated bicycle ramps feels like riding through the sky.
+
+[1. Major Bike Rental Hubs]:
+■ Sunrise Itoyama (15 mins by bus/taxi from JR Imabari Station):
+The undisputed capital of Ehime cycling! Perched right under the Kurushima Kaikyo Bridge, it offers road bikes, cross bikes, tandems, and modern high-capacity E-bikes (pedal-assist).
+■ JR Imabari Station Terminal:
+Hop straight off the train and start pedaling instantly.
+
+[2. Distance & Riding Time Planning]:
+■ Half-Route / Beginner Ride (Imabari/Itoyama ⇄ Oshima / Hakatajima: 20–35 km round-trip / 3–4 hours):
+Cross the majestic Kurushima Kaikyo Bridge, sample the famous Hakata Salt Soft-Serve at the Marine Park, and return comfortably.
+■ Full Traverse (Imabari ⇄ Onomichi: 70 km one-way / 5–7 hours):
+With modern E-bikes, even first-timers can effortlessly glide up the gentle 3% bridge approach spirals with a huge smile!
+
+[3. Essential Cultural Detours]:
+■ Kosanji Temple & The Hill of Hope (Miraishin no Oka) on Ikuchijima:
+40 km from Imabari. A breathtaking temple complex built by an industrialist in tribute to his mother, evoking Kyoto and Nikko shrines. Atop the hill lies a dazzling 5,000 m² pure white Carrara marble sanctuary crafted by sculptor Itto Kuetani—resembling the Santorini coast!
+■ Gelato Dolce on the Lemon Coast:
+Savor refreshing lemon gelato made from local organic groves.
+■ Oyamazumi Shrine on Omishima:
+The guardian shrine of samurai and sailors, housing 40% of all national treasure-designated armor and weaponry in Japan.
+
+[4. Unique Ryokan & Cycle Resorts]:
+■ Azumi Setoda (Ikuchijima):
+Created by Aman Resorts founder Adrian Zecca, revitalizing a 140-year-old historic merchant estate into refined luxury.
+■ Fujimien (Omishima):
+The beloved onsen and seafood inn of cyclers, famous for lavish fresh sashimi boat platters and natural hot spring baths.
+■ WAKKA (Omishima):
+All-in-one cycling resort offering ocean-view dome glamping, cottage rooms, cafe, support vehicles, and boat charters.
+
+[5. Packing List & Crucial Riding Rules]:
+- Gear: Quick-dry sportswear, padded cycling shorts, UV sunglasses, fingerless gloves, windbreaker (bridges get breezy), and compact saddle bags instead of heavy backpacks.
+- Rules: Follow the painted Blue Line on the left edge of roads, slow down when crosswinds pick up on suspension bridges, and hydrate frequently at Cycle Oases.`
           }
         ]
       },
@@ -858,7 +1112,9 @@ const icons = {
   compass: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>`,
   sparkles: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>`,
   arrowRight: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>`,
-  close: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>`
+  close: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>`,
+  onsen: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v2a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6v-2a1 1 0 0 1 1-1Z"/><path d="M8 4c0 2-1 3-1 4"/><path d="M12 2c0 2-1 3-1 4"/><path d="M16 4c0 2-1 3-1 4"/></svg>`,
+  bike: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>`
 };
 
 // Initialize Application
@@ -882,9 +1138,7 @@ function renderNavbar() {
   navContainer.innerHTML = `
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <div class="flex items-center space-x-3 cursor-pointer" onclick="switchTab('sakanoue')">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 via-orange-500 to-rose-500 flex items-center justify-center text-white shadow-md shadow-orange-500/20">
-          <span class="font-display font-bold text-xl">M</span>
-        </div>
+        <img src="./matsuyama.svg" alt="MATSUYAMA DISCOVERY" class="w-11 h-11 rounded-xl shadow-md shadow-orange-500/20 object-contain hover:scale-105 transition-transform">
         <div>
           <span class="font-display font-bold tracking-wider text-xl text-slate-900">MATSUYAMA</span>
           <span class="text-xs uppercase tracking-widest text-orange-600 block font-semibold">Discovery Portal</span>
@@ -971,11 +1225,11 @@ function renderTabs() {
   const data = siteData[currentLang];
   tabsContainer.innerHTML = `
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex overflow-x-auto pb-2 gap-2 sm:gap-2.5 scrollbar-none justify-start md:justify-center">
+      <div id="tabs-scroll-wrapper" class="flex overflow-x-auto py-1 px-1 sm:px-2 gap-2 sm:gap-2.5 scrollbar-none justify-start md:justify-center scroll-smooth overscroll-x-contain">
         ${data.tabs.map(tab => {
           const isActive = tab.id === currentTab;
           return `
-            <button onclick="switchTab('${tab.id}')" 
+            <button id="tab-btn-${tab.id}" onclick="switchTab('${tab.id}')" 
               class="flex-shrink-0 flex items-center space-x-2 px-3.5 py-3 rounded-xl border text-xs sm:text-sm font-bold transition-all duration-300 ${
                 isActive 
                   ? 'active-tab' 
@@ -983,7 +1237,7 @@ function renderTabs() {
               }">
               <span class="${isActive ? 'text-white' : 'text-orange-500'}">${icons[tab.icon] || ''}</span>
               <div class="text-left">
-                <span class="block">${tab.label}</span>
+                <span class="block whitespace-nowrap">${tab.label}</span>
                 <span class="block text-[10px] opacity-80 font-normal truncate max-w-[110px] sm:max-w-[150px]">${tab.subtitle}</span>
               </div>
             </button>
@@ -1087,6 +1341,36 @@ function renderTabSpecialBanner(tabId) {
             <div class="text-sm font-bold text-slate-900">秋山真之 (作戦)</div>
             <div class="text-sm font-bold text-orange-600">正岡子規 (文学)</div>
             <div class="text-[11px] text-slate-500 mt-2 font-medium">${isJa ? '全員が松山城下の同郷の友' : 'All Lifelong Friends from Matsuyama'}</div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  if (tabId === 'onsen') {
+    return `
+      <div class="mt-12 bg-gradient-to-br from-sky-50 via-cyan-50 to-amber-50 rounded-3xl p-6 sm:p-10 border border-sky-200/80 shadow-md">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+          <div class="space-y-4 max-w-2xl">
+            <span class="inline-block bg-sky-600 text-white text-xs font-bold px-3.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
+              ${isJa ? '一目でわかる！全国4大名湯 泉質比較' : 'National Onsen Comparison'}
+            </span>
+            <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 font-serif-jp">
+              ${isJa ? '刺激ゼロの至福：赤ちゃんからシニアまで愛される理由' : 'Pure Gentle Bliss: Why Dogo Welcomes Everyone'}
+            </h3>
+            <p class="text-slate-700 text-sm leading-relaxed">
+              ${isJa
+                ? '【草津】の強力な酸性殺菌力、【有馬】の濃厚な塩分と保温力、【別府】の硫黄の香りに対し、【道後】は「肌に一切負担をかけない天然の化粧水（pH 9.1のアルカリ性単純泉）」。湯あたりしにくく、湯上がり後もサラサラで爽快です。'
+                : 'Compared to Kusatsu’s intense acidity, Arima’s dense salty minerals, and Beppu’s rich sulfur, Dogo offers pure cosmetic water (pH 9.1 alkaline simple spring). It gently exfoliates without burning, leaving skin supple, refreshed, and clear.'}
+            </p>
+          </div>
+          <div class="flex-shrink-0 bg-white p-5 rounded-2xl border border-sky-200 shadow-sm max-w-xs text-center">
+            <div class="text-3xl mb-2">♨️ ✨ 🧖</div>
+            <div class="text-xs text-slate-500 uppercase tracking-widest font-bold">${isJa ? '道後温泉の黄金数値' : 'Key Stats'}</div>
+            <div class="text-base font-bold text-sky-700 mt-1">pH 9.1 (アルカリ美肌)</div>
+            <div class="text-sm font-semibold text-slate-700">源泉温度 42℃ (適温管理)</div>
+            <div class="text-xs text-orange-600 mt-1 font-bold">無加水・無加温 100%</div>
+            <div class="text-[11px] text-emerald-600 mt-2 font-medium">${isJa ? '湯上がりに冷たいみかん果汁を！' : 'Best with chilled mikan juice!'}</div>
           </div>
         </div>
       </div>
@@ -1308,9 +1592,12 @@ function renderFooter() {
   footerContainer.innerHTML = `
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-slate-200">
       <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-        <div>
-          <span class="font-display font-bold text-slate-900 tracking-wider text-lg">${data.footer.about}</span>
-          <p class="text-xs text-slate-600 mt-1 max-w-lg leading-relaxed">${data.footer.desc}</p>
+        <div class="flex items-center space-x-3.5">
+          <img src="./matsuyama.svg" alt="MATSUYAMA DISCOVERY" class="w-10 h-10 rounded-xl shadow-sm object-contain">
+          <div>
+            <span class="font-display font-bold text-slate-900 tracking-wider text-lg">${data.footer.about}</span>
+            <p class="text-xs text-slate-600 mt-1 max-w-lg leading-relaxed">${data.footer.desc}</p>
+          </div>
         </div>
         <div class="flex flex-col sm:flex-row items-center gap-4">
           <div class="text-xs text-orange-600 font-bold">${data.footer.githubNote}</div>
@@ -1328,6 +1615,14 @@ function switchTab(tabId) {
   currentTab = tabId;
   renderTabs();
   renderActiveSection();
+
+  // Ensure active tab button is fully visible in scroll container
+  setTimeout(() => {
+    const activeBtn = document.getElementById(`tab-btn-${tabId}`);
+    if (activeBtn) {
+      activeBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
+  }, 50);
 }
 
 // Switch Language
